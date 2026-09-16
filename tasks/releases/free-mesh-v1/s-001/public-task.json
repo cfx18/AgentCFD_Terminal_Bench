@@ -1,0 +1,12 @@
+{
+  "schema": "geometry-public-task-v1",
+  "texts": [
+    "instruction.md",
+    "protocol.md",
+    "observations.md"
+  ],
+  "assets": {
+    "geometry/domain.stl": "fa1de70b2bdb013778a55e90f06d8b9bd9d404595a017413c752835d0936c156",
+    "geometry/README.md": "c01af9d73f1e712fcaff87893cae8c73e8947ef92136cb8c12c4687746ec2cd1"
+  }
+}

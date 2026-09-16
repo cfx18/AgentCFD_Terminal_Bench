@@ -1,0 +1,23 @@
+{
+  "version": "science-from-scratch-v1",
+  "task": {
+    "id": "s-203",
+    "version": "edge-discrete-science-v1",
+    "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+  },
+  "model": {
+    "name": "AWS-Claude-Fable-5",
+    "wire_api": "chat"
+  },
+  "budget": {
+    "model_calls": 64,
+    "native_seconds": 1800,
+    "per_run_seconds": 300,
+    "request_seconds": 600
+  },
+  "documentation": {
+    "mode": "offline-reference-docs-v1",
+    "bundle": "openfoam-v2306-reference-v1",
+    "digest": "6ee02ee3c7e9047b5ffe81cb337dfcf320b3c0a5a63fbe825b62dae600be5a88"
+  }
+}

@@ -1,0 +1,24 @@
+# New experiment conditions; old 64-call snapshots and scores remain unchanged.
+version: workbench-v3
+harness:
+  name: codex
+  backend: chatgpt-subscription
+  reasoning_effort: xhigh
+  auth_home: /root/.codex-experiment
+model: gpt-6-astra
+tasks: [s-204, s-203]
+task_root: ../tasks/releases/dense-reconstruction-v2
+docs: ../environments/docs-v2306
+network: disabled
+budget:
+  model_calls: 120
+  native_seconds: null  # No native or whole-task wall-clock limit.
+  request_seconds: 600  # Per-API no-response protection, not a task time budget.
+completion:
+  on_model_budget_exhausted: evaluate_latest_successful
+execution:
+  foam_root: ../environments/native-v2306/foam
+  mpi: intelmpi  # Runtime library selection only; solver execution is serial.
+  memory_bytes: 4294967296
+  file_bytes: 536870912
+output: ../runs/dense-reconstruction

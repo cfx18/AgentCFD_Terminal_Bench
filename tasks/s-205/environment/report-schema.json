@@ -1,0 +1,38 @@
+{
+  "T_cell_min_mean_max": [
+    "K",
+    3
+  ],
+  "U_cell_mean": [
+    "m/s",
+    3
+  ],
+  "U_speed_max": [
+    "m/s",
+    1
+  ],
+  "U_speed_rms": [
+    "m/s",
+    1
+  ],
+  "final_time": [
+    "s",
+    1
+  ],
+  "last_final_residual": [
+    "1",
+    1
+  ],
+  "last_initial_residual": [
+    "1",
+    1
+  ],
+  "p_cell_min_mean_max": [
+    "Pa",
+    3
+  ],
+  "rho_cell_min_mean_max": [
+    "kg/m3",
+    3
+  ]
+}

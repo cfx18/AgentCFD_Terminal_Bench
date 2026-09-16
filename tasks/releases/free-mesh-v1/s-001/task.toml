@@ -1,0 +1,19 @@
+schema_version = "1.4"
+[metadata]
+version = "free-mesh-v1"
+runtime = "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+native_commands = [["mesh", "blockMesh"], ["mesh_check", "checkMesh"], ["solver", "icoFoam"], ["centres", "postProcess", "-func", "writeCellCentres", "-latestTime"], ["volumes", "postProcess", "-func", "writeCellVolumes", "-latestTime"]]
+artifact_fields = ["U", "p", "C", "V"]
+qualification_seconds = 300
+[metadata.native_completion]
+kind = "transient"
+end = 2.0
+tolerance = 1e-8
+early_convergence = false
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "domain_volume", "velocity_field", "transverse_velocity"]
+[verifier]
+environment_mode = "separate"
+[verifier.environment]
+network_mode = "no-network"

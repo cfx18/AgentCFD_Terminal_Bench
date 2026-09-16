@@ -1,0 +1,26 @@
+{
+  "convergence_rules": [],
+  "general_mesh_qualified": true,
+  "integrity_policy": "dense-integrity-v1",
+  "policy": "dense-observation-v1",
+  "qualification_scope": "single-fluid native U/T/p; physical-coordinate containing-cell sampling",
+  "release_status": "released",
+  "rubric": {
+    "aggregation": "minimum_over_metrics_and_fields",
+    "approval": "user_confirmed_2026-09-16",
+    "full_credit": {
+      "normalized_maximum_error": 0.2,
+      "normalized_rmse": 0.05
+    },
+    "interpolation": "linear_between_anchors",
+    "pressure_alignment": "volume_weighted_constant_offset",
+    "scope": "reconstruct_public_finite_numerical_reference",
+    "version": "dense-reconstruction-reward-v1",
+    "zero_credit": {
+      "normalized_maximum_error": 1.0,
+      "normalized_rmse": 0.3
+    }
+  },
+  "rubric_approved": true,
+  "unresolved_integrity": "human_review_no_reward_not_model_failure"
+}

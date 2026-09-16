@@ -1,0 +1,353 @@
+{
+  "schema": "agentcfd-tutorial-authoring-release-v1",
+  "release": "tutorial-authoring-v1",
+  "task_count": 49,
+  "source_completed_manifest": "runs/tutorial-authoring/completed-good-49-manifest.json",
+  "review_table": "docs/tutorial-authoring-v1/review-table.json",
+  "review_summary": "docs/tutorial-authoring-v1/REVIEW_TABLE.zh.md",
+  "items": [
+    {
+      "candidate_id": "q-0051",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0051",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0051",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0051/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0052",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0052",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0052",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0052/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0053",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0053",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0053",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0053/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0054",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0054",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0054",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0054/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0055",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0055",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0055",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0055/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0064",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0064",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0064",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0064/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0065",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0065",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0065",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0065/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0066",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0066",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0066",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0066/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0068",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0068",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0068",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0068/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0069",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0069",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0069",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0069/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0094",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0094",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0094",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0094/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0096",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0096",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0096",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0096/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0097",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0097",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0097",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0097/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0098",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0098",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0098",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0098/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0099",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0099",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0099",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0099/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0131",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0131",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0131",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0131/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0132",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0132",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0132",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0132/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0133",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0133",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0133",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0133/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0134",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0134",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0134",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0134/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0135",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0135",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0135",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0135/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0136",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0136",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0136",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0136/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0139",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0139",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0139",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0139/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0146",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0146",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0146",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0146/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0147",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0147",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0147",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0147/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0148",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0148",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0148",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0148/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0149",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0149",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0149",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0149/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0150",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0150",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0150",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0150/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0176",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0176",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0176",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0176/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0177",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0177",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0177",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0177/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0178",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0178",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0178",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0178/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0179",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0179",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0179",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0179/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0180",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0180",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0180",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0180/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0181",
+      "source_campaign": "auto-q0181",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T123202Z-auto-infra-retry-low1-r1/workers/q-0181",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0181",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0181/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0290",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0290",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0290",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0290/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0291",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0291",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0291",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0291/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0292",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0292",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0292",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0292/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0293",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0293",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0293",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0293/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0294",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0294",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0294",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0294/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0363",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0363",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0363",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0363/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0364",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0364",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0364",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0364/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0365",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0365",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0365",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0365/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0366",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0366",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0366",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0366/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0503",
+      "source_campaign": "q0503",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T093704Z-sol-high-infra-retry-v2/workers/q-0503",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0503",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0503/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0505",
+      "source_campaign": "original",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0505",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0505",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0505/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0506",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0506",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0506",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0506/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0508",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0508",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0508",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0508/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0509",
+      "source_campaign": "retry-low2",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0509",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0509",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0509/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0510",
+      "source_campaign": "clean-continuation",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0510",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0510",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0510/public/instruction.md"
+    },
+    {
+      "candidate_id": "q-0511",
+      "source_campaign": "q0511",
+      "source_worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100634Z-sol-high-q0511-retry-low1-v1/workers/q-0511",
+      "release_path": "tasks/releases/tutorial-authoring-v1/q-0511",
+      "public_instruction": "tasks/releases/tutorial-authoring-v1/q-0511/public/instruction.md"
+    }
+  ]
+}

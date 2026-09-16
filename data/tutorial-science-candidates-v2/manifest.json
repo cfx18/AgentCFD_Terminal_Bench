@@ -1,0 +1,64 @@
+{
+  "approved_tasks": 0,
+  "archive_sha256": "d7fba773658c0f06ad17f90199565f32e9bf502b7bb03077503642064e1f5344",
+  "paid_ready": false,
+  "registered_candidates": 5,
+  "schema": "tutorial-science-candidates-v2",
+  "tasks": [
+    {
+      "blockers": [
+        "quantitative_acceptance_not_frozen",
+        "original_reference_full_run_not_qualified",
+        "native_positive_negative_controls_pending"
+      ],
+      "id": "s-102",
+      "instruction_sha256": "4810fe45805c7f772f335829c3f39d005a09df1f5e3453106bbe19d6ad09d65f",
+      "profile_hash": "de658ea7f1af9dd1f02f41e88644750a460860f0353e6ded17d0a7d510049c95",
+      "status": "requirements_draft"
+    },
+    {
+      "blockers": [
+        "quantitative_acceptance_not_frozen",
+        "original_reference_full_run_not_qualified",
+        "native_positive_negative_controls_pending"
+      ],
+      "id": "s-101",
+      "instruction_sha256": "3a7aa72da32733d11a627db42de4b6a7a11ae5ed581defffcb3f81a43b14ce2e",
+      "profile_hash": "faacb5e6644fa45753d31d97586013dc5d280bd55bc25c9a85a749177f61d21a",
+      "status": "requirements_draft"
+    },
+    {
+      "blockers": [
+        "quantitative_acceptance_not_frozen",
+        "original_reference_full_run_not_qualified",
+        "native_positive_negative_controls_pending"
+      ],
+      "id": "s-105",
+      "instruction_sha256": "a2ee723faac3422f61d7d6eb940a0a16802b21f3d783cc52b63959eb2acda300",
+      "profile_hash": "f151b7964ff0e49e497c3baf534110082788c6e1c1440dbdac8161c8af424d04",
+      "status": "requirements_draft"
+    },
+    {
+      "blockers": [
+        "quantitative_acceptance_not_frozen",
+        "original_reference_full_run_not_qualified",
+        "native_positive_negative_controls_pending"
+      ],
+      "id": "s-104",
+      "instruction_sha256": "ef4ed1013f8c74d35d733c46e29e562caa9dcfee7a387cf0844fbfe2952dff9d",
+      "profile_hash": "26b5684ab8d403a6f842d1b3600b83b32f8c296b715f09d880f2407e54e49be2",
+      "status": "requirements_draft"
+    },
+    {
+      "blockers": [
+        "quantitative_acceptance_not_frozen",
+        "original_reference_full_run_not_qualified",
+        "native_positive_negative_controls_pending"
+      ],
+      "id": "s-103",
+      "instruction_sha256": "b3845a0360f23a520e17597916a061c6602397eafd16e8ec2c7a09ccad93c0d3",
+      "profile_hash": "c81095ab2c08efafb5651d55f9b98e8995b469e026058666a5316fedb1520989",
+      "status": "requirements_draft"
+    }
+  ]
+}

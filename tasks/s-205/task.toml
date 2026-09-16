@@ -1,0 +1,45 @@
+schema_version = "1.4"
+artifacts = ["/work/system/science-action.json"]
+
+[task]
+name = "agentcfd-terminal-bench/s-205"
+description = "Compressible flow after removal of a diaphragm"
+
+[metadata]
+version = "edge-discrete-science-v1"
+track = "science"
+runtime = "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+execution_protocol = "durable-native-session-v1"
+edge_recipe = "shock-v1"
+native_commands = [["mesh", "blockMesh"], ["initialize", "setFields"], ["mesh_check", "checkMesh"], ["solver", "rhoCentralFoam"]]
+artifact_fields = ["U", "p", "T", "rho"]
+qualification_seconds = 300
+
+[metadata.qualification]
+positive_source = "edge-original-preparation-v1"
+alternative_numerics = true
+
+[metadata.native_completion]
+kind = "transient"
+end = 0.007
+tolerance = 1e-07
+early_convergence = false
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "field_realizability", "field_U", "field_p", "field_T", "field_rho"]
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+cpus = 1
+memory_mb = 2048
+network_mode = "no-network"
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

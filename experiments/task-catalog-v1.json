@@ -1,0 +1,12 @@
+{
+  "s-001": {"positive_source": null},
+  "s-101": {"positive_source": "runs/tutorial-reference-preparation-001/s-101"},
+  "s-102": {"positive_source": "runs/tutorial-reference-preparation-001/s-102"},
+  "s-103": {"positive_source": "runs/tutorial-reference-preparation-001/s-103"},
+  "s-104": {"positive_source": "runs/tutorial-reference-preparation-001/s-104"},
+  "s-105": {"positive_source": "runs/tutorial-reference-preparation-001/s-105"},
+  "s-202": {"positive_source": "runs/fable-edge-originals-002/s-202"},
+  "s-203": {"positive_source": "runs/fable-edge-originals-001/s-203"},
+  "s-204": {"positive_source": "runs/fable-edge-originals-002/s-204"},
+  "s-205": {"positive_source": "runs/fable-edge-originals-001/s-205"}
+}

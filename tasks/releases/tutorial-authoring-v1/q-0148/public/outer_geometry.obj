@@ -1,0 +1,22 @@
+# Rectangular sealed cavity; coordinates in metres
+o sealed_room_outer_boundary
+v 0 0 0
+v 10 0 0
+v 10 5 0
+v 0 5 0
+v 0 0 10
+v 10 0 10
+v 10 5 10
+v 0 5 10
+g floor
+f 1 2 6 5
+g ceiling
+f 4 8 7 3
+g side_z_min
+f 1 4 3 2
+g side_z_max
+f 5 6 7 8
+g side_x_min
+f 1 5 8 4
+g side_x_max
+f 2 3 7 6

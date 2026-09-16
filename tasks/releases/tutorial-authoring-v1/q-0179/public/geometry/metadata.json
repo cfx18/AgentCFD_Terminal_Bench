@@ -1,0 +1,64 @@
+{
+  "source": "case/constant/polyMesh (archived native mesh)",
+  "coordinate_units": "m",
+  "representation": "exact boundary polylines on the z=0 plane; no volume mesh exported",
+  "mesh_point_count": 76806,
+  "mesh_face_count": 151803,
+  "patches": {
+    "frontBack": {
+      "type": "empty",
+      "nFaces": 75600,
+      "startFace": 74997
+    },
+    "inlet": {
+      "type": "patch",
+      "nFaces": 808,
+      "startFace": 150597
+    },
+    "pressure": {
+      "type": "wall",
+      "nFaces": 199,
+      "startFace": 151405
+    },
+    "suction": {
+      "type": "wall",
+      "nFaces": 199,
+      "startFace": 151604
+    }
+  },
+  "curve_vertex_counts": {
+    "inlet": [
+      809
+    ],
+    "pressure": [
+      200
+    ],
+    "suction": [
+      200
+    ]
+  },
+  "domain_curve_bounds_m": {
+    "min": [
+      -15.03166865,
+      -14.99711525,
+      0.0
+    ],
+    "max": [
+      15.0,
+      14.99711525,
+      0.0
+    ]
+  },
+  "airfoil_bounds_m": {
+    "min": [
+      0.0,
+      -0.05970701086,
+      0.0
+    ],
+    "max": [
+      1.0,
+      0.05970701086,
+      0.0
+    ]
+  }
+}

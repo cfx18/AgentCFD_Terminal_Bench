@@ -1,0 +1,28 @@
+{
+  "version": "science-from-scratch-v1",
+  "task": {
+    "id": "s-105",
+    "version": "original-tutorial-science-v2",
+    "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+  },
+  "model": {
+    "name": "gpt-5.6-sol",
+    "wire_api": "responses"
+  },
+  "budget": {
+    "model_calls": 64,
+    "native_seconds": 600,
+    "per_run_seconds": 120,
+    "request_seconds": 600
+  },
+  "documentation": {
+    "mode": "offline-reference-docs-v1",
+    "bundle": "openfoam-v2306-reference-v1",
+    "digest": "6ee02ee3c7e9047b5ffe81cb337dfcf320b3c0a5a63fbe825b62dae600be5a88"
+  },
+  "harness": {
+    "backend": "chatgpt-subscription",
+    "reasoning_effort": "ultra",
+    "public_decision_log": true
+  }
+}

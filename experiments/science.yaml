@@ -1,0 +1,80 @@
+# 只改这一份，再 prepare 生成新的冻结实验；本文件不存 API key。
+# 所有相对路径相对于 AgentCFD_Terminal_Bench，而非终端当前目录。
+version: science-campaign-v1
+name: astra-xhigh-output-20x-007  # New scoring release; previous snapshots are immutable.
+
+harness:
+  # 可选 codex | foamclaw | claude-code | kimi-code。
+  # 后三者目前只支持 custom-api + Kimi-K3；有接口不代表已完成本轮资格测试。
+  name: codex
+  backend: chatgpt-subscription    # chatgpt-subscription | custom-api
+  reasoning_effort: xhigh         # 本轮不用 ultra；xhigh 下明确关闭子 Agent。自定义 API 必须 null。
+  public_decision_log: true       # 中文公开决策与查阅证据摘要，不索取隐藏思维链；自定义 API 暂填 false
+
+model:
+  # 可选 ID：gpt-6-astra | gpt-5.6-sol | AWS-Claude-Fable-5 | Kimi-K3。
+  # 订阅支持 Astra / Sol；Astra 的工具调用使用原生 Responses，不经过 Chat 转换。
+  # 旧自定义 API 仍支持 Sol / Fable / Kimi，不自动映射、降级或更换认证方式。
+  # 被排除的 Opus、Qwen3.7、Kimi2.6 不重新启用。
+  name: gpt-6-astra
+
+# 按列表顺序执行；删减/重排生效，不再修改多个 JSON。所有登记题可选：
+# s-001 瞬态 Couette；s-101 顶盖驱动；s-102 连通偏折通道；
+# s-103 稳态台阶；s-104 瞬态台阶；s-105 分叉流+标量源；
+# s-202 多区域接触热阻；s-203 温敏黏度；s-204 自然对流；s-205 激波管。
+# 用户明确：s-10x 是故意做错的 case，本轮不修复、不纳入新物理题发布。
+tasks: [s-205, s-203, s-202, s-204]
+
+# registered-v1：现有已登记题面，仍含配置写法提示。
+# geometry-only-free-mesh-v1：已实现 s-001 新版闭环；其他九题待审，选中即拒绝。
+# 单题工程配置见 free-mesh-s001-review.yaml，不代表全题集已发布。
+# physics-intent-draft-v1：上一版草案，保留历史，不再作为本轮目标。
+# geometry-only-free-mesh-draft-v1: superseded Chinese draft, retained as history.
+# geometry-only-free-mesh-en-v2: reviewed English s-202..s-205 public bundles in
+# task-drafts/geometry-only-free-mesh-en-v2/. Existing numerical references have
+# been accepted by the expert. This profile selects tasks/releases/expert-reference-v1:
+# finite numerical reference matching; convergence diagnostics are retained separately.
+# No fallback to old fixed-mesh tasks. Editing this file never starts a model.
+# geometry-only-free-mesh-output-v1: same public English tasks, geometry and GT;
+# removes task_contract from scoring, keeping all native/GT/report checks.
+instruction_profile: geometry-only-free-mesh-output-v1
+
+# 只限累计模型调用；没有单次输出 token、整题 token 或费用硬上限。
+# native_* 是隔离 OpenFOAM 执行的资源安全限额，不是模型输出限制。
+budget:
+  model_calls: 64
+  native_seconds: 1800
+  per_run_seconds: 1800           # 用户确认；仅本次新四题。全部提交累计仍只允许 1800 秒。
+  request_seconds: 600            # 单次请求的故障看门狗，不是总作答时间
+
+# 可选 openfoam-v2306-reference-v1 | none；新物理条件必须选文档。
+# 固定、筛查过的 OpenFOAM 通用工具文档；不开放互联网或 tutorial 答案。
+documentation: openfoam-v2306-reference-v1
+
+authentication:
+  auth_home: /root/.codex         # 仅宿主读取；订阅模式用它。
+  # 自定义 API 时删除 auth_home，改为 env_file: /absolute/path/private-science.env
+  # env 内写 SCIENCE_API_BASE / SCIENCE_API_KEY；不会复制进 Agent 工作区。
+
+execution:
+  python: ../.venv-harbor/bin/python
+  prepared_parent: runs/prepared
+  # 每次 submit 自动生成 [可选标签-]UTC微秒时间-配置SHA256前12位-随机后缀/
+  # 目录内 snapshots/ 保存配置与代码，launch/ 保存后台日志，results/ 保存全部本轮结果。
+  # 无需手写运行目录名；prepare 的 name 仍是准备版本名，不是运行 ID。
+  output_parent: runs/manual
+  provider_concurrency: 1         # 当前 serial controller 只支持 1，其他值报错，不假装生效。
+  native_concurrency: 1
+
+# 以下是发布证据，不是“填了路径就已验证”。改 harness/model/桥接源码需新接口测试。
+evidence:
+  interface_check: local-only     # 用户明确不做在线烟测；正式首题才首次请求订阅。
+  probe: audits/astra-output-reference-20260915-001/local-interface
+  junit:
+    - audits/astra-output-reference-20260915-001/tests-release.xml
+
+release:
+  ready: true                     # 发布审阅通过；源码绑定测试/接口证据缺失时 check 仍拒绝启动。
+  audit_report: docs/ASTRA_OUTPUT_REFERENCE_20260915.md
+  # 用户确认：本地测试通过后直接起正式任务，无额外在线烟测。
+  blockers: []

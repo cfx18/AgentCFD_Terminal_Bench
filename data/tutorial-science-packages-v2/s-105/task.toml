@@ -1,0 +1,44 @@
+schema_version = "1.4"
+artifacts = ["/work/system/science-action.json"]
+
+[task]
+name = "agentcfd-terminal-bench/s-105"
+description = "Pressure-driven branching flow with a transported scalar and volume source"
+
+[metadata]
+version = "original-tutorial-science-v2"
+track = "science"
+runtime = "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+execution_protocol = "durable-native-session-v1"
+native_commands = [["mesh", "blockMesh"], ["mesh_check", "checkMesh"], ["solver", "pimpleFoam"]]
+artifact_fields = ["U", "epsilon", "k", "nut", "p", "s"]
+qualification_seconds = 300
+
+[metadata.qualification]
+positive_source = "original-preparation-v1"
+alternative_numerics = true
+
+[metadata.native_completion]
+kind = "transient"
+end = 1.5
+tolerance = 0.0000001
+early_convergence = false
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "field_realizability", "field_U", "field_epsilon", "field_k", "field_nut", "field_p", "field_s"]
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+cpus = 1
+memory_mb = 2048
+network_mode = "no-network"
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

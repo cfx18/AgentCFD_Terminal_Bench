@@ -1,0 +1,11 @@
+# Observation and output contract
+
+Read `/input/observations/schema.json` and `/input/observations/fields.csv`. All target samples are public. They are synthetic internal-cell values, not laboratory measurements. Each row contains physical coordinates, a positive reference-volume quadrature weight, three velocity components, pressure and absolute temperature. Coordinates are observation locations, not a requirement to use the reference mesh. Geometry is `/input/geometry/domain.stl`; neutral surface labels do not prescribe boundary conditions.
+
+Save standard native `U`, `T` and absolute `p` fields with dimensions m/s, K and Pa respectively. If your formulation evolves reduced pressure, also produce its physically consistent absolute-pressure field. ASCII and binary native fields are supported by the native sampler. Choose your boundary names freely. The latest saved numerical state from your submitted run is compared; the target supplies no physical time or mandatory iteration count.
+
+The evaluator samples your native fields at every observation location using OpenFOAM containing-cell sampling (`cell` interpolation). It uses fixed reference-volume weights to report velocity-vector and scalar RMSE, maximum errors and normalized errors. Missing sample coverage and nonfinite values are reported explicitly, not dropped. Mesh interpolation/discretization contributes to reconstruction error; these metrics do not certify continuum or steady-state convergence.
+
+The normalizing scales are supplied in the schema. Temperature and pressure are scaled by their respective target ranges, not by their absolute means. Both raw absolute-pressure error and a separately mean-aligned pressure-shape error are reported. The absolute pressure level is not silently discarded. A small reconstruction error does not uniquely establish the inferred mechanism or correctness on a different operating condition.
+
+This draft reports raw metrics only. Pass thresholds, a combined reward and mechanism-identification scores have not been released. Public observations can be used for your own comparisons; the authoritative evaluator reads a frozen native run after final submission. Do not repeatedly submit to query a private checker.

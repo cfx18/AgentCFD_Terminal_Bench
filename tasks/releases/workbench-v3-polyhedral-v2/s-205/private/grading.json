@@ -1,0 +1,8 @@
+{
+  "convergence_rules": [],
+  "convergence_status": "diagnostic_only_until_expert_thresholds_are_registered",
+  "general_mesh_qualified": true,
+  "observation_version": "polyhedral-observations-v2",
+  "policy": "accepted-gt-v1",
+  "reference_revision": "same_native_fields_polyhedral_observations_v2"
+}

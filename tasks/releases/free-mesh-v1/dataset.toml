@@ -1,0 +1,52 @@
+[dataset]
+name = "science-free-mesh-v1"
+
+[[tasks]]
+id = "s-001"
+status = "implemented"
+digest = "602c6f78a0210376542e446813a945ccfad6c51225fda2504866bb13b96cc1f7"
+
+[[tasks]]
+id = "s-101"
+status = "review"
+digest = "592738d1a8d080e07a0a0eb2bbd309747f399f3bba0a30d32007b573397c731e"
+
+[[tasks]]
+id = "s-102"
+status = "review"
+digest = "40ed335f72edc4b0ca6e6a00b249f24756b3ff04965e816c59ab0a94e986af6b"
+
+[[tasks]]
+id = "s-103"
+status = "review"
+digest = "5d9dc5c3077c259d706431cf8f96406b53c9f53aa09702b0245449bec2157c95"
+
+[[tasks]]
+id = "s-104"
+status = "review"
+digest = "db091d689ea9d631670a99e551431162fff14aad742a893fdac88f554c8358e7"
+
+[[tasks]]
+id = "s-105"
+status = "review"
+digest = "9402effdd7f5de582660335a3d8856797bb392b101be6442a0d47762e7027260"
+
+[[tasks]]
+id = "s-202"
+status = "review"
+digest = "628d8ff0e8d8cf140b17d0eed3bf852b6ccd4d70210819e04313be0799b4b19b"
+
+[[tasks]]
+id = "s-203"
+status = "review"
+digest = "e8454c9d1b3328d5bb3533491303590a7cfb168156b5f44ccd8660d5a84d634f"
+
+[[tasks]]
+id = "s-204"
+status = "review"
+digest = "02aae278743fc3617458e26df6f19d6a22664144b1f88b70b8a5f0a74a60e0f5"
+
+[[tasks]]
+id = "s-205"
+status = "review"
+digest = "342f0eb7d9512764812c0c538121bb6046b43263b258e924bcb7f16e1cf71067"

@@ -1,0 +1,108 @@
+{
+  "corrupt_field_rejected": true,
+  "grader_identity": "2533a36bfd9756c9d8bc663f1056d03a632e542d8ccef595c61c88014a88e8e8",
+  "limits": [
+    "At most 1000000 cells per region.",
+    "Unsupported or inconsistent extraction remains infrastructure error, never a claimed physical failure."
+  ],
+  "native_export_seconds": 6.268109574913979,
+  "observation_version": "polyhedral-observations-v2",
+  "old_vs_new": {
+    "bottomWater/T": {
+      "limit": 0.14086579585037304,
+      "passed": true,
+      "reference_rms": 2.8173159170074604,
+      "relative_rms": 0.033183976436192024,
+      "rms_difference": 0.09348974500328429
+    },
+    "bottomWater/U": {
+      "limit": 2.980501611536679e-05,
+      "passed": true,
+      "reference_rms": 0.0005961003223073358,
+      "relative_rms": 0.005206503238116777,
+      "rms_difference": 3.103598258335598e-06
+    },
+    "bottomWater/p": {
+      "limit": 9.810069629146684,
+      "passed": true,
+      "reference_rms": 196.20139258293366,
+      "relative_rms": 1.1190926740267736e-07,
+      "rms_difference": 2.1956754107341203e-05
+    },
+    "bottomWater/p_rgh": {
+      "limit": 8.610140725399342e-05,
+      "passed": true,
+      "reference_rms": 0.0017220281450798683,
+      "relative_rms": 0.0127505196078785,
+      "rms_difference": 2.1956753629159503e-05
+    },
+    "heater/T": {
+      "limit": 4.541063494202983,
+      "passed": true,
+      "reference_rms": 90.82126988405965,
+      "relative_rms": 8.20240093057127e-15,
+      "rms_difference": 7.449524686126754e-13
+    },
+    "leftSolid/T": {
+      "limit": 0.01,
+      "passed": true,
+      "reference_rms": 0.07348301152380451,
+      "relative_rms": 0.04432589701966662,
+      "rms_difference": 0.0032572004014991343
+    },
+    "rightSolid/T": {
+      "limit": 0.8816634998477432,
+      "passed": true,
+      "reference_rms": 17.633269996954862,
+      "relative_rms": 0.04133868837145572,
+      "rms_difference": 0.728936253373857
+    },
+    "topAir/T": {
+      "limit": 0.10415574933741718,
+      "passed": true,
+      "reference_rms": 2.0831149867483436,
+      "relative_rms": 0.009914725147463565,
+      "rms_difference": 0.020653512544172033
+    },
+    "topAir/U": {
+      "limit": 0.002900435597823843,
+      "passed": true,
+      "reference_rms": 0.05800871195647686,
+      "relative_rms": 0.0015340341606487526,
+      "rms_difference": 8.898734575646924e-05
+    },
+    "topAir/p": {
+      "limit": 4999.986661749823,
+      "passed": true,
+      "reference_rms": 99999.73323499646,
+      "relative_rms": 5.81906916639006e-10,
+      "rms_difference": 5.819053643149992e-05
+    },
+    "topAir/p_rgh": {
+      "limit": 5000.0002615883195,
+      "passed": true,
+      "reference_rms": 100000.00523176638,
+      "relative_rms": 7.011276113255329e-10,
+      "rms_difference": 7.011276480068915e-05
+    }
+  },
+  "reference_identity": "20269f35ab68c2e69495ce7c9e94486b7779ebe576df7cdc4f2749113ffd6f9f",
+  "reference_replay": "pass",
+  "regression_tests_passed": true,
+  "solver_rerun": false,
+  "task_id": "s-202",
+  "test_count": 142,
+  "test_report_sha256": "e190a8fb19d7e49e0efc8b0af70c485bb1824f44806ad87f63c45d03dcf48e36",
+  "tested_meshes": [
+    "orthogonal_hex",
+    "skew_hex",
+    "tetrahedral",
+    "concave_polyhedral",
+    "transverse_subdivision"
+  ],
+  "tested_names": [
+    "renamed_regions",
+    "split_regions",
+    "renamed_and_split_boundary_patches"
+  ]
+}

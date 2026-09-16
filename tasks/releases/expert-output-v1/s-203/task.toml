@@ -1,0 +1,33 @@
+schema_version = "1.4"
+
+[metadata]
+artifact_fields = ["U", "p", "T", "k", "epsilon", "nut", "C", "V", "phi", "grad(U)", "grad(T)"]
+edge_recipe = "free-mesh-thermal-energy-v1"
+execution_protocol = "durable-native-session-v1"
+native_commands = [["mesh", "blockMesh"], ["mesh_check", "checkMesh"], ["solver", "pimpleFoam"], ["centres", "postProcess", "-func", "writeCellCentres", "-latestTime"], ["volumes", "postProcess", "-func", "writeCellVolumes", "-latestTime"], ["velocity_gradient", "postProcess", "-func", "grad(U)", "-latestTime"], ["temperature_gradient", "postProcess", "-func", "grad(T)", "-latestTime"]]
+native_mesh_geometry = true
+qualification_seconds = 300
+runtime = "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1"
+track = "science"
+version = "expert-output-v1"
+model_native_seconds = 1800
+submitted_steady_endpoint = false
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["native_completion", "field_realizability", "reference_observations"]
+
+[metadata.native_completion]
+kind = "transient"
+end = 1.5
+tolerance = 1e-07
+early_convergence = false
+
+[metadata.qualification]
+source_mode = "expert-accepted-reference-v1"
+
+[verifier]
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

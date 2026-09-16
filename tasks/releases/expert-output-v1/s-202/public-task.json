@@ -1,0 +1,17 @@
+{
+  "schema": "geometry-public-task-v1",
+  "texts": [
+    "instruction.md",
+    "protocol.md",
+    "observations.md"
+  ],
+  "assets": {
+    "geometry/README.md": "460cb305996216799f117e8f239f9fbf25dd528eb754eff1ca9c9687c12b8abd",
+    "geometry/bottomWater.stl": "ec0908e97f7c54b6f680162ad3157de093f46c85ab1d82efe1e81c04af021a3e",
+    "geometry/domain.stl": "ff2a706a93bd2bc795692627a082b1ef56bb83b69c98daaa41acbfec1e060178",
+    "geometry/heater.stl": "33aa50f871ad1bb76dc8c444de90e1907720f2c4bfad77ac3023acc1c0d3ce14",
+    "geometry/leftSolid.stl": "091a06d06ef4a70e7d3ab09e1ba5e73beac41faeced099674ce1bef25bae512c",
+    "geometry/rightSolid.stl": "ca43e47e345682e033ec2e3caac713c592cca4bf9ebb52ef799050af8ec82e63",
+    "geometry/topAir.stl": "16670a5b243755de4930a7e383cb5570340fe6f293917a944db89e992cec72bc"
+  }
+}

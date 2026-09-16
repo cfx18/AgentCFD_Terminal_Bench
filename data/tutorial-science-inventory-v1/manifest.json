@@ -1,0 +1,59 @@
+{
+  "approved_tasks": 0,
+  "archive_sha256": "d7fba773658c0f06ad17f90199565f32e9bf502b7bb03077503642064e1f5344",
+  "calibration_only": [
+    "s-001"
+  ],
+  "first_batch": [
+    {
+      "physical_family": "closed_lid_driven_flow",
+      "source_path": "incompressible/icoFoam/cavity/cavity",
+      "task_id": "s-101"
+    },
+    {
+      "physical_family": "nonconformal_interface_flow",
+      "source_path": "basic/simpleFoam/implicitAMI",
+      "task_id": "s-102"
+    },
+    {
+      "physical_family": "steady_turbulent_backward_step",
+      "source_path": "incompressible/simpleFoam/pitzDaily",
+      "task_id": "s-103"
+    },
+    {
+      "physical_family": "transient_turbulent_backward_step",
+      "source_path": "incompressible/pimpleFoam/RAS/pitzDaily",
+      "task_id": "s-104"
+    },
+    {
+      "physical_family": "junction_flow_and_scalar_transport",
+      "source_path": "incompressible/pimpleFoam/RAS/TJunction",
+      "task_id": "s-105"
+    }
+  ],
+  "first_batch_size": 5,
+  "harnesses": [
+    "codex",
+    "foamclaw",
+    "claude-code",
+    "kimi-code"
+  ],
+  "inventory_hash": "98955f9afb51185fd0b4de41e314ff90942a9d09dbc9e845a01188812bc90b8b",
+  "main_tutorials": 470,
+  "model": "Kimi-K3",
+  "module_tutorials": 45,
+  "paid_ready": false,
+  "references_hash": "4fee31eef104c44f8e20440e1dc87d3ce253da629ec7b79fb4f3ec9996ea83c4",
+  "repair_tasks_in_new_campaign": 0,
+  "repeated_empty_directory_headers": [
+    "OpenFOAM-v2306/modules/OpenQBMM",
+    "OpenFOAM-v2306/modules/adios",
+    "OpenFOAM-v2306/modules/avalanche",
+    "OpenFOAM-v2306/modules/cfmesh",
+    "OpenFOAM-v2306/modules/external-solver",
+    "OpenFOAM-v2306/modules/visualization"
+  ],
+  "selection_basis": "five distinct original sources; closed flow, interfaces, steady/transient RAS and scalar mixing; selected before new model results",
+  "source_candidates": 515,
+  "version": "tutorial-science-inventory-v1"
+}

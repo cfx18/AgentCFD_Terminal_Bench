@@ -1,0 +1,27 @@
+# Same task release, docs, grading, execution and total budgets as Astra v3.
+version: workbench-v3
+harness:
+  name: kimi-code                   # Node @moonshot-ai/kimi-code, not Python kimi-cli.
+  backend: custom-api
+  reasoning_effort: null            # Official provider default; no sampling override.
+  runtime: ../.harness-runtime/kimi-code-0.28.1/node_modules
+  endpoint: https://api.moonshot.cn/v1
+  env_file: ../.env.kimi-official    # HOST ONLY; contents never archived/mounted.
+  api_key_env: SCIENCE_API_KEY
+  endpoint_env: SCIENCE_API_BASE
+  context_window: 1048576           # Official /models metadata, not a token-spend cap.
+model: kimi-k3                      # Exact official ID, no fallback model.
+tasks: [s-205, s-203, s-202, s-204]
+task_root: ../tasks/releases/workbench-v3-polyhedral-v2
+docs: ../environments/docs-v2306
+network: disabled
+budget:
+  model_calls: 64
+  native_seconds: 1000
+  request_seconds: 600
+execution:
+  foam_root: ../environments/native-v2306/foam
+  mpi: intelmpi
+  memory_bytes: 4294967296
+  file_bytes: 536870912
+output: ../runs/workbench-v3

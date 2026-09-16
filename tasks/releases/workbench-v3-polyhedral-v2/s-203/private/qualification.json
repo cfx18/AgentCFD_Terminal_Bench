@@ -1,0 +1,73 @@
+{
+  "corrupt_field_rejected": true,
+  "grader_identity": "2533a36bfd9756c9d8bc663f1056d03a632e542d8ccef595c61c88014a88e8e8",
+  "limits": [
+    "At most 1000000 cells per region.",
+    "Unsupported or inconsistent extraction remains infrastructure error, never a claimed physical failure."
+  ],
+  "native_export_seconds": 4.900781020522118,
+  "observation_version": "polyhedral-observations-v2",
+  "old_vs_new": {
+    "T": {
+      "limit": 0.751852096867921,
+      "passed": true,
+      "reference_rms": 15.037041937358419,
+      "relative_rms": 1.2482319166066708e-14,
+      "rms_difference": 1.8769715677563786e-13
+    },
+    "U": {
+      "limit": 0.15500906533046516,
+      "passed": true,
+      "reference_rms": 3.100181306609303,
+      "relative_rms": 4.301372184192722e-15,
+      "rms_difference": 1.3335033638203503e-14
+    },
+    "epsilon": {
+      "limit": 12.852082018036283,
+      "passed": true,
+      "reference_rms": 257.04164036072564,
+      "relative_rms": 1.1884940602030477e-14,
+      "rms_difference": 3.054924627935704e-12
+    },
+    "k": {
+      "limit": 0.05015272107374144,
+      "passed": true,
+      "reference_rms": 1.0030544214748287,
+      "relative_rms": 6.7045754489979406e-15,
+      "rms_difference": 6.725054048228969e-15
+    },
+    "nut": {
+      "limit": 2.7923566674793146e-05,
+      "passed": true,
+      "reference_rms": 0.0005584713334958629,
+      "relative_rms": 2.638477570802021e-14,
+      "rms_difference": 1.4735140873647296e-17
+    },
+    "p": {
+      "limit": 0.41604876236113875,
+      "passed": true,
+      "reference_rms": 8.320975247222774,
+      "relative_rms": 1.7322913979584693e-15,
+      "rms_difference": 1.441435384338936e-14
+    }
+  },
+  "reference_identity": "7aad49ed4f4b1b3fbe35bf9a664b94f35e614bf9c1eb02a35f4c4677eaac6cd7",
+  "reference_replay": "pass",
+  "regression_tests_passed": true,
+  "solver_rerun": false,
+  "task_id": "s-203",
+  "test_count": 142,
+  "test_report_sha256": "e190a8fb19d7e49e0efc8b0af70c485bb1824f44806ad87f63c45d03dcf48e36",
+  "tested_meshes": [
+    "orthogonal_hex",
+    "skew_hex",
+    "tetrahedral",
+    "concave_polyhedral",
+    "transverse_subdivision"
+  ],
+  "tested_names": [
+    "renamed_regions",
+    "split_regions",
+    "renamed_and_split_boundary_patches"
+  ]
+}

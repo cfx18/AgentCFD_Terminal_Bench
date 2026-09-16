@@ -1,0 +1,19 @@
+# Reconstruct gravity-driven particle settling in a closed column
+
+You are given the three-dimensional exterior geometry and dense synthetic observations of the carrier-gas and dispersed-particle state. Build and run an OpenFOAM v2306 case that reproduces these observations. Generate your own volume mesh and case inputs. The original configuration is not supplied. You may inspect all supplied observations and consult general OpenFOAM documentation, source code and web resources.
+
+## Known physical information
+
+Coordinates are in metres. The domain is a rectangular column occupying -0.0092 <= x <= 0.0092, -0.0092 <= y <= 0.0092 and 0 <= z <= 0.300. The top and bottom are stationary, impermeable, no-slip walls for the gas. The four lateral faces are symmetry planes for the gas. Dispersed particles cannot leave the domain; their interactions with all six faces are idealized as frictionless, perfectly elastic reflections.
+
+The problem family is transient, isothermal, incompressible, two-way-coupled flow of a laminar gas and a dense monodisperse particle phase represented by Lagrangian parcels. The carrier is air with density 1.2 kg/m3 and molecular kinematic viscosity 1.0e-5 m2/s. The particles are spheres of diameter 3.0e-4 m and material density 2526 kg/m3. The represented particle count is 2,154,750, corresponding to total solid volume 3.0462060e-5 m3, total solid mass 0.0769472 kg and nominal domain-mean initial solid volume fraction 0.299918. Gravity is (0, 0, -9.81) m/s2. There is no heat-transfer model, inlet, outlet, moving wall or additional imposed flow forcing.
+
+Initially the gas and particles are at rest, and the gas kinematic gauge pressure is zero. Particle centres are sampled approximately uniformly throughout the column at the stated overall loading; the exact parcel sampling is not supplied and is not uniquely recoverable. Gravity and the sealed/symmetry boundary behavior are known. Drag, dense-packing stress, parcel coarse-graining, collision or isotropization treatment, and their coefficients are modeling choices to infer and justify from the observations. Different closure choices can produce similar finite-time fields, so the hidden configuration is only one realization and is not a uniquely identifiable ground truth.
+
+## Deliverable
+
+Submit a successful native calculation at physical time t = 1.0 s with the carrier velocity and kinematic gauge pressure, together with the native dispersed-particle positions, velocities, diameters and parcel weights used by your model. Preserve any native carrier/particle volume-fraction field your calculation produces. Pressure has units m2/s2, not Pa. Do not create or report a temperature field for this isothermal problem. Choose the volume mesh, parcel resolution, closures and numerical controls within the execution budget; the mesh must use the physical coordinates of the supplied geometry.
+
+Give a short final modeling note separating known information, inferred choices, unresolved alternatives and verified results. No particular solver, dictionary recipe, mesh topology or long explanation is required. The target is a finite numerical state at the stated observation time, not proof of mesh convergence or a uniquely recovered microscopic parcel realization.
+
+The target data may be used for analysis and calibration, including physically interpretable material, closure and boundary parameters. Do not initialize or prescribe an internal field from the target, use the target particle state as an initial parcel cloud, construct pointwise forcing that pins the interior or particles to the observations, or substitute target data for native output. Start from the stated rest condition and nominally uniform initial particle loading. This is a reconstruction task, not a test of copying or restarting an existing solution.

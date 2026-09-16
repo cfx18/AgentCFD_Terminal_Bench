@@ -1,0 +1,323 @@
+{
+  "physics": {
+    "0/T": {
+      "boundaryField": {
+        "empty": {
+          "type": [
+            "empty"
+          ]
+        },
+        "sides": {
+          "type": [
+            "zeroGradient"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "]"
+      ]
+    },
+    "0/U": {
+      "boundaryField": {
+        "empty": {
+          "type": [
+            "empty"
+          ]
+        },
+        "sides": {
+          "type": [
+            "zeroGradient"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ]
+    },
+    "0/p": {
+      "boundaryField": {
+        "empty": {
+          "type": [
+            "empty"
+          ]
+        },
+        "sides": {
+          "type": [
+            "zeroGradient"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "1",
+        "-1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ]
+    },
+    "constant/thermophysicalProperties": {
+      "mixture": {
+        "specie": {
+          "molWeight": [
+            "28.96"
+          ]
+        },
+        "thermodynamics": {
+          "Cp": [
+            "1004.5"
+          ],
+          "Hf": [
+            "2.544e+06"
+          ]
+        },
+        "transport": {
+          "Pr": [
+            "1"
+          ],
+          "mu": [
+            "0"
+          ]
+        }
+      },
+      "thermoType": {
+        "energy": [
+          "sensibleInternalEnergy"
+        ],
+        "equationOfState": [
+          "perfectGas"
+        ],
+        "mixture": [
+          "pureMixture"
+        ],
+        "specie": [
+          "specie"
+        ],
+        "thermo": [
+          "hConst"
+        ],
+        "transport": [
+          "const"
+        ],
+        "type": [
+          "hePsiThermo"
+        ]
+      }
+    },
+    "constant/turbulenceProperties": {
+      "simulationType": [
+        "laminar"
+      ]
+    },
+    "system/blockMeshDict": {
+      "blocks": [
+        "(",
+        "hex",
+        "(",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        ")",
+        "(",
+        "400",
+        "1",
+        "1",
+        ")",
+        "simpleGrading",
+        "(",
+        "1",
+        "1",
+        "1",
+        ")",
+        ")"
+      ],
+      "boundary": [
+        "(",
+        "sides",
+        "{",
+        "type",
+        "patch",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "1",
+        "2",
+        "6",
+        "5",
+        ")",
+        "(",
+        "0",
+        "4",
+        "7",
+        "3",
+        ")",
+        ")",
+        ";",
+        "}",
+        "empty",
+        "{",
+        "type",
+        "empty",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "0",
+        "1",
+        "5",
+        "4",
+        ")",
+        "(",
+        "5",
+        "6",
+        "7",
+        "4",
+        ")",
+        "(",
+        "3",
+        "7",
+        "6",
+        "2",
+        ")",
+        "(",
+        "0",
+        "3",
+        "2",
+        "1",
+        ")",
+        ")",
+        ";",
+        "}",
+        ")"
+      ],
+      "edges": [
+        "(",
+        ")"
+      ],
+      "mergePatchPairs": [
+        "(",
+        ")"
+      ],
+      "scale": [
+        "1"
+      ],
+      "vertices": [
+        "(",
+        "(",
+        "-5",
+        "-1",
+        "-1",
+        ")",
+        "(",
+        "5",
+        "-1",
+        "-1",
+        ")",
+        "(",
+        "5",
+        "1",
+        "-1",
+        ")",
+        "(",
+        "-5",
+        "1",
+        "-1",
+        ")",
+        "(",
+        "-5",
+        "-1",
+        "1",
+        ")",
+        "(",
+        "5",
+        "-1",
+        "1",
+        ")",
+        "(",
+        "5",
+        "1",
+        "1",
+        ")",
+        "(",
+        "-5",
+        "1",
+        "1",
+        ")",
+        ")"
+      ]
+    },
+    "system/setFieldsDict": {
+      "defaultFieldValues": [
+        "(",
+        "volVectorFieldValue",
+        "U",
+        "(",
+        "0",
+        "0",
+        "0",
+        ")",
+        "volScalarFieldValue",
+        "T",
+        "348.432",
+        "volScalarFieldValue",
+        "p",
+        "100000",
+        ")"
+      ],
+      "regions": [
+        "(",
+        "boxToCell",
+        "{",
+        "box",
+        "(",
+        "0",
+        "-1",
+        "-1",
+        ")",
+        "(",
+        "5",
+        "1",
+        "1",
+        ")",
+        ";",
+        "fieldValues",
+        "(",
+        "volScalarFieldValue",
+        "T",
+        "278.746",
+        "volScalarFieldValue",
+        "p",
+        "10000",
+        ")",
+        ";",
+        "}",
+        ")"
+      ]
+    }
+  }
+}

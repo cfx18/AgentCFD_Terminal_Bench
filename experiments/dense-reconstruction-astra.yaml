@@ -1,0 +1,22 @@
+# Formal two-task reconstruction experiment. Credentials stay with the host broker.
+version: workbench-v3
+harness:
+  name: codex
+  backend: chatgpt-subscription
+  reasoning_effort: xhigh
+  auth_home: /root/.codex-experiment
+model: gpt-6-astra
+tasks: [s-204, s-203]
+task_root: ../tasks/releases/dense-reconstruction-v1
+docs: ../environments/docs-v2306
+network: disabled
+budget:
+  model_calls: 64
+  native_seconds: 1000
+  request_seconds: 600
+execution:
+  foam_root: ../environments/native-v2306/foam
+  mpi: intelmpi
+  memory_bytes: 4294967296
+  file_bytes: 536870912
+output: ../runs/dense-reconstruction

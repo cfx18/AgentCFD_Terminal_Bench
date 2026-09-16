@@ -1,0 +1,47 @@
+{
+  "columns": [
+    "x_m",
+    "y_m",
+    "z_m",
+    "volume_m3",
+    "Ux_m_s",
+    "Uy_m_s",
+    "Uz_m_s",
+    "p",
+    "T_K"
+  ],
+  "coordinate_unit": "m",
+  "csv_sha256": "9ac239513dfede5240b9d1daa743748f229e041c5e48881cd4cb1221b78f0c66",
+  "normalizers": {
+    "T": {
+      "definition": "reference maximum minus minimum temperature, NOT absolute Kelvin",
+      "unit": "K",
+      "value": 0.09081574300000739
+    },
+    "U": {
+      "definition": "reference volume-weighted RMS speed",
+      "unit": "m/s",
+      "value": 5.678357606912215
+    },
+    "p": {
+      "definition": "reference maximum minus minimum pressure, NOT absolute mean",
+      "unit": "m2/s2",
+      "value": 61.2781806575
+    }
+  },
+  "point_count": 68107,
+  "pressure_definition": "kinematic gauge pressure",
+  "pressure_unit": "m2/s2",
+  "sampling": "All reference internal-cell centres; candidate samples use native containing-cell values at these coordinates.",
+  "schema": "dense-observation-v1",
+  "scoring_status": "released; dense-reconstruction-reward-v1",
+  "snapshot": {
+    "kind": "physical_time",
+    "unit": "s",
+    "value": 1.5
+  },
+  "synthetic_observations": true,
+  "temperature_unit": "K",
+  "velocity_unit": "m/s",
+  "weight_unit": "m3"
+}

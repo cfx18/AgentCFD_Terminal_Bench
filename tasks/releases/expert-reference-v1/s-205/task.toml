@@ -1,0 +1,32 @@
+schema_version = "1.4"
+
+[metadata]
+artifact_fields = ["U", "p", "T", "rho", "C", "V"]
+edge_recipe = "free-mesh-shock-v1"
+execution_protocol = "durable-native-session-v1"
+native_commands = [["mesh", "blockMesh"], ["initialize", "setFields"], ["mesh_check", "checkMesh"], ["solver", "rhoCentralFoam"], ["centres", "postProcess", "-func", "writeCellCentres", "-latestTime"], ["volumes", "postProcess", "-func", "writeCellVolumes", "-latestTime"]]
+qualification_seconds = 300
+runtime = "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+track = "science"
+version = "expert-reference-v1"
+model_native_seconds = 1800
+submitted_steady_endpoint = false
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "field_realizability", "reference_observations"]
+
+[metadata.native_completion]
+kind = "transient"
+end = 0.007
+tolerance = 1e-07
+early_convergence = false
+
+[metadata.qualification]
+source_mode = "expert-accepted-reference-v1"
+
+[verifier]
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

@@ -1,0 +1,329 @@
+{
+  "cell_count": 5120,
+  "coordinate_system": "Cartesian SI",
+  "coordinates_are_native_cell_centres": true,
+  "csv_columns": [
+    "cell_id",
+    "x_m",
+    "y_m",
+    "z_m",
+    "volume_m3",
+    "UMean_x",
+    "UMean_y",
+    "UMean_z",
+    "translationalT",
+    "internalT",
+    "overallT",
+    "p",
+    "rhoNMean",
+    "rhoMMean",
+    "dsmcRhoNMean",
+    "momentumMean_x",
+    "momentumMean_y",
+    "momentumMean_z",
+    "linearKEMean",
+    "internalEMean",
+    "iDofMean"
+  ],
+  "domain_bounds_m": {
+    "x": [
+      -0.05,
+      0.05
+    ],
+    "y": [
+      -0.04,
+      0.04
+    ],
+    "z": [
+      -0.04,
+      0.04
+    ]
+  },
+  "fields": {
+    "C": {
+      "components": 3,
+      "finite": true,
+      "native_class": "volVectorField",
+      "native_dimensions": "[0 1 0 0 0 0 0]",
+      "physical_unit": "m",
+      "source_field": "case/0.001/C",
+      "statistics": {
+        "component_max": [
+          0.0475,
+          0.0375,
+          0.0375
+        ],
+        "component_mean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "component_min": [
+          -0.0475,
+          -0.0375,
+          -0.0375
+        ],
+        "max": 0.07119515432949071,
+        "mean": 0.041741688648718134,
+        "min": 0.004330127018922193,
+        "rms": 0.04351723796382303,
+        "std": 0.01230371605465095,
+        "volume_weighted_mean": 0.04174168864871814
+      }
+    },
+    "UMean": {
+      "components": 3,
+      "finite": true,
+      "native_class": "volVectorField",
+      "native_dimensions": "[0 1 -1 0 0 0 0]",
+      "physical_unit": "m/s",
+      "source_field": "case/0.001/UMean",
+      "statistics": {
+        "component_max": [
+          1964.090911,
+          15.98926552,
+          14.50969467
+        ],
+        "component_mean": [
+          1948.5872352888673,
+          0.07009863780478051,
+          -0.5514453109609877
+        ],
+        "component_min": [
+          1929.016602,
+          -14.1299028,
+          -14.10918797
+        ],
+        "max": 1964.0922689021884,
+        "mean": 1948.5959316971835,
+        "min": 1929.0333125916927,
+        "rms": 1948.600357235583,
+        "std": 4.152973853352706,
+        "volume_weighted_mean": 1948.5959316971837
+      }
+    },
+    "V": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[0 3 0 0 0 0 0]",
+      "physical_unit": "m^3",
+      "source_field": "case/0.001/V",
+      "statistics": {
+        "max": 1.25e-07,
+        "mean": 1.25e-07,
+        "min": 1.25e-07,
+        "rms": 1.25e-07,
+        "std": 0.0,
+        "volume_weighted_mean": 1.25e-07
+      }
+    },
+    "dsmcRhoNMean": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[0 -3 0 0 0 0 0]",
+      "physical_unit": "DSMC parcels/cell",
+      "source_field": "case/0.001/dsmcRhoNMean",
+      "statistics": {
+        "max": 13.146,
+        "mean": 12.519140625,
+        "min": 11.927,
+        "rms": 12.520498790265156,
+        "std": 0.18441249552527447,
+        "volume_weighted_mean": 12.519140625000002
+      }
+    },
+    "iDofMean": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[0 -3 0 0 0 0 0]",
+      "physical_unit": "1/m^3",
+      "source_field": "case/0.001/iDofMean",
+      "statistics": {
+        "max": 2.10336e+20,
+        "mean": 2.0030625000000002e+20,
+        "min": 1.90832e+20,
+        "rms": 2.003279806442425e+20,
+        "std": 2.9505999284043914e+18,
+        "volume_weighted_mean": 2.0030625000000002e+20
+      }
+    },
+    "internalEMean": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[1 -1 -2 0 0 0 0]",
+      "physical_unit": "J/m^3",
+      "source_field": "case/0.001/internalEMean",
+      "statistics": {
+        "max": 0.442863715,
+        "mean": 0.41325353434701173,
+        "min": 0.3850424801,
+        "rms": 0.41334028075754664,
+        "std": 0.008467824185154547,
+        "volume_weighted_mean": 0.4132535343470117
+      }
+    },
+    "internalT": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[1 2 -2 0 0 0 0]",
+      "physical_unit": "K",
+      "source_field": "case/0.001/internalT",
+      "statistics": {
+        "max": 314.1591021,
+        "mean": 298.86027930365236,
+        "min": 282.2253349,
+        "rms": 298.89046066225615,
+        "std": 4.247461528796343,
+        "volume_weighted_mean": 298.86027930365236
+      }
+    },
+    "linearKEMean": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[1 -1 -2 0 0 0 0]",
+      "physical_unit": "J/m^3",
+      "source_field": "case/0.001/linearKEMean",
+      "statistics": {
+        "max": 10.26719582,
+        "mean": 9.746970666667186,
+        "min": 9.247283816,
+        "rms": 9.748028055143536,
+        "std": 0.14357502218308554,
+        "volume_weighted_mean": 9.746970666667188
+      }
+    },
+    "momentumMean": {
+      "components": 3,
+      "finite": true,
+      "native_class": "volVectorField",
+      "native_dimensions": "[1 -2 -1 0 0 0 0]",
+      "physical_unit": "kg/(m^2 s)",
+      "source_field": "case/0.001/momentumMean",
+      "statistics": {
+        "component_max": [
+          0.0098613113,
+          7.921344618e-05,
+          6.926461131e-05
+        ],
+        "component_mean": [
+          0.009365297538449415,
+          3.343554137370562e-07,
+          -2.6687851572439387e-06
+        ],
+        "component_min": [
+          0.008901503724,
+          -6.731501292e-05,
+          -6.850273304e-05
+        ],
+        "max": 0.009861323034515609,
+        "mean": 0.009365339325077512,
+        "min": 0.008901556808447878,
+        "rms": 0.00936634659234887,
+        "std": 0.0001373601622085669,
+        "volume_weighted_mean": 0.009365339325077514
+      }
+    },
+    "overallT": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[1 2 -2 0 0 0 0]",
+      "physical_unit": "K",
+      "source_field": "case/0.001/overallT",
+      "statistics": {
+        "max": 311.2252237,
+        "mean": 299.57370307539065,
+        "min": 289.3782798,
+        "rms": 299.58696880810226,
+        "std": 2.819273900235389,
+        "volume_weighted_mean": 299.5737030753906
+      }
+    },
+    "p": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[1 -1 -2 0 0 0 0]",
+      "physical_unit": "Pa",
+      "source_field": "case/0.001/p",
+      "statistics": {
+        "max": 0.4430005501,
+        "mean": 0.4148861707038868,
+        "min": 0.3890269903,
+        "rms": 0.41495242082292455,
+        "std": 0.007414641290770801,
+        "volume_weighted_mean": 0.4148861707038868
+      }
+    },
+    "rhoMMean": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[1 -3 0 0 0 0 0]",
+      "physical_unit": "kg/m^3",
+      "source_field": "case/0.001/rhoMMean",
+      "statistics": {
+        "max": 5.06359712e-06,
+        "mean": 4.806215125e-06,
+        "min": 4.5802712e-06,
+        "rms": 4.80673751795311e-06,
+        "std": 7.08642273595078e-08,
+        "volume_weighted_mean": 4.806215125e-06
+      }
+    },
+    "rhoNMean": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[0 -3 0 0 0 0 0]",
+      "physical_unit": "molecules/m^3",
+      "source_field": "case/0.001/rhoNMean",
+      "statistics": {
+        "max": 1.05168e+20,
+        "mean": 1.0015312500000001e+20,
+        "min": 9.5416e+19,
+        "rms": 1.0016399032212124e+20,
+        "std": 1.4752999642021957e+18,
+        "volume_weighted_mean": 1.0015312500000001e+20
+      }
+    },
+    "translationalT": {
+      "components": 1,
+      "finite": true,
+      "native_class": "volScalarField",
+      "native_dimensions": "[1 2 -2 0 0 0 0]",
+      "physical_unit": "K",
+      "source_field": "case/0.001/translationalT",
+      "statistics": {
+        "max": 314.329183,
+        "mean": 300.0493189235156,
+        "min": 287.0003244,
+        "rms": 300.0727983668764,
+        "std": 3.7537359073923033,
+        "volume_weighted_mean": 300.0493189235156
+      }
+    }
+  },
+  "native_export_run_id": "r-e7049a7affbf4588",
+  "notes": [
+    "UMean and the temperature and pressure fields are macroscopic fields calculated from cumulative mean extensive fields at the terminal write.",
+    "The native OpenFOAM temperature outputs contain the dimension vector [1 2 -2 0 0 0 0], although the function output names, values near 300, and solver diagnostics identify them physically as kelvin. This native metadata inconsistency is preserved and flagged.",
+    "dsmcRhoNMean is semantically the time-averaged DSMC parcel population per cell (its cell values sum to the parcel population), despite the native field carrying the dimension vector [0 -3 0 0 0 0 0].",
+    "The CSV contains cell data only; the STL supplies the extracted exterior geometry and does not prescribe a volume mesh."
+  ],
+  "observation_time_s": 0.001,
+  "schema": "dense-openfoam-observations-v1",
+  "solver_run_id": "r-119cb5dc64404e01",
+  "statistical_averaging_window_s": [
+    0.0,
+    0.001
+  ],
+  "total_volume_m3": 0.0006399999999999999,
+  "volumes_are_native_cell_volumes": true
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "dense-multiphase-observation-v1",
+  "synthetic_observations": true,
+  "point_count": 1155,
+  "columns": [
+    "x_m",
+    "y_m",
+    "z_m",
+    "volume_m3",
+    "Uair_x_m_s",
+    "Uair_y_m_s",
+    "Uair_z_m_s",
+    "p_m2_s2",
+    "alpha_air",
+    "particle_theta"
+  ],
+  "coordinate_unit": "m",
+  "weight_unit": "m3",
+  "geometry_reference_time": {
+    "value": 0.0,
+    "unit": "s"
+  },
+  "snapshot": {
+    "kind": "physical_time",
+    "value": 2.0,
+    "unit": "s",
+    "note": "Finite transient numerical realization; not stationary or mesh-independent."
+  },
+  "fields": {
+    "U.air": {
+      "columns": ["Uair_x_m_s", "Uair_y_m_s", "Uair_z_m_s"],
+      "dimensions": "[0 1 -1 0 0 0 0]",
+      "unit": "m/s",
+      "definition": "carrier velocity"
+    },
+    "p": {
+      "columns": ["p_m2_s2"],
+      "dimensions": "[0 2 -2 0 0 0 0]",
+      "unit": "m2/s2",
+      "definition": "kinematic gauge pressure"
+    },
+    "alpha.air": {
+      "columns": ["alpha_air"],
+      "dimensions": "[0 0 0 0 0 0 0]",
+      "unit": "1",
+      "definition": "carrier volume fraction; clipped at 0.1 in the reference realization"
+    },
+    "kinematicCloud:theta": {
+      "columns": ["particle_theta"],
+      "dimensions": "[0 0 0 0 0 0 0]",
+      "unit": "1",
+      "definition": "native Eulerian particle volume-fraction field"
+    }
+  },
+  "normalizers": {
+    "U.air": {
+      "value": 3.993413892909154,
+      "unit": "m/s",
+      "definition": "reference volume-weighted RMS carrier speed"
+    },
+    "p": {
+      "value": 173.21251116833787,
+      "unit": "m2/s2",
+      "definition": "reference maximum minus minimum kinematic pressure"
+    },
+    "kinematicCloud:theta": {
+      "value": 0.1296187188516066,
+      "unit": "1",
+      "definition": "reference volume-weighted RMS particle volume fraction; provisional because the reference is locally overpacked"
+    },
+    "alpha.air": {
+      "value": 0.9,
+      "unit": "1",
+      "definition": "reference maximum minus minimum carrier fraction; diagnostic only"
+    }
+  },
+  "sampling": "All reference internal-cell centres; candidate values should be sampled with native containing-cell lookup at these physical coordinates.",
+  "known_reference_defect": "particle_theta reaches 1.8634298528148734; three cells exceed one and five cells have alpha_air + particle_theta greater than one.",
+  "csv_sha256": "636ed916bab74e3481776595e5e0c251f3baed6f880c2243d51fc164859eef58",
+  "geometry_sha256": "5c88d821557c92705495aed0835a03d067c8b4eb52a10f38b745061e7d085a55",
+  "scoring_status": "draft_review_required; thresholds and reward not released"
+}

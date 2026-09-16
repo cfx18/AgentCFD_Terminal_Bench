@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="138" time="228.443" timestamp="2026-09-16T10:12:30.758466" hostname="p-c2f7367abcd9-ackcs-00gjfb3i"><testcase classname="tests.test_codex_local_api" name="test_actual_cli_tools_and_same_session_resume[custom-api]" time="13.925" /><testcase classname="tests.test_codex_local_api" name="test_actual_cli_tools_and_same_session_resume[chatgpt-subscription]" time="13.920" /><testcase classname="tests.test_controller" name="test_terminal_then_resume_does_not_rerun[pass]" time="1.092" /><testcase classname="tests.test_controller" name="test_terminal_then_resume_does_not_rerun[fail]" time="1.006" /><testcase classname="tests.test_controller" name="test_unknown_request_stays_interrupted_without_reissue" time="0.850" /><testcase classname="tests.test_controller" name="test_known_response_before_state_commit_is_recovered" time="0.607" /><testcase classname="tests.test_controller" name="test_report_reads_committed_state_not_stale_projection" time="0.295" /><testcase classname="tests.test_dense_grading_lifecycle" name="test_failed_native_run_does_not_sample" time="0.262" /><testcase classname="tests.test_dense_grading_lifecycle" name="test_candidate_and_infrastructure_failures_are_separate[error0-fail-native_observation_invalid]" time="0.262" /><testcase classname="tests.test_dense_grading_lifecycle" name="test_candidate_and_infrastructure_failures_are_separate[error1-error-dense_sampling_infrastructure_error]" time="0.254" /><testcase classname="tests.test_dense_grading_lifecycle" name="test_controller_interruption_preserves_binding_and_resumes_sampler" time="0.732" /><testcase classname="tests.test_dense_grading_lifecycle" name="test_different_submission_cannot_reuse_score" time="0.480" /><testcase classname="tests.test_dense_grading_lifecycle" name="test_exec_cannot_be_submitted_as_native_calculation" time="0.015" /><testcase classname="tests.test_dense_native" name="test_real_sampling_changed_mesh_boundary_names_and_binary[3-False-False]" time="0.967" /><testcase classname="tests.test_dense_native" name="test_real_sampling_changed_mesh_boundary_names_and_binary[6-True-False]" time="0.968" /><testcase classname="tests.test_dense_native" name="test_real_sampling_changed_mesh_boundary_names_and_binary[4-True-True]" time="1.375" /><testcase classname="tests.test_dense_native" name="test_unknown_sampler_dispatch_is_not_reissued" time="0.732" /><testcase classname="tests.test_dense_native" name="test_wrong_pressure_dimensions_rejected_before_sampling" time="0.590" /><testcase classname="tests.test_dense_native" name="test_nonphysical_temperature_is_candidate_failure_not_infrastructure" time="0.947" /><testcase classname="tests.test_dense_reconstruction" name="test_export_is_bound_to_selected_reference[s-203]" time="0.253" /><testcase classname="tests.test_dense_reconstruction" name="test_self_comparison_zero_but_not_approved_pass[s-203]" time="0.006" /><testcase classname="tests.test_dense_reconstruction" name="test_small_temperature_error_not_diluted_by_absolute_kelvin[s-203]" time="0.005" /><testcase classname="tests.test_dense_reconstruction" name="test_vector_direction_and_pressure_offset_are_not_discarded[s-203]" time="0.005" /><testcase classname="tests.test_dense_reconstruction" name="test_local_error_is_visible_even_with_small_average[s-203]" time="0.005" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-203-nan]" time="0.005" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-203-negative_temperature]" time="0.005" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-203-missing_field]" time="0.002" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-203-missing_row]" time="0.002" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-203-numeric_overflow]" time="0.003" /><testcase classname="tests.test_dense_reconstruction" name="test_reordering_is_not_a_field_error[s-203]" time="0.229" /><testcase classname="tests.test_dense_reconstruction" name="test_points_cannot_be_silently_dropped_or_extrapolated[s-203-missing]" time="0.001" /><testcase classname="tests.test_dense_reconstruction" name="test_points_cannot_be_silently_dropped_or_extrapolated[s-203-duplicate]" time="0.075" /><testcase classname="tests.test_dense_reconstruction" name="test_points_cannot_be_silently_dropped_or_extrapolated[s-203-shifted]" time="0.151" /><testcase classname="tests.test_dense_reconstruction" name="test_public_bundle_does_not_leak_original_configuration[s-203]" time="0.192" /><testcase classname="tests.test_dense_reconstruction" name="test_prompt_does_not_deny_access_to_public_target[s-203]" time="0.002" /><testcase classname="tests.test_dense_reconstruction" name="test_sampler_receives_coordinates_not_target_values[s-203]" time="0.001" /><testcase classname="tests.test_dense_reconstruction" name="test_export_is_bound_to_selected_reference[s-204]" time="0.274" /><testcase classname="tests.test_dense_reconstruction" name="test_self_comparison_zero_but_not_approved_pass[s-204]" time="0.007" /><testcase classname="tests.test_dense_reconstruction" name="test_small_temperature_error_not_diluted_by_absolute_kelvin[s-204]" time="0.006" /><testcase classname="tests.test_dense_reconstruction" name="test_vector_direction_and_pressure_offset_are_not_discarded[s-204]" time="0.006" /><testcase classname="tests.test_dense_reconstruction" name="test_local_error_is_visible_even_with_small_average[s-204]" time="0.006" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-204-nan]" time="0.005" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-204-negative_temperature]" time="0.006" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-204-missing_field]" time="0.003" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-204-missing_row]" time="0.002" /><testcase classname="tests.test_dense_reconstruction" name="test_invalid_samples_never_become_success[s-204-numeric_overflow]" time="0.003" /><testcase classname="tests.test_dense_reconstruction" name="test_reordering_is_not_a_field_error[s-204]" time="0.212" /><testcase classname="tests.test_dense_reconstruction" name="test_points_cannot_be_silently_dropped_or_extrapolated[s-204-missing]" time="0.001" /><testcase classname="tests.test_dense_reconstruction" name="test_points_cannot_be_silently_dropped_or_extrapolated[s-204-duplicate]" time="0.071" /><testcase classname="tests.test_dense_reconstruction" name="test_points_cannot_be_silently_dropped_or_extrapolated[s-204-shifted]" time="0.171" /><testcase classname="tests.test_dense_reconstruction" name="test_public_bundle_does_not_leak_original_configuration[s-204]" time="0.062" /><testcase classname="tests.test_dense_reconstruction" name="test_prompt_does_not_deny_access_to_public_target[s-204]" time="0.002" /><testcase classname="tests.test_dense_reconstruction" name="test_sampler_receives_coordinates_not_target_values[s-204]" time="0.001" /><testcase classname="tests.test_dense_reconstruction" name="test_export_refuses_overwriting_existing_draft" time="0.000" /><testcase classname="tests.test_dense_reconstruction" name="test_csv_tampering_is_detected" time="0.036" /><testcase classname="tests.test_dense_reconstruction" name="test_steady_reference_is_not_6000_seconds" time="0.270" /><testcase classname="tests.test_dense_reconstruction" name="test_missing_endpoint_is_invalid_not_fabricated" time="0.027" /><testcase classname="tests.test_dense_reconstruction" name="test_draft_prepare_cannot_be_unlocked_by_mesh_flag_alone" time="1.166" /><testcase classname="tests.test_geometric_observations" name="test_shock_accepts_oblique_tets_and_reordered_cells[False]" time="1.180" /><testcase classname="tests.test_geometric_observations" name="test_shock_accepts_oblique_tets_and_reordered_cells[True]" time="1.173" /><testcase classname="tests.test_geometric_observations" name="test_cavity_split_random_patches_identified_by_geometry" time="3.502" /><testcase classname="tests.test_geometric_observations" name="test_thermal_logical_regions_can_be_renamed_and_split[s-202]" time="0.624" /><testcase classname="tests.test_geometric_observations" name="test_thermal_logical_regions_can_be_renamed_and_split[s-203]" time="0.279" /><testcase classname="tests.test_geometric_observations" name="test_export_discovery_ignores_unused_construction_mesh" time="0.003" /><testcase classname="tests.test_grading_replay" name="test_gt_identical_and_bad_field_rejected[s-202]" time="0.005" /><testcase classname="tests.test_grading_replay" name="test_gt_identical_and_bad_field_rejected[s-203]" time="0.003" /><testcase classname="tests.test_grading_replay" name="test_gt_identical_and_bad_field_rejected[s-204]" time="0.003" /><testcase classname="tests.test_grading_replay" name="test_gt_identical_and_bad_field_rejected[s-205]" time="0.003" /><testcase classname="tests.test_grading_replay" name="test_selected_reference_replay[s-202]" time="4.099" /><testcase classname="tests.test_grading_replay" name="test_selected_reference_replay[s-203]" time="25.540" /><testcase classname="tests.test_grading_replay" name="test_selected_reference_replay[s-204]" time="30.594" /><testcase classname="tests.test_grading_replay" name="test_selected_reference_replay[s-205]" time="0.090" /><testcase classname="tests.test_grading_replay" name="test_zero_exit_without_fields_never_passes[s-202]" time="0.004" /><testcase classname="tests.test_grading_replay" name="test_zero_exit_without_fields_never_passes[s-203]" time="0.003" /><testcase classname="tests.test_grading_replay" name="test_zero_exit_without_fields_never_passes[s-204]" time="0.002" /><testcase classname="tests.test_grading_replay" name="test_zero_exit_without_fields_never_passes[s-205]" time="0.002" /><testcase classname="tests.test_grading_replay" name="test_failed_native_never_compares[s-202]" time="0.003" /><testcase classname="tests.test_grading_replay" name="test_failed_native_never_compares[s-203]" time="0.002" /><testcase classname="tests.test_grading_replay" name="test_failed_native_never_compares[s-204]" time="0.002" /><testcase classname="tests.test_grading_replay" name="test_failed_native_never_compares[s-205]" time="0.002" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[foamDictionary]" time="0.170" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[blockMesh]" time="0.217" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[checkMesh]" time="0.221" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[snappyHexMesh]" time="0.321" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[topoSet]" time="0.172" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[setFields]" time="0.220" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[pimpleFoam]" time="0.370" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[rhoCentralFoam]" time="0.320" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[foamFormatConvert]" time="0.220" /><testcase classname="tests.test_native_openfoam" name="test_installed_tool_dependencies[postProcess]" time="0.318" /><testcase classname="tests.test_native_openfoam" name="test_native_dictionary_errors_not_python_allowlist" time="0.337" /><testcase classname="tests.test_native_openfoam" name="test_real_shock_native_to_private_grader[ascii]" time="3.486" /><testcase classname="tests.test_native_openfoam" name="test_real_shock_native_to_private_grader[binary]" time="3.507" /><testcase classname="tests.test_packaging" name="test_archive_is_not_a_new_runtime_dependency_or_wheel_package" time="0.124" /><testcase classname="tests.test_polyhedral_geometry" name="test_tetra_clips_and_coplanar_cap_not_duplicated" time="0.002" /><testcase classname="tests.test_polyhedral_geometry" name="test_skew_mesh_partition_conserves_volume[0]" time="0.002" /><testcase classname="tests.test_polyhedral_geometry" name="test_skew_mesh_partition_conserves_volume[0.3]" time="0.093" /><testcase classname="tests.test_polyhedral_geometry" name="test_skew_mesh_partition_conserves_volume[-0.2]" time="0.090" /><testcase classname="tests.test_polyhedral_geometry" name="test_concave_polyhedron_signed_decomposition" time="0.023" /><testcase classname="tests.test_polyhedral_geometry" name="test_forged_native_volume_is_not_accepted" time="0.001" /><testcase classname="tests.test_polyhedral_native" name="test_real_alternative_cross_section_mesh_and_private_grading[ascii]" time="0.258"><failure message="AssertionError: {'next_offset': 440, 'text': &quot;&#10;  &#10;  --&gt; FOAM FATAL ERROR: (openfoam-2306)&#10;  Symmetry plane 'empty' is not planar.&#10;  At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.&#10;  &#10;  FOAM exiting&#10;  &#10;  &quot;}&#10;assert False">tmp_path = PosixPath('/tmp/pytest-of-root/pytest-514/test_real_alternative_cross_se0')
+write_format = 'ascii'
+
+    @pytest.mark.parametrize("write_format", ["ascii", "binary"])
+    def test_real_alternative_cross_section_mesh_and_private_grading(
+        tmp_path, write_format
+    ):
+        target, inputs, _ = source_evidence("s-205")
+        inputs["system/blockMeshDict"] = inputs["system/blockMeshDict"].replace(
+            "(400 1 1)", "(200 2 2)"
+        )
+        for name, text in inputs.items():
+            inputs[name] = re.sub(r"type\s+empty\s*;", "type symmetryPlane;", text)
+        inputs["system/controlDict"] = re.sub(
+            r"writeFormat\s+ascii\s*;",
+            f"writeFormat {write_format};",
+            inputs["system/controlDict"],
+        )
+        work = tmp_path / "work"
+        work.mkdir()
+        for name, text in inputs.items():
+            p = work / name
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(text)
+        runner = Runner(
+            tmp_path / "native", Sandbox(foam_root=str(FOAM), mpi="intelmpi"), seconds=60
+        )
+        for argv, kind in [
+            (["blockMesh"], "exec"),
+            (["setFields"], "exec"),
+            (["rhoCentralFoam"], "run"),
+        ]:
+            op = runner.start(work, argv, kind=kind)
+&gt;           native = wait(runner, op)
+
+tests/test_polyhedral_native.py:69: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+runner = &lt;agentcfd_bench.execution.runner.Runner object at 0x7f5b36ec12e0&gt;
+op = {'lifecycle': 'running', 'run_id': 'r-120aaa4a116d41ea', 'seconds_reserved': 60}
+
+    def wait(runner, op):
+        deadline = time.monotonic() + 90
+        while time.monotonic() &lt; deadline:
+            status = runner.status(op["run_id"])
+            if status["lifecycle"] != "running":
+&gt;               assert status["success"], runner.logs(op["run_id"], stream="stderr")
+E               AssertionError: {'next_offset': 440, 'text': "
+E                 
+E                 --&gt; FOAM FATAL ERROR: (openfoam-2306)
+E                 Symmetry plane 'empty' is not planar.
+E                 At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.
+E                 
+E                 FOAM exiting
+E                 
+E                 "}
+E               assert False
+
+tests/test_polyhedral_native.py:33: AssertionError</failure></testcase><testcase classname="tests.test_polyhedral_native" name="test_real_alternative_cross_section_mesh_and_private_grading[binary]" time="0.231"><failure message="AssertionError: {'next_offset': 440, 'text': &quot;&#10;  &#10;  --&gt; FOAM FATAL ERROR: (openfoam-2306)&#10;  Symmetry plane 'empty' is not planar.&#10;  At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.&#10;  &#10;  FOAM exiting&#10;  &#10;  &quot;}&#10;assert False">tmp_path = PosixPath('/tmp/pytest-of-root/pytest-514/test_real_alternative_cross_se1')
+write_format = 'binary'
+
+    @pytest.mark.parametrize("write_format", ["ascii", "binary"])
+    def test_real_alternative_cross_section_mesh_and_private_grading(
+        tmp_path, write_format
+    ):
+        target, inputs, _ = source_evidence("s-205")
+        inputs["system/blockMeshDict"] = inputs["system/blockMeshDict"].replace(
+            "(400 1 1)", "(200 2 2)"
+        )
+        for name, text in inputs.items():
+            inputs[name] = re.sub(r"type\s+empty\s*;", "type symmetryPlane;", text)
+        inputs["system/controlDict"] = re.sub(
+            r"writeFormat\s+ascii\s*;",
+            f"writeFormat {write_format};",
+            inputs["system/controlDict"],
+        )
+        work = tmp_path / "work"
+        work.mkdir()
+        for name, text in inputs.items():
+            p = work / name
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(text)
+        runner = Runner(
+            tmp_path / "native", Sandbox(foam_root=str(FOAM), mpi="intelmpi"), seconds=60
+        )
+        for argv, kind in [
+            (["blockMesh"], "exec"),
+            (["setFields"], "exec"),
+            (["rhoCentralFoam"], "run"),
+        ]:
+            op = runner.start(work, argv, kind=kind)
+&gt;           native = wait(runner, op)
+
+tests/test_polyhedral_native.py:69: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+runner = &lt;agentcfd_bench.execution.runner.Runner object at 0x7f59abdc6b70&gt;
+op = {'lifecycle': 'running', 'run_id': 'r-15e20e61cd244f94', 'seconds_reserved': 60}
+
+    def wait(runner, op):
+        deadline = time.monotonic() + 90
+        while time.monotonic() &lt; deadline:
+            status = runner.status(op["run_id"])
+            if status["lifecycle"] != "running":
+&gt;               assert status["success"], runner.logs(op["run_id"], stream="stderr")
+E               AssertionError: {'next_offset': 440, 'text': "
+E                 
+E                 --&gt; FOAM FATAL ERROR: (openfoam-2306)
+E                 Symmetry plane 'empty' is not planar.
+E                 At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.
+E                 
+E                 FOAM exiting
+E                 
+E                 "}
+E               assert False
+
+tests/test_polyhedral_native.py:33: AssertionError</failure></testcase><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-202]" time="2.474" /><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-203]" time="35.123" /><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-204]" time="48.404" /><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-205]" time="0.184" /><testcase classname="tests.test_polyhedral_native" name="test_native_multiregion_export_after_region_and_patch_rename" time="13.817" /><testcase classname="tests.test_polyhedral_native" name="test_latest_mesh_points_override_constant" time="0.003" /><testcase classname="tests.test_tool_boundary" name="test_script_cannot_be_final_solver" time="0.508" /><testcase classname="tests.test_tool_boundary" name="test_all_installed_native_names_are_allowed" time="0.331" /><testcase classname="tests.test_tool_boundary" name="test_logs_retain_valid_equation_paths_and_dimensions" time="0.219" /><testcase classname="tests.test_tool_boundary" name="test_public_outputs_are_mounted_read_only" time="0.016" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload0]" time="0.544" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload1]" time="0.540" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload2]" time="0.541" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload3]" time="0.551" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload4]" time="0.540" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload5]" time="0.604" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload6]" time="1.056" /><testcase classname="tests.test_tool_boundary" name="test_invalid_rpc_is_structured_error_not_broken_pipe[payload7]" time="0.705" /><testcase classname="tests.test_tool_boundary" name="test_native_proxy_checks_embedded_tool_declarations" time="0.003" /><testcase classname="tests.test_workbench" name="test_archive_unchanged" time="0.005" /><testcase classname="tests.test_workbench" name="test_no_new_imports_from_archive" time="0.004" /><testcase classname="tests.test_workbench" name="test_namespace_is_real_and_offline" time="0.069" /><testcase classname="tests.test_workbench" name="test_snapshot_does_not_parse_openfoam" time="0.016" /><testcase classname="tests.test_workbench" name="test_snapshot_symlink_escape" time="0.002" /><testcase classname="tests.test_workbench" name="test_normal_native_and_immutable_result" time="0.169" /><testcase classname="tests.test_workbench" name="test_failure_retains_fields_and_original_stderr" time="0.173" /><testcase classname="tests.test_workbench" name="test_timeout_retains_fields" time="0.520" /><testcase classname="tests.test_workbench" name="test_live_log_and_cancel" time="0.171" /><testcase classname="tests.test_workbench" name="test_exit_before_collection_resume_without_execution" time="0.027" /><testcase classname="tests.test_workbench" name="test_unknown_execution_is_not_reissued" time="0.014" /><testcase classname="tests.test_workbench" name="test_task_public_private_separation[s-202]" time="0.011" /><testcase classname="tests.test_workbench" name="test_task_public_private_separation[s-203]" time="0.006" /><testcase classname="tests.test_workbench" name="test_task_public_private_separation[s-204]" time="0.005" /><testcase classname="tests.test_workbench" name="test_task_public_private_separation[s-205]" time="0.016" /><testcase classname="tests.test_workbench" name="test_convergence_missing_is_not_success" time="0.000" /><testcase classname="tests.test_workbench" name="test_cli_rejects_implicit_paid_run" time="0.061" /></testsuite></testsuites>

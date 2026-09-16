@@ -1,0 +1,56 @@
+{
+  "schema": "dense-openfoam-observations-v1",
+  "state": {
+    "kind": "steady_numerical_endpoint",
+    "physical_time_s": null,
+    "reference_iteration_is_physical_time": false
+  },
+  "coordinates": {
+    "units": "m",
+    "columns": [
+      "x_m",
+      "y_m",
+      "z_m"
+    ]
+  },
+  "samples": {
+    "file": "fields.csv",
+    "count": 7656,
+    "location": "native reference cell centres",
+    "weight_column": "volume_m3",
+    "weight_units": "m3",
+    "note": "Weights are genuine native cell volumes and should be normalized as sampling weights; they are not asserted to form a non-overlapping domain quadrature. Coordinates are observation locations, not a required mesh or topology."
+  },
+  "fields": {
+    "U": {
+      "columns": [
+        "U_x_m_per_s",
+        "U_y_m_per_s",
+        "U_z_m_per_s"
+      ],
+      "units": "m/s",
+      "dimensions": "[0 1 -1 0 0 0 0]"
+    },
+    "T": {
+      "column": "T_K",
+      "units": "K",
+      "dimensions": "[0 0 0 1 0 0 0]"
+    },
+    "p": {
+      "column": "p_Pa",
+      "units": "Pa",
+      "dimensions": "[1 -1 -2 0 0 0 0]"
+    }
+  },
+  "geometry": {
+    "directory": "../geometry",
+    "format": "VTK PolyData XML",
+    "parts": [
+      "inlet.vtp",
+      "outlet.vtp",
+      "topAndBottom.vtp",
+      "walls.vtp"
+    ],
+    "note": "Surface labels identify geometry components only and do not prescribe numerical boundary types."
+  }
+}

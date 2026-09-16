@@ -1,0 +1,98 @@
+{
+  "schema": "physics-edge-study-candidate-v1",
+  "status": "candidate_not_executable",
+  "paid_ready": false,
+  "purpose": "Exploratory study of physical interpretation failures with a strong agent allowed to consult documentation",
+  "requested_model": "Fable 5",
+  "resolved_provider_model": null,
+  "requested_harness": "codex",
+  "model_substitution_allowed": false,
+  "runtime_requirement": "OpenFOAM-v2306, immutable runtime identity to be verified",
+  "selection_note": "Five tasks: the four recommended initial tasks plus shockTube as the independent compressible-flow case.",
+  "protocol": {
+    "start": "empty_anonymous_work_directory",
+    "max_provider_calls_per_trial": 64,
+    "max_provider_concurrency": 1,
+    "max_native_concurrency": 1,
+    "benchmark_output_token_cap": null,
+    "benchmark_cumulative_token_cap": null,
+    "benchmark_cost_cap": null,
+    "client_provider_output_settings": "preserve_and_record",
+    "native_and_network_safety_timeouts": "required_to_be_bound_before_release",
+    "repeated_run_submissions": "allowed_within_provider_call_budget",
+    "lookup": {
+      "required": true,
+      "minimum": "fixed_read_only_OpenFOAM_documentation",
+      "public_web": "requested_if_isolated_audited_bridge_is_available; never silently described as enabled",
+      "record": ["query", "returned_material", "delivery_status", "source_url_or_document_id"],
+      "forbidden": ["host_files", "private_reference", "verifier_code", "previous_scores", "other_task_workspaces"]
+    },
+    "feedback": "native_logs_and_public_acceptance_status; never_private_expected_values_or_reference_differences",
+    "reporting": "retain_all_registered_trials; separate_physics_failure_workflow_failure_and_infrastructure_error",
+    "study_interpretation": "exploratory_failure_mining_not_representative_model_ranking"
+  },
+  "tasks": [
+    {
+      "candidate_id": "edge-01",
+      "source_path": "incompressible/pimpleFoam/RAS/TJunction",
+      "source_id": "t-b12ef8d406cb7c1110ea",
+      "existing_task": "s-105",
+      "public_title": "Pressure-driven branching flow with a transported scalar",
+      "invariants": ["original_3d_no_slip_walls", "original_inlet_total_pressure_time_table", "distinct_outlet_static_pressures", "scalar_transport_with_uniform_source", "original_initial_conditions_and_duration"],
+      "acceptance_design": ["reuse_existing_contract_and_numerical_baseline_without_relaxing_thresholds", "independently_extract_actual_native_outputs", "distinguish_reference_field_mismatch_from_proven_physical_intent_violation"],
+      "readiness": "historical_native_evidence_exists; current_code_qualification_required"
+    },
+    {
+      "candidate_id": "edge-02",
+      "source_path": "heatTransfer/chtMultiRegionFoam/multiRegionHeater",
+      "source_id": "t-a8c5d1ee6967f9ff98d9",
+      "public_title": "Transient heat transfer across coupled fluid and solid regions",
+      "invariants": ["fluid_regions_bottomWater_topAir", "solid_regions_heater_leftSolid_rightSolid", "heater_minY_fixed_temperature_500_K_not_fixed_power", "heater_leftSolid_contact_layer_thickness_0.001_m_and_conductivity_0.0005_W_per_m_K", "all_remaining_original_materials_boundaries_and_initial_conditions"],
+      "acceptance_design": ["correct_region_and_interface_pairing", "allow_temperature_jump_at_resistive_contact", "contact_area_specific_resistance_2_m2_K_per_W", "interface_heat_flux_balance_with_consistent_normals", "transient_energy_balance_including_storage", "qualified_regional_temperature_time_series"],
+      "readiness": "source_inspected; multi_region_execution_extraction_and_native_controls_pending"
+    },
+    {
+      "candidate_id": "edge-03",
+      "source_path": "incompressible/pimpleFoam/RAS/TJunctionArrheniusBirdCarreauTransport",
+      "source_id": "t-4efdaed6ab3dd8463bcf",
+      "public_title": "Branching flow with temperature-dependent viscosity",
+      "invariants": ["original_ArrheniusBirdCarreau_parameters", "nu0_equals_nuInf_15e-6_k_equals_0_n_equals_1", "temperature_dependence_alpha_0.1_Talpha_300_K", "energyTransport_T_and_viscous_dissipation_enabled", "original_300_K_initial_and_315_K_inlet_temperature"],
+      "acceptance_design": ["do_not_require_nonexistent_shear_thinning", "do_not_allow_replacement_by_temperature_independent_viscosity", "prove_temperature_equation_was_executed", "validate_viscosity_temperature_relation", "qualified_outlet_flow_and_temperature_results"],
+      "readiness": "source_inspected; coupled_transport_support_and_native_controls_pending"
+    },
+    {
+      "candidate_id": "edge-04",
+      "source_path": "heatTransfer/buoyantSimpleFoam/buoyantCavity",
+      "source_id": "t-ce9f55a20cddc79a849e",
+      "public_title": "Natural convection in an enclosed three-dimensional cavity",
+      "invariants": ["hot_wall_307.75_K", "cold_wall_288.15_K", "remaining_walls_adiabatic", "all_walls_no_slip_including_front_and_back", "gravity_0_minus9.81_0_m_per_s2", "original_geometry_materials_and_model"],
+      "acceptance_design": ["correct_buoyancy_and_circulation_orientation", "pressure_variable_and_units_consistent_with_solver", "wall_heat_balance_after_convergence", "qualified_velocity_and_temperature_profiles", "experimental_comparison_only_with_accessible_data_and_registered_uncertainty"],
+      "readiness": "source_inspected; buoyant_execution_extraction_and_native_controls_pending"
+    },
+    {
+      "candidate_id": "edge-05",
+      "source_path": "compressible/rhoCentralFoam/shockTube",
+      "source_id": "t-5e15513fea71b0c0ee7d",
+      "public_title": "Transient compressible flow following removal of a diaphragm",
+      "invariants": ["original_piecewise_pressure_temperature_and_zero_velocity", "original_perfect_gas_and_constant_thermodynamic_parameters", "original_geometry_and_boundary_conditions", "preserve_original_end_time_0.007_s_and_time_safety_settings"],
+      "acceptance_design": ["initial_thermodynamic_consistency", "pressure_density_velocity_profiles_at_registered_times", "wave_and_contact_locations", "independent_Riemann_solution_only_where_original_assumptions_and_pre_reflection_time_are_valid", "no_claim_that_solver_exit_alone_proves_correct_physics"],
+      "readiness": "source_inspected; compressible_execution_extraction_and_native_controls_pending"
+    }
+  ],
+  "release_gates": [
+    "resolve_exact_Fable_provider_identity_without_secret_disclosure",
+    "freeze_public_task_inputs_and_private_source_hashes",
+    "implement_and_test_missing_execution_and_acceptance_plugins",
+    "qualify_original_reference_and_positive_negative_controls_for_each_task",
+    "validate_known_physically_equivalent_inputs_are_not_rejected",
+    "run_actual_Codex_client_against_local_fake_API_and_verify_isolation",
+    "verify_documentation_access_and_record_exact_scope",
+    "freeze_code_runtime_task_model_and_tool_identities",
+    "confirm_audit_storage_health_before_paid_dispatch"
+  ],
+  "authorization": {
+    "user_requested_five_task_configuration_and_Fable_test": true,
+    "authorization_does_not_override_release_gates": true,
+    "paid_calls_started_by_this_candidate_file": 0
+  }
+}

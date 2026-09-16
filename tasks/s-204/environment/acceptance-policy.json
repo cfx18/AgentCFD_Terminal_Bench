@@ -1,0 +1,46 @@
+{
+  "fields": {
+    "T": {
+      "offset": 293,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "U": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "alphat": {
+      "offset": 0,
+      "relative_l2": 0.25,
+      "relative_linf": 0.5
+    },
+    "k": {
+      "offset": 0,
+      "relative_l2": 0.25,
+      "relative_linf": 0.5
+    },
+    "nut": {
+      "offset": 0,
+      "relative_l2": 0.25,
+      "relative_linf": 0.5
+    },
+    "omega": {
+      "offset": 0,
+      "relative_l2": 0.25,
+      "relative_linf": 0.5
+    },
+    "p": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "p_rgh": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    }
+  },
+  "floor": 1e-12,
+  "version": "thermal-compressible-discrete-v1"
+}

@@ -1,0 +1,45 @@
+schema_version = "1.4"
+artifacts = ["/work/system/science-action.json"]
+
+[task]
+name = "agentcfd-terminal-bench/s-202"
+description = "Transient conjugate heat transfer through a resistive contact"
+
+[metadata]
+version = "edge-discrete-science-v1"
+track = "science"
+runtime = "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1"
+execution_protocol = "durable-native-session-v1"
+edge_recipe = "multiregion-v1"
+native_commands = [["mesh", "blockMesh"], ["zones", "topoSet"], ["split", "splitMeshRegions", "-cellZones", "-overwrite"], ["boundary_bottomwater", "changeDictionary", "-region", "bottomWater"], ["boundary_topair", "changeDictionary", "-region", "topAir"], ["boundary_heater", "changeDictionary", "-region", "heater"], ["boundary_leftsolid", "changeDictionary", "-region", "leftSolid"], ["boundary_rightsolid", "changeDictionary", "-region", "rightSolid"], ["mesh_check", "checkMesh", "-allRegions"], ["solver", "chtMultiRegionFoam"]]
+artifact_fields = ["bottomWater/T", "bottomWater/U", "bottomWater/p", "bottomWater/p_rgh", "topAir/T", "topAir/U", "topAir/p", "topAir/p_rgh", "heater/T", "leftSolid/T", "rightSolid/T"]
+qualification_seconds = 300
+
+[metadata.qualification]
+positive_source = "edge-original-preparation-v1"
+alternative_numerics = true
+
+[metadata.native_completion]
+kind = "transient"
+end = 100
+tolerance = 1e-07
+early_convergence = false
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "field_realizability", "field_bottomWater/T", "field_bottomWater/U", "field_bottomWater/p", "field_bottomWater/p_rgh", "field_topAir/T", "field_topAir/U", "field_topAir/p", "field_topAir/p_rgh", "field_heater/T", "field_leftSolid/T", "field_rightSolid/T"]
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+cpus = 1
+memory_mb = 2048
+network_mode = "no-network"
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

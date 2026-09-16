@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="8" time="103.042" timestamp="2026-09-16T10:13:55.076770" hostname="p-c2f7367abcd9-ackcs-00gjfb3i"><testcase classname="tests.test_polyhedral_native" name="test_real_alternative_cross_section_mesh_and_private_grading[ascii]" time="0.343"><failure message="AssertionError: {'next_offset': 440, 'text': &quot;&#10;  &#10;  --&gt; FOAM FATAL ERROR: (openfoam-2306)&#10;  Symmetry plane 'empty' is not planar.&#10;  At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.&#10;  &#10;  FOAM exiting&#10;  &#10;  &quot;}&#10;assert False">tmp_path = PosixPath('/tmp/pytest-of-root/pytest-515/test_real_alternative_cross_se0')
+write_format = 'ascii'
+
+    @pytest.mark.parametrize("write_format", ["ascii", "binary"])
+    def test_real_alternative_cross_section_mesh_and_private_grading(
+        tmp_path, write_format
+    ):
+        target, inputs, _ = source_evidence("s-205")
+        inputs["system/blockMeshDict"] = inputs["system/blockMeshDict"].replace(
+            "(400 1 1)", "(200 2 2)"
+        )
+        for name, text in inputs.items():
+            inputs[name] = re.sub(r"type\s+empty\s*;", "type symmetryPlane;", text)
+        inputs["system/controlDict"] = re.sub(
+            r"writeFormat\s+ascii\s*;",
+            f"writeFormat {write_format};",
+            inputs["system/controlDict"],
+        )
+        work = tmp_path / "work"
+        work.mkdir()
+        for name, text in inputs.items():
+            p = work / name
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(text)
+        runner = Runner(
+            tmp_path / "native", Sandbox(foam_root=str(FOAM), mpi="intelmpi"), seconds=60
+        )
+        for argv, kind in [
+            (["blockMesh"], "exec"),
+            (["setFields"], "exec"),
+            (["rhoCentralFoam"], "run"),
+        ]:
+            op = runner.start(work, argv, kind=kind)
+&gt;           native = wait(runner, op)
+
+tests/test_polyhedral_native.py:69: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+runner = &lt;agentcfd_bench.execution.runner.Runner object at 0x7f33bd1754c0&gt;
+op = {'lifecycle': 'running', 'run_id': 'r-a68db2a47e254ce6', 'seconds_reserved': 60}
+
+    def wait(runner, op):
+        deadline = time.monotonic() + 90
+        while time.monotonic() &lt; deadline:
+            status = runner.status(op["run_id"])
+            if status["lifecycle"] != "running":
+&gt;               assert status["success"], runner.logs(op["run_id"], stream="stderr")
+E               AssertionError: {'next_offset': 440, 'text': "
+E                 
+E                 --&gt; FOAM FATAL ERROR: (openfoam-2306)
+E                 Symmetry plane 'empty' is not planar.
+E                 At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.
+E                 
+E                 FOAM exiting
+E                 
+E                 "}
+E               assert False
+
+tests/test_polyhedral_native.py:33: AssertionError</failure></testcase><testcase classname="tests.test_polyhedral_native" name="test_real_alternative_cross_section_mesh_and_private_grading[binary]" time="0.229"><failure message="AssertionError: {'next_offset': 440, 'text': &quot;&#10;  &#10;  --&gt; FOAM FATAL ERROR: (openfoam-2306)&#10;  Symmetry plane 'empty' is not planar.&#10;  At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.&#10;  &#10;  FOAM exiting&#10;  &#10;  &quot;}&#10;assert False">tmp_path = PosixPath('/tmp/pytest-of-root/pytest-515/test_real_alternative_cross_se1')
+write_format = 'binary'
+
+    @pytest.mark.parametrize("write_format", ["ascii", "binary"])
+    def test_real_alternative_cross_section_mesh_and_private_grading(
+        tmp_path, write_format
+    ):
+        target, inputs, _ = source_evidence("s-205")
+        inputs["system/blockMeshDict"] = inputs["system/blockMeshDict"].replace(
+            "(400 1 1)", "(200 2 2)"
+        )
+        for name, text in inputs.items():
+            inputs[name] = re.sub(r"type\s+empty\s*;", "type symmetryPlane;", text)
+        inputs["system/controlDict"] = re.sub(
+            r"writeFormat\s+ascii\s*;",
+            f"writeFormat {write_format};",
+            inputs["system/controlDict"],
+        )
+        work = tmp_path / "work"
+        work.mkdir()
+        for name, text in inputs.items():
+            p = work / name
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(text)
+        runner = Runner(
+            tmp_path / "native", Sandbox(foam_root=str(FOAM), mpi="intelmpi"), seconds=60
+        )
+        for argv, kind in [
+            (["blockMesh"], "exec"),
+            (["setFields"], "exec"),
+            (["rhoCentralFoam"], "run"),
+        ]:
+            op = runner.start(work, argv, kind=kind)
+&gt;           native = wait(runner, op)
+
+tests/test_polyhedral_native.py:69: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+runner = &lt;agentcfd_bench.execution.runner.Runner object at 0x7f3237940290&gt;
+op = {'lifecycle': 'running', 'run_id': 'r-2df870e78d614322', 'seconds_reserved': 60}
+
+    def wait(runner, op):
+        deadline = time.monotonic() + 90
+        while time.monotonic() &lt; deadline:
+            status = runner.status(op["run_id"])
+            if status["lifecycle"] != "running":
+&gt;               assert status["success"], runner.logs(op["run_id"], stream="stderr")
+E               AssertionError: {'next_offset': 440, 'text': "
+E                 
+E                 --&gt; FOAM FATAL ERROR: (openfoam-2306)
+E                 Symmetry plane 'empty' is not planar.
+E                 At loc...in file meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.C at line 67.
+E                 
+E                 FOAM exiting
+E                 
+E                 "}
+E               assert False
+
+tests/test_polyhedral_native.py:33: AssertionError</failure></testcase><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-202]" time="2.491" /><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-203]" time="37.551" /><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-204]" time="48.885" /><testcase classname="tests.test_polyhedral_native" name="test_real_reference_replay_and_broken_evidence[s-205]" time="0.307" /><testcase classname="tests.test_polyhedral_native" name="test_native_multiregion_export_after_region_and_patch_rename" time="12.665" /><testcase classname="tests.test_polyhedral_native" name="test_latest_mesh_points_override_constant" time="0.005" /></testsuite></testsuites>

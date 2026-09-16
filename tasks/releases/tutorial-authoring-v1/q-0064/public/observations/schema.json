@@ -1,0 +1,265 @@
+{
+  "schema": "openfoam-dense-observations-v1",
+  "candidate_id": "q-0064",
+  "solver_run_id": "r-91f023ecdca741f4",
+  "export_method": "ASCII native polyMesh reconstruction after native export service interruption",
+  "observation_time_s": 0.124524,
+  "configured_end_time_s": 0.125,
+  "cell_count": 33627,
+  "coordinates": {
+    "columns": [
+      "x_m",
+      "y_m",
+      "z_m"
+    ],
+    "units": "m",
+    "location": "native mesh cell centroid"
+  },
+  "quadrature_weight": {
+    "column": "volume_m3",
+    "units": "m3",
+    "meaning": "native geometric cell volume"
+  },
+  "mesh_instance": "5e-06",
+  "geometry": {
+    "file": "../geometry/domain.stl",
+    "lower_bound_m": [
+      -19.4,
+      -19.42,
+      0.0
+    ],
+    "upper_bound_m": [
+      23.66,
+      23.68,
+      23.17
+    ],
+    "note": "Only the exterior box is triangulated; the pipe lattice is specified physically in instruction.md and is not a volume-mesh prescription."
+  },
+  "fields": {
+    "U": {
+      "class": "volVectorField",
+      "components": 3,
+      "dimensions": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "m/s",
+      "time_s": 0.124524
+    },
+    "p": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        1,
+        -1,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "Pa",
+      "time_s": 0.124524
+    },
+    "T": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "units": "K",
+      "time_s": 0.124524
+    },
+    "rho": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        1,
+        -3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "kg/m3",
+      "time_s": 0.124524
+    },
+    "b": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "1",
+      "time_s": 0.124524
+    },
+    "ft": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "1",
+      "time_s": 0.124524
+    },
+    "Xi": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "1",
+      "time_s": 0.124524
+    },
+    "k": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "m2/s2",
+      "time_s": 0.124524
+    },
+    "epsilon": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        2,
+        -3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "m2/s3",
+      "time_s": 0.124524
+    },
+    "nut": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "m2/s",
+      "time_s": 0.124524
+    },
+    "alphat": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "kg/(m s)",
+      "time_s": 0.124524
+    },
+    "Su": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "m/s",
+      "time_s": 0.124524
+    },
+    "St": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "m/s",
+      "time_s": 0.124524
+    },
+    "Tu": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "units": "K",
+      "time_s": 0.124524
+    },
+    "betav": {
+      "class": "volScalarField",
+      "components": 1,
+      "dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "units": "1",
+      "time_s": 5e-06
+    }
+  }
+}

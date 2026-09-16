@@ -1,0 +1,6 @@
+{
+  "ux_profile": ["m/s", 20],
+  "uy_rms": ["m/s", 1],
+  "final_time": ["s", 1],
+  "ux_final_initial_residual": ["1", 1]
+}

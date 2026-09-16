@@ -1,0 +1,18 @@
+{
+  "basis": "canonical_discrete_fields_not_experimental_or_mesh_independent_truth",
+  "fields": {
+    "U": {
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "p": {
+      "relative_l2": 0.15,
+      "relative_linf": 0.5
+    }
+  },
+  "normalization_floor": 1e-12,
+  "pressure_gauge": "absolute_kinematic_pressure",
+  "report_absolute_tolerance": 1e-06,
+  "report_relative_tolerance": 1e-05,
+  "version": "tutorial-quantitative-acceptance-v1"
+}

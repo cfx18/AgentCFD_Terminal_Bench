@@ -1,0 +1,126 @@
+{
+  "schema": "openfoam-dense-cell-observations-v1",
+  "coordinate_system": "Cartesian SI; x, y, z in metres",
+  "observation": {
+    "kind": "accepted steady-iteration state",
+    "index": 150000,
+    "physical_time_seconds": null,
+    "cell_count": 640
+  },
+  "coordinates": {
+    "source": "native OpenFOAM writeCellCentres output C",
+    "dimensions": "[0 1 0 0 0 0 0]",
+    "units": "m"
+  },
+  "volumes": {
+    "source": "native OpenFOAM writeCellVolumes output V",
+    "dimensions": "[0 3 0 0 0 0 0]",
+    "units": "m^3",
+    "sum": 2400000000000.0
+  },
+  "fields": {
+    "U": {
+      "columns": [
+        "U_x_m_per_s",
+        "U_y_m_per_s",
+        "U_z_m_per_s"
+      ],
+      "dimensions": "[0 1 -1 0 0 0 0]",
+      "units": "m/s"
+    },
+    "T": {
+      "columns": [
+        "T_K"
+      ],
+      "dimensions": "[0 0 0 1 0 0 0]",
+      "units": "K"
+    },
+    "p": {
+      "columns": [
+        "p_m2_per_s2"
+      ],
+      "dimensions": "[0 2 -2 0 0 0 0]",
+      "units": "m^2/s^2",
+      "meaning": "kinematic pressure including the hydrostatic contribution; gauge-referenced"
+    },
+    "p_rgh": {
+      "columns": [
+        "p_rgh_m2_per_s2"
+      ],
+      "dimensions": "[0 2 -2 0 0 0 0]",
+      "units": "m^2/s^2",
+      "meaning": "hydrostatic-reduced kinematic pressure; gauge-referenced"
+    },
+    "k": {
+      "columns": [
+        "k_m2_per_s2"
+      ],
+      "dimensions": "[0 2 -2 0 0 0 0]",
+      "units": "m^2/s^2"
+    },
+    "epsilon": {
+      "columns": [
+        "epsilon_m2_per_s3"
+      ],
+      "dimensions": "[0 2 -3 0 0 0 0]",
+      "units": "m^2/s^3"
+    },
+    "nut": {
+      "columns": [
+        "nut_m2_per_s"
+      ],
+      "dimensions": "[0 2 -1 0 0 0 0]",
+      "units": "m^2/s"
+    },
+    "alphat": {
+      "columns": [
+        "alphat_m2_per_s"
+      ],
+      "dimensions": "[0 2 -1 0 0 0 0]",
+      "units": "m^2/s"
+    },
+    "Cd": {
+      "columns": [
+        "Cd_1"
+      ],
+      "dimensions": "[0 0 0 0 0 0 0]",
+      "units": "1",
+      "meaning": "actual zero canopy-drag field"
+    },
+    "LAD": {
+      "columns": [
+        "LAD_per_m"
+      ],
+      "dimensions": "[0 -1 0 0 0 0 0]",
+      "units": "1/m",
+      "meaning": "actual zero leaf-area-density field"
+    },
+    "qPlant": {
+      "columns": [
+        "qPlant_m2_per_s3"
+      ],
+      "dimensions": "[0 2 -3 0 0 0 0]",
+      "units": "m^2/s^3",
+      "meaning": "actual zero plant heat-source field"
+    }
+  },
+  "excluded_native_surface_fields": {
+    "phi": "A face flux cannot be represented as a cell-centred observation and is not included in fields.csv."
+  },
+  "geometry": {
+    "file": "../geometry/outer_geometry.obj",
+    "kind": "native exterior boundary surface only; no volume connectivity",
+    "bounds_m": {
+      "min": [
+        -10000.0,
+        -10000.0,
+        20.0
+      ],
+      "max": [
+        10000.0,
+        10000.0,
+        6020.0
+      ]
+    }
+  }
+}

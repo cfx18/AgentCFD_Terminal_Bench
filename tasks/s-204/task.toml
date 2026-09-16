@@ -1,0 +1,45 @@
+schema_version = "1.4"
+artifacts = ["/work/system/science-action.json"]
+
+[task]
+name = "agentcfd-terminal-bench/s-204"
+description = "Natural convection in a closed three-dimensional cavity"
+
+[metadata]
+version = "edge-discrete-science-v1"
+track = "science"
+runtime = "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1"
+execution_protocol = "durable-native-session-v1"
+edge_recipe = "buoyant-v1"
+native_commands = [["mesh", "blockMesh"], ["mesh_check", "checkMesh"], ["solver", "buoyantSimpleFoam"]]
+artifact_fields = ["U", "p", "p_rgh", "T", "k", "omega", "nut", "alphat"]
+qualification_seconds = 300
+
+[metadata.qualification]
+positive_source = "edge-original-preparation-v1"
+alternative_numerics = true
+
+[metadata.native_completion]
+kind = "steady"
+end = 1000
+tolerance = 1e-07
+early_convergence = true
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "field_realizability", "field_U", "field_p", "field_p_rgh", "field_T", "field_k", "field_omega", "field_nut", "field_alphat"]
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+cpus = 1
+memory_mb = 2048
+network_mode = "no-network"
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

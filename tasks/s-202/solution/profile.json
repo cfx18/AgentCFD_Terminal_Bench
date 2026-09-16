@@ -1,0 +1,1834 @@
+{
+  "completion": {
+    "early_convergence": false,
+    "end": 100,
+    "kind": "transient",
+    "tolerance": 1e-07
+  },
+  "control": {
+    "adjustTimeStep": [
+      "yes"
+    ],
+    "application": [
+      "chtMultiRegionFoam"
+    ],
+    "deltaT": [
+      "0.001"
+    ],
+    "endTime": [
+      "100"
+    ],
+    "functions": {
+      "vtkWrite": {
+        "boundary": [
+          "true"
+        ],
+        "fields": [
+          "(",
+          "\".*\"",
+          ")"
+        ],
+        "internal": [
+          "true"
+        ],
+        "interpolate": [
+          "true"
+        ],
+        "libs": [
+          "(",
+          "utilityFunctionObjects",
+          ")"
+        ],
+        "log": [
+          "true"
+        ],
+        "regions": [
+          "(",
+          "\".*\"",
+          ")"
+        ],
+        "single": [
+          "false"
+        ],
+        "type": [
+          "vtkWrite"
+        ],
+        "writeControl": [
+          "writeTime"
+        ],
+        "writeIds": [
+          "false"
+        ],
+        "writeInterval": [
+          "1"
+        ]
+      },
+      "walls": {
+        "fields": [
+          "(",
+          "T",
+          ")"
+        ],
+        "internal": [
+          "false"
+        ],
+        "libs": [
+          "(",
+          "utilityFunctionObjects",
+          ")"
+        ],
+        "log": [
+          "true"
+        ],
+        "patches": [
+          "(",
+          "\"(?i).*solid_to.*\"",
+          "\"heater.*(Air|Water)\"",
+          ")"
+        ],
+        "regions": [
+          "(",
+          "heater",
+          "\"(?i).*solid\"",
+          ")"
+        ],
+        "type": [
+          "vtkWrite"
+        ],
+        "writeControl": [
+          "writeTime"
+        ],
+        "writeInterval": [
+          "1"
+        ]
+      }
+    },
+    "maxCo": [
+      "0.6"
+    ],
+    "maxDi": [
+      "10.0"
+    ],
+    "purgeWrite": [
+      "0"
+    ],
+    "runTimeModifiable": [
+      "yes"
+    ],
+    "startFrom": [
+      "latestTime"
+    ],
+    "startTime": [
+      "0.001"
+    ],
+    "stopAt": [
+      "endTime"
+    ],
+    "timeFormat": [
+      "general"
+    ],
+    "timePrecision": [
+      "6"
+    ],
+    "writeCompression": [
+      "off"
+    ],
+    "writeControl": [
+      "adjustable"
+    ],
+    "writeFormat": [
+      "ascii"
+    ],
+    "writeInterval": [
+      "10"
+    ],
+    "writePrecision": [
+      "8"
+    ]
+  },
+  "fields": {
+    "bottomWater/T": {
+      "count": 1460,
+      "dimensions": "[ 0 0 0 1 0 0 0 ]",
+      "unit": "K"
+    },
+    "bottomWater/U": {
+      "count": 1460,
+      "dimensions": "[ 0 1 -1 0 0 0 0 ]",
+      "unit": "m/s"
+    },
+    "bottomWater/p": {
+      "count": 1460,
+      "dimensions": "[ 1 -1 -2 0 0 0 0 ]",
+      "unit": "Pa"
+    },
+    "bottomWater/p_rgh": {
+      "count": 1460,
+      "dimensions": "[ 1 -1 -2 0 0 0 0 ]",
+      "unit": "Pa"
+    },
+    "heater/T": {
+      "count": 80,
+      "dimensions": "[ 0 0 0 1 0 0 0 ]",
+      "unit": "K"
+    },
+    "leftSolid/T": {
+      "count": 130,
+      "dimensions": "[ 0 0 0 1 0 0 0 ]",
+      "unit": "K"
+    },
+    "rightSolid/T": {
+      "count": 130,
+      "dimensions": "[ 0 0 0 1 0 0 0 ]",
+      "unit": "K"
+    },
+    "topAir/T": {
+      "count": 1200,
+      "dimensions": "[ 0 0 0 1 0 0 0 ]",
+      "unit": "K"
+    },
+    "topAir/U": {
+      "count": 1200,
+      "dimensions": "[ 0 1 -1 0 0 0 0 ]",
+      "unit": "m/s"
+    },
+    "topAir/p": {
+      "count": 1200,
+      "dimensions": "[ 1 -1 -2 0 0 0 0 ]",
+      "unit": "Pa"
+    },
+    "topAir/p_rgh": {
+      "count": 1200,
+      "dimensions": "[ 1 -1 -2 0 0 0 0 ]",
+      "unit": "Pa"
+    }
+  },
+  "physics": {
+    "0/T": {
+      "boundaryField": {
+        "\".*\"": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "300"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "300"
+      ]
+    },
+    "0/U": {
+      "boundaryField": {
+        "\".*\"": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "(",
+            "0.01",
+            "0",
+            "0",
+            ")"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "(",
+        "0.01",
+        "0",
+        "0",
+        ")"
+      ]
+    },
+    "0/p": {
+      "boundaryField": {
+        "\".*\"": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "1",
+        "-1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "1e5"
+      ]
+    },
+    "0/p_rgh": {
+      "boundaryField": {
+        "\".*\"": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "1",
+        "-1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "1e5"
+      ]
+    },
+    "constant/bottomWater/radiationProperties": {
+      "radiation": [
+        "off"
+      ],
+      "radiationModel": [
+        "none"
+      ]
+    },
+    "constant/bottomWater/thermophysicalProperties": {
+      "mixture": {
+        "equationOfState": {
+          "rho": [
+            "1000"
+          ]
+        },
+        "specie": {
+          "molWeight": [
+            "18"
+          ]
+        },
+        "thermodynamics": {
+          "Cp": [
+            "4181"
+          ],
+          "Hf": [
+            "0"
+          ]
+        },
+        "transport": {
+          "Pr": [
+            "6.62"
+          ],
+          "mu": [
+            "959e-6"
+          ]
+        }
+      },
+      "thermoType": {
+        "energy": [
+          "sensibleEnthalpy"
+        ],
+        "equationOfState": [
+          "rhoConst"
+        ],
+        "mixture": [
+          "pureMixture"
+        ],
+        "specie": [
+          "specie"
+        ],
+        "thermo": [
+          "hConst"
+        ],
+        "transport": [
+          "const"
+        ],
+        "type": [
+          "heRhoThermo"
+        ]
+      }
+    },
+    "constant/bottomWater/turbulenceProperties": {
+      "simulationType": [
+        "laminar"
+      ]
+    },
+    "constant/g": {
+      "dimensions": [
+        "[",
+        "0",
+        "1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "value": [
+        "(",
+        "0",
+        "-9.81",
+        "0",
+        ")"
+      ]
+    },
+    "constant/heater/radiationProperties": {
+      "radiation": [
+        "off"
+      ],
+      "radiationModel": [
+        "none"
+      ]
+    },
+    "constant/heater/thermophysicalProperties": {
+      "mixture": {
+        "equationOfState": {
+          "rho": [
+            "8000"
+          ]
+        },
+        "specie": {
+          "molWeight": [
+            "50"
+          ]
+        },
+        "thermodynamics": {
+          "Cp": [
+            "450"
+          ],
+          "Hf": [
+            "0"
+          ]
+        },
+        "transport": {
+          "kappa": [
+            "80"
+          ]
+        }
+      },
+      "thermoType": {
+        "energy": [
+          "sensibleEnthalpy"
+        ],
+        "equationOfState": [
+          "rhoConst"
+        ],
+        "mixture": [
+          "pureMixture"
+        ],
+        "specie": [
+          "specie"
+        ],
+        "thermo": [
+          "hConst"
+        ],
+        "transport": [
+          "constIso"
+        ],
+        "type": [
+          "heSolidThermo"
+        ]
+      }
+    },
+    "constant/leftSolid/radiationProperties": {
+      "radiation": [
+        "off"
+      ],
+      "radiationModel": [
+        "none"
+      ]
+    },
+    "constant/leftSolid/thermophysicalProperties": {
+      "mixture": {
+        "equationOfState": {
+          "rho": [
+            "8000"
+          ]
+        },
+        "specie": {
+          "molWeight": [
+            "50"
+          ]
+        },
+        "thermodynamics": {
+          "Cp": [
+            "450"
+          ],
+          "Hf": [
+            "0"
+          ]
+        },
+        "transport": {
+          "kappa": [
+            "80"
+          ]
+        }
+      },
+      "thermoType": {
+        "energy": [
+          "sensibleEnthalpy"
+        ],
+        "equationOfState": [
+          "rhoConst"
+        ],
+        "mixture": [
+          "pureMixture"
+        ],
+        "specie": [
+          "specie"
+        ],
+        "thermo": [
+          "hConst"
+        ],
+        "transport": [
+          "constIso"
+        ],
+        "type": [
+          "heSolidThermo"
+        ]
+      }
+    },
+    "constant/regionProperties": {
+      "regions": [
+        "(",
+        "fluid",
+        "(",
+        "bottomWater",
+        "topAir",
+        ")",
+        "solid",
+        "(",
+        "heater",
+        "leftSolid",
+        "rightSolid",
+        ")",
+        ")"
+      ]
+    },
+    "constant/rightSolid/radiationProperties": {
+      "radiation": [
+        "off"
+      ],
+      "radiationModel": [
+        "none"
+      ]
+    },
+    "constant/rightSolid/thermophysicalProperties": {
+      "mixture": {
+        "equationOfState": {
+          "rho": [
+            "8000"
+          ]
+        },
+        "specie": {
+          "molWeight": [
+            "50"
+          ]
+        },
+        "thermodynamics": {
+          "Cp": [
+            "450"
+          ],
+          "Hf": [
+            "0"
+          ]
+        },
+        "transport": {
+          "kappa": [
+            "80"
+          ]
+        }
+      },
+      "thermoType": {
+        "energy": [
+          "sensibleEnthalpy"
+        ],
+        "equationOfState": [
+          "rhoConst"
+        ],
+        "mixture": [
+          "pureMixture"
+        ],
+        "specie": [
+          "specie"
+        ],
+        "thermo": [
+          "hConst"
+        ],
+        "transport": [
+          "constIso"
+        ],
+        "type": [
+          "heSolidThermo"
+        ]
+      }
+    },
+    "constant/topAir/radiationProperties": {
+      "radiation": [
+        "off"
+      ],
+      "radiationModel": [
+        "none"
+      ]
+    },
+    "constant/topAir/thermophysicalProperties": {
+      "mixture": {
+        "specie": {
+          "molWeight": [
+            "28.9"
+          ]
+        },
+        "thermodynamics": {
+          "Cp": [
+            "1000"
+          ],
+          "Hf": [
+            "0"
+          ]
+        },
+        "transport": {
+          "Pr": [
+            "0.7"
+          ],
+          "mu": [
+            "1.8e-05"
+          ]
+        }
+      },
+      "thermoType": {
+        "energy": [
+          "sensibleEnthalpy"
+        ],
+        "equationOfState": [
+          "perfectGas"
+        ],
+        "mixture": [
+          "pureMixture"
+        ],
+        "specie": [
+          "specie"
+        ],
+        "thermo": [
+          "hConst"
+        ],
+        "transport": [
+          "const"
+        ],
+        "type": [
+          "heRhoThermo"
+        ]
+      }
+    },
+    "constant/topAir/turbulenceProperties": {
+      "simulationType": [
+        "laminar"
+      ]
+    },
+    "system/blockMeshDict": {
+      "blocks": [
+        "(",
+        "hex",
+        "(",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        ")",
+        "(",
+        "30",
+        "10",
+        "10",
+        ")",
+        "simpleGrading",
+        "(",
+        "1",
+        "1",
+        "1",
+        ")",
+        ")"
+      ],
+      "boundary": [
+        "(",
+        "maxY",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "3",
+        "7",
+        "6",
+        "2",
+        ")",
+        ")",
+        ";",
+        "}",
+        "minX",
+        "{",
+        "type",
+        "patch",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "0",
+        "4",
+        "7",
+        "3",
+        ")",
+        ")",
+        ";",
+        "}",
+        "maxX",
+        "{",
+        "type",
+        "patch",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "2",
+        "6",
+        "5",
+        "1",
+        ")",
+        ")",
+        ";",
+        "}",
+        "minY",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "1",
+        "5",
+        "4",
+        "0",
+        ")",
+        ")",
+        ";",
+        "}",
+        "minZ",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "0",
+        "3",
+        "2",
+        "1",
+        ")",
+        ")",
+        ";",
+        "}",
+        "maxZ",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "4",
+        "5",
+        "6",
+        "7",
+        ")",
+        ")",
+        ";",
+        "}",
+        ")"
+      ],
+      "edges": [
+        "(",
+        ")"
+      ],
+      "mergePatchPairs": [
+        "(",
+        ")"
+      ],
+      "scale": [
+        "1"
+      ],
+      "vertices": [
+        "(",
+        "(",
+        "-0.1",
+        "-0.04",
+        "-0.05",
+        ")",
+        "(",
+        "0.1",
+        "-0.04",
+        "-0.05",
+        ")",
+        "(",
+        "0.1",
+        "0.04",
+        "-0.05",
+        ")",
+        "(",
+        "-0.1",
+        "0.04",
+        "-0.05",
+        ")",
+        "(",
+        "-0.1",
+        "-0.04",
+        "0.05",
+        ")",
+        "(",
+        "0.1",
+        "-0.04",
+        "0.05",
+        ")",
+        "(",
+        "0.1",
+        "0.04",
+        "0.05",
+        ")",
+        "(",
+        "-0.1",
+        "0.04",
+        "0.05",
+        ")",
+        ")"
+      ]
+    },
+    "system/bottomWater/changeDictionaryDict": {
+      "T": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "zeroGradient"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "\"bottomWater_to_.*\"": {
+            "Tnbr": [
+              "T"
+            ],
+            "kappaMethod": [
+              "fluidThermo"
+            ],
+            "type": [
+              "compressible::turbulentTemperatureRadCoupledMixed"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "maxX": {
+            "inletValue": [
+              "uniform",
+              "300"
+            ],
+            "type": [
+              "inletOutlet"
+            ]
+          },
+          "minX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "300"
+        ]
+      },
+      "U": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "(",
+              "0",
+              "0",
+              "0",
+              ")"
+            ]
+          },
+          "maxX": {
+            "inletValue": [
+              "uniform",
+              "(",
+              "0",
+              "0",
+              "0",
+              ")"
+            ],
+            "type": [
+              "inletOutlet"
+            ]
+          },
+          "minX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "(",
+              "0.001",
+              "0",
+              "0",
+              ")"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "(",
+          "0.001",
+          "0",
+          "0",
+          ")"
+        ]
+      },
+      "epsilon": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "epsilonWallFunction"
+            ],
+            "value": [
+              "uniform",
+              "0.01"
+            ]
+          },
+          "maxX": {
+            "inletValue": [
+              "uniform",
+              "0.01"
+            ],
+            "type": [
+              "inletOutlet"
+            ]
+          },
+          "minX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "0.01"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "0.01"
+        ]
+      },
+      "k": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "kqRWallFunction"
+            ],
+            "value": [
+              "uniform",
+              "0.1"
+            ]
+          },
+          "maxX": {
+            "type": [
+              "zeroGradient"
+            ],
+            "value": [
+              "uniform",
+              "0.1"
+            ]
+          },
+          "minX": {
+            "inletValue": [
+              "uniform",
+              "0.1"
+            ],
+            "type": [
+              "inletOutlet"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "0.1"
+        ]
+      },
+      "p": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "calculated"
+            ],
+            "value": [
+              "uniform",
+              "0"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "0"
+        ]
+      },
+      "p_rgh": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "fixedFluxPressure"
+            ],
+            "value": [
+              "uniform",
+              "0"
+            ]
+          },
+          "maxX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "0"
+            ]
+          },
+          "minX": {
+            "type": [
+              "zeroGradient"
+            ],
+            "value": [
+              "uniform",
+              "0"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "0"
+        ]
+      }
+    },
+    "system/heater/changeDictionaryDict": {
+      "T": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "zeroGradient"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "\"heater_to_.*\"": {
+            "Tnbr": [
+              "T"
+            ],
+            "kappaMethod": [
+              "solidThermo"
+            ],
+            "type": [
+              "compressible::turbulentTemperatureRadCoupledMixed"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "heater_to_leftSolid": {
+            "Tnbr": [
+              "T"
+            ],
+            "kappaLayers": [
+              "(",
+              "5e-4",
+              ")"
+            ],
+            "kappaMethod": [
+              "solidThermo"
+            ],
+            "thicknessLayers": [
+              "(",
+              "1e-3",
+              ")"
+            ],
+            "type": [
+              "compressible::turbulentTemperatureRadCoupledMixed"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "minY": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "500"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "300"
+        ]
+      },
+      "boundary": {
+        "maxZ": {
+          "type": [
+            "patch"
+          ]
+        },
+        "minY": {
+          "inGroups": [
+            "(",
+            "coupleGroup",
+            ")"
+          ],
+          "type": [
+            "patch"
+          ]
+        },
+        "minZ": {
+          "type": [
+            "patch"
+          ]
+        }
+      }
+    },
+    "system/leftSolid/changeDictionaryDict": {
+      "T": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "zeroGradient"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "\"leftSolid_to_.*\"": {
+            "Tnbr": [
+              "T"
+            ],
+            "kappaMethod": [
+              "solidThermo"
+            ],
+            "type": [
+              "compressible::turbulentTemperatureRadCoupledMixed"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "leftSolid_to_heater": {
+            "Tnbr": [
+              "T"
+            ],
+            "kappaLayers": [
+              "(",
+              "5e-4",
+              ")"
+            ],
+            "kappaMethod": [
+              "solidThermo"
+            ],
+            "thicknessLayers": [
+              "(",
+              "1e-3",
+              ")"
+            ],
+            "type": [
+              "compressible::turbulentTemperatureRadCoupledMixed"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "300"
+        ]
+      },
+      "boundary": {
+        "maxZ": {
+          "type": [
+            "patch"
+          ]
+        },
+        "minZ": {
+          "type": [
+            "patch"
+          ]
+        }
+      }
+    },
+    "system/rightSolid/changeDictionaryDict": {
+      "T": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "zeroGradient"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "\"rightSolid_to_.*\"": {
+            "Tnbr": [
+              "T"
+            ],
+            "kappaMethod": [
+              "solidThermo"
+            ],
+            "type": [
+              "compressible::turbulentTemperatureRadCoupledMixed"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "300"
+        ]
+      },
+      "boundary": {
+        "maxZ": {
+          "type": [
+            "patch"
+          ]
+        },
+        "minZ": {
+          "type": [
+            "patch"
+          ]
+        }
+      }
+    },
+    "system/topAir/changeDictionaryDict": {
+      "T": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "zeroGradient"
+            ]
+          },
+          "\"topAir_to_.*\"": {
+            "Tnbr": [
+              "T"
+            ],
+            "kappaMethod": [
+              "fluidThermo"
+            ],
+            "type": [
+              "compressible::turbulentTemperatureRadCoupledMixed"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "maxX": {
+            "inletValue": [
+              "uniform",
+              "300"
+            ],
+            "type": [
+              "inletOutlet"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          },
+          "minX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "300"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "300"
+        ]
+      },
+      "U": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "(",
+              "0",
+              "0",
+              "0",
+              ")"
+            ]
+          },
+          "maxX": {
+            "inletValue": [
+              "uniform",
+              "(",
+              "0",
+              "0",
+              "0",
+              ")"
+            ],
+            "type": [
+              "inletOutlet"
+            ],
+            "value": [
+              "uniform",
+              "(",
+              "0.1",
+              "0",
+              "0",
+              ")"
+            ]
+          },
+          "minX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "(",
+              "0.1",
+              "0",
+              "0",
+              ")"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "(",
+          "0.1",
+          "0",
+          "0",
+          ")"
+        ]
+      },
+      "boundary": {
+        "minX": {
+          "inGroups": [
+            "(",
+            "coupleGroup",
+            ")"
+          ]
+        }
+      },
+      "epsilon": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "epsilonWallFunction"
+            ],
+            "value": [
+              "uniform",
+              "0.01"
+            ]
+          },
+          "maxX": {
+            "inletValue": [
+              "uniform",
+              "0.01"
+            ],
+            "type": [
+              "inletOutlet"
+            ],
+            "value": [
+              "uniform",
+              "0.01"
+            ]
+          },
+          "minX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "0.01"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "0.01"
+        ]
+      },
+      "k": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "kqRWallFunction"
+            ],
+            "value": [
+              "uniform",
+              "0.1"
+            ]
+          },
+          "maxX": {
+            "inletValue": [
+              "uniform",
+              "0.1"
+            ],
+            "type": [
+              "inletOutlet"
+            ],
+            "value": [
+              "uniform",
+              "0.1"
+            ]
+          },
+          "minX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "0.1"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "0.1"
+        ]
+      },
+      "p": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "calculated"
+            ],
+            "value": [
+              "uniform",
+              "1e5"
+            ]
+          },
+          "maxX": {
+            "type": [
+              "calculated"
+            ],
+            "value": [
+              "uniform",
+              "1e5"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "1e5"
+        ]
+      },
+      "p_rgh": {
+        "boundaryField": {
+          "\".*\"": {
+            "type": [
+              "fixedFluxPressure"
+            ],
+            "value": [
+              "uniform",
+              "1e5"
+            ]
+          },
+          "maxX": {
+            "type": [
+              "fixedValue"
+            ],
+            "value": [
+              "uniform",
+              "1e5"
+            ]
+          }
+        },
+        "internalField": [
+          "uniform",
+          "1e5"
+        ]
+      }
+    },
+    "system/topoSetDict": {
+      "actions": [
+        "(",
+        "{",
+        "name",
+        "heaterCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "boxToCell",
+        ";",
+        "box",
+        "(",
+        "-0.01001",
+        "0",
+        "-100",
+        ")",
+        "(",
+        "0.01001",
+        "0.00999",
+        "100",
+        ")",
+        ";",
+        "}",
+        "{",
+        "name",
+        "heaterCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "add",
+        ";",
+        "source",
+        "boxToCell",
+        ";",
+        "box",
+        "(",
+        "-0.01001",
+        "-100",
+        "-0.01001",
+        ")",
+        "(",
+        "0.01001",
+        "0.00999",
+        "0.01001",
+        ")",
+        ";",
+        "}",
+        "{",
+        "name",
+        "heater",
+        ";",
+        "type",
+        "cellZoneSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "setToCellZone",
+        ";",
+        "set",
+        "heaterCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "leftSolidCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "boxToCell",
+        ";",
+        "box",
+        "(",
+        "-100",
+        "0",
+        "-100",
+        ")",
+        "(",
+        "-0.01001",
+        "0.00999",
+        "100",
+        ")",
+        ";",
+        "}",
+        "{",
+        "name",
+        "leftSolid",
+        ";",
+        "type",
+        "cellZoneSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "setToCellZone",
+        ";",
+        "set",
+        "leftSolidCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "rightSolidCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "boxToCell",
+        ";",
+        "box",
+        "(",
+        "0.01001",
+        "0",
+        "-100",
+        ")",
+        "(",
+        "100",
+        "0.00999",
+        "100",
+        ")",
+        ";",
+        "}",
+        "{",
+        "name",
+        "rightSolid",
+        ";",
+        "type",
+        "cellZoneSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "setToCellZone",
+        ";",
+        "set",
+        "rightSolidCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "topAirCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "boxToCell",
+        ";",
+        "box",
+        "(",
+        "-100",
+        "0.00999",
+        "-100",
+        ")",
+        "(",
+        "100",
+        "100",
+        "100",
+        ")",
+        ";",
+        "}",
+        "{",
+        "name",
+        "topAir",
+        ";",
+        "type",
+        "cellZoneSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "setToCellZone",
+        ";",
+        "set",
+        "topAirCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "bottomWaterCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "cellToCell",
+        ";",
+        "set",
+        "heaterCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "bottomWaterCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "add",
+        ";",
+        "source",
+        "cellToCell",
+        ";",
+        "set",
+        "leftSolidCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "bottomWaterCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "add",
+        ";",
+        "source",
+        "cellToCell",
+        ";",
+        "set",
+        "rightSolidCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "bottomWaterCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "add",
+        ";",
+        "source",
+        "cellToCell",
+        ";",
+        "set",
+        "topAirCellSet",
+        ";",
+        "}",
+        "{",
+        "name",
+        "bottomWaterCellSet",
+        ";",
+        "type",
+        "cellSet",
+        ";",
+        "action",
+        "invert",
+        ";",
+        "}",
+        "{",
+        "name",
+        "bottomWater",
+        ";",
+        "type",
+        "cellZoneSet",
+        ";",
+        "action",
+        "new",
+        ";",
+        "source",
+        "setToCellZone",
+        ";",
+        "set",
+        "bottomWaterCellSet",
+        ";",
+        "}",
+        ")"
+      ]
+    }
+  },
+  "residual": "p_rgh",
+  "task_id": "s-202",
+  "version": "thermal-compressible-discrete-v1"
+}

@@ -1,0 +1,182 @@
+{
+  "final_time": {
+    "unit": "s",
+    "size": 1
+  },
+  "pressure_initial_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "pressure_final_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "bottomWater_cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "bottomWater_volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "bottomWater_T_volume_mean": {
+    "unit": "K",
+    "size": 1
+  },
+  "bottomWater_T_min_max": {
+    "unit": "K",
+    "size": 2
+  },
+  "bottomWater_T_rise_rms": {
+    "unit": "K",
+    "size": 1
+  },
+  "bottomWater_relative_300K_sensible_enthalpy": {
+    "unit": "J",
+    "size": 1
+  },
+  "bottomWater_U_volume_mean": {
+    "unit": "m/s",
+    "size": 3
+  },
+  "bottomWater_speed_volume_rms": {
+    "unit": "m/s",
+    "size": 1
+  },
+  "bottomWater_minX_flow": {
+    "unit": "kg/s",
+    "size": 1
+  },
+  "bottomWater_minX_enthalpy_flux": {
+    "unit": "W",
+    "size": 1
+  },
+  "bottomWater_maxX_flow": {
+    "unit": "kg/s",
+    "size": 1
+  },
+  "bottomWater_maxX_enthalpy_flux": {
+    "unit": "W",
+    "size": 1
+  },
+  "topAir_cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "topAir_volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "topAir_T_volume_mean": {
+    "unit": "K",
+    "size": 1
+  },
+  "topAir_T_min_max": {
+    "unit": "K",
+    "size": 2
+  },
+  "topAir_T_rise_rms": {
+    "unit": "K",
+    "size": 1
+  },
+  "topAir_relative_300K_sensible_enthalpy": {
+    "unit": "J",
+    "size": 1
+  },
+  "topAir_U_volume_mean": {
+    "unit": "m/s",
+    "size": 3
+  },
+  "topAir_speed_volume_rms": {
+    "unit": "m/s",
+    "size": 1
+  },
+  "topAir_minX_flow": {
+    "unit": "kg/s",
+    "size": 1
+  },
+  "topAir_minX_enthalpy_flux": {
+    "unit": "W",
+    "size": 1
+  },
+  "topAir_maxX_flow": {
+    "unit": "kg/s",
+    "size": 1
+  },
+  "topAir_maxX_enthalpy_flux": {
+    "unit": "W",
+    "size": 1
+  },
+  "heater_cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "heater_volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "heater_T_volume_mean": {
+    "unit": "K",
+    "size": 1
+  },
+  "heater_T_min_max": {
+    "unit": "K",
+    "size": 2
+  },
+  "heater_T_rise_rms": {
+    "unit": "K",
+    "size": 1
+  },
+  "heater_relative_300K_sensible_enthalpy": {
+    "unit": "J",
+    "size": 1
+  },
+  "leftSolid_cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "leftSolid_volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "leftSolid_T_volume_mean": {
+    "unit": "K",
+    "size": 1
+  },
+  "leftSolid_T_min_max": {
+    "unit": "K",
+    "size": 2
+  },
+  "leftSolid_T_rise_rms": {
+    "unit": "K",
+    "size": 1
+  },
+  "leftSolid_relative_300K_sensible_enthalpy": {
+    "unit": "J",
+    "size": 1
+  },
+  "rightSolid_cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "rightSolid_volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "rightSolid_T_volume_mean": {
+    "unit": "K",
+    "size": 1
+  },
+  "rightSolid_T_min_max": {
+    "unit": "K",
+    "size": 2
+  },
+  "rightSolid_T_rise_rms": {
+    "unit": "K",
+    "size": 1
+  },
+  "rightSolid_relative_300K_sensible_enthalpy": {
+    "unit": "J",
+    "size": 1
+  }
+}

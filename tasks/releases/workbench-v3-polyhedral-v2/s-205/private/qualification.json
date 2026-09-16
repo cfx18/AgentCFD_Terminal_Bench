@@ -1,0 +1,51 @@
+{
+  "corrupt_field_rejected": true,
+  "grader_identity": "2533a36bfd9756c9d8bc663f1056d03a632e542d8ccef595c61c88014a88e8e8",
+  "limits": [
+    "At most 1000000 cells per region.",
+    "Unsupported or inconsistent extraction remains infrastructure error, never a claimed physical failure."
+  ],
+  "native_export_seconds": 2.695619612932205,
+  "observation_version": "polyhedral-observations-v2",
+  "old_vs_new": {
+    "T": {
+      "error": 9.39282224626619e-15,
+      "limit": 0.04,
+      "passed": true
+    },
+    "Ux": {
+      "error": 2.9071511435085126e-15,
+      "limit": 0.04,
+      "passed": true
+    },
+    "p": {
+      "error": 5.620677256956696e-15,
+      "limit": 0.04,
+      "passed": true
+    },
+    "rho": {
+      "error": 5.730778102323805e-15,
+      "limit": 0.04,
+      "passed": true
+    }
+  },
+  "reference_identity": "23c6d848bf8b70312663962ff699c558b65d39f701a708f3cd1d14d5296d820d",
+  "reference_replay": "pass",
+  "regression_tests_passed": true,
+  "solver_rerun": false,
+  "task_id": "s-205",
+  "test_count": 142,
+  "test_report_sha256": "e190a8fb19d7e49e0efc8b0af70c485bb1824f44806ad87f63c45d03dcf48e36",
+  "tested_meshes": [
+    "orthogonal_hex",
+    "skew_hex",
+    "tetrahedral",
+    "concave_polyhedral",
+    "transverse_subdivision"
+  ],
+  "tested_names": [
+    "renamed_regions",
+    "split_regions",
+    "renamed_and_split_boundary_patches"
+  ]
+}

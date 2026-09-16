@@ -1,0 +1,15 @@
+{
+  "version": "science-from-scratch-v1",
+  "task": {
+    "id": "s-001",
+    "version": "couette-transient-2",
+    "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+  },
+  "budget": {
+    "model_calls": 64,
+    "native_seconds": 600,
+    "per_run_seconds": 120,
+    "request_seconds": 600
+  },
+  "model": {"name": "Kimi-K3", "wire_api": "responses"}
+}

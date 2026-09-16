@@ -1,0 +1,42 @@
+# 仅用于新版 s-001 工程烟测准备；不是把十题正式实验缩成一题。
+# 所有相对路径相对于 AgentCFD_Terminal_Bench。prepare 不访问模型或集群。
+version: science-campaign-v1
+name: free-mesh-s001-review-001
+harness:
+  name: codex                    # codex | foamclaw | claude-code | kimi-code
+  backend: chatgpt-subscription  # chatgpt-subscription | custom-api
+  reasoning_effort: xhigh        # 禁用子 Agent；custom-api 必须 null
+  public_decision_log: true      # custom-api 暂须 false
+model:
+  # 入口允许 gpt-5.6-sol | AWS-Claude-Fable-5 | Kimi-K3；不自动替换。
+  # 订阅只用 gpt-5.6-sol；非 Codex harness 当前只接 custom-api + Kimi-K3。
+  name: gpt-5.6-sol
+tasks: [s-001]
+# 显式选择 free-mesh-v1 版本，绝不回退到旧固定网格任务。
+# 其余九题仍在该版本清单；未完成资格的题会使整份配置报错，不会被跳过。
+instruction_profile: geometry-only-free-mesh-v1
+budget:
+  model_calls: 64
+  native_seconds: 1800
+  per_run_seconds: 300
+  request_seconds: 600
+documentation: openfoam-v2306-reference-v1
+authentication:
+  auth_home: /root/.codex
+  # custom-api 时替换上行为 env_file: /absolute/path/private-science.env
+execution:
+  python: ../.venv-harbor/bin/python
+  prepared_parent: runs/prepared
+  output_parent: runs/manual
+  provider_concurrency: 1
+  native_concurrency: 1
+evidence:
+  probe: runs/free-mesh-xhigh-probe-not-run
+  junit:
+    - audits/free-mesh-tests-20260915-002.xml
+release:
+  ready: false
+  audit_report: docs/FREE_MESH_IMPLEMENTATION_20260915.md
+  blockers:
+    - 这是单题工程验证候选，不是十题正式发布；须完成人工审阅及冻结快照。
+    - 本轮没有访问付费模型；须提供与所选 harness、模型和快照一致的真实接口资格。

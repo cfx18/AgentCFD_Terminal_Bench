@@ -1,0 +1,16 @@
+{
+  "aggregation": "minimum_over_metrics_and_fields",
+  "approval": "user_confirmed_2026-09-16",
+  "full_credit": {
+    "normalized_maximum_error": 0.2,
+    "normalized_rmse": 0.05
+  },
+  "interpolation": "linear_between_anchors",
+  "pressure_alignment": "none",
+  "scope": "reconstruct_public_finite_numerical_reference",
+  "version": "dense-reconstruction-reward-v1",
+  "zero_credit": {
+    "normalized_maximum_error": 1.0,
+    "normalized_rmse": 0.3
+  }
+}

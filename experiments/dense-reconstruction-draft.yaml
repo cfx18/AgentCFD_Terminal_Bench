@@ -1,0 +1,22 @@
+# Draft task/data/grader validation only. prepare must block paid launch until release.
+version: workbench-v3
+harness:
+  name: codex                       # Only this real bridge is released in workbench-v3.
+  backend: chatgpt-subscription      # Alternative: custom-api; configure endpoint + api_key_env.
+  reasoning_effort: xhigh           # low / medium / high / xhigh; no sub-agents.
+  auth_home: /root/.codex-experiment # Host-only experiment account; no fallback to /root/.codex.
+model: gpt-6-astra                   # Explicit selection, not invoked by preparation.
+tasks: [s-204, s-203]
+task_root: ../task-drafts/dense-observation-v1
+docs: ../environments/docs-v2306
+network: disabled
+budget:
+  model_calls: 64
+  native_seconds: 1000
+  request_seconds: 600
+execution:
+  foam_root: ../environments/native-v2306/foam
+  mpi: intelmpi
+  memory_bytes: 4294967296
+  file_bytes: 536870912
+output: ../runs/dense-reconstruction

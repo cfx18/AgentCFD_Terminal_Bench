@@ -1,0 +1,12 @@
+{
+  "content_identity": "d0e284ddaac6cd72a9794d0db73651db5dc123ec94631c781e76f2771976af5e",
+  "coverage": "635 reference pages plus matching native source, not a claim of exhaustive manual coverage",
+  "coverage_reviewed": true,
+  "known_missing_api_pages_remedied_by_source": [
+    "scalarTransport",
+    "readFields",
+    "fvOptions"
+  ],
+  "tutorial_solutions_included": false,
+  "version": "OpenFOAM-v2306"
+}

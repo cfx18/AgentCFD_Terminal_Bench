@@ -1,0 +1,443 @@
+{
+  "q-0051": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0051",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0051/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0051/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0051/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0051/agent/work/REVIEW.zh.md"
+  },
+  "q-0052": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0052",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0052/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0052/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0052/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0052/agent/work/REVIEW.zh.md"
+  },
+  "q-0053": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0053",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0053/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0053/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0053/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0053/agent/work/REVIEW.zh.md"
+  },
+  "q-0054": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0054",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0054/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0054/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0054/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0054/agent/work/REVIEW.zh.md"
+  },
+  "q-0055": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0055",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0055/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0055/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0055/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0055/agent/work/REVIEW.zh.md"
+  },
+  "q-0064": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0064",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0064/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0064/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0064/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0064/agent/work/REVIEW.zh.md"
+  },
+  "q-0065": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0065",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0065/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0065/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0065/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0065/agent/work/REVIEW.zh.md"
+  },
+  "q-0066": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0066",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0066/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0066/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0066/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0066/agent/work/REVIEW.zh.md"
+  },
+  "q-0068": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0068",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0068/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0068/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0068/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0068/agent/work/REVIEW.zh.md"
+  },
+  "q-0069": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0069",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0069/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0069/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0069/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0069/agent/work/REVIEW.zh.md"
+  },
+  "q-0094": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0094",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0094/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0094/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0094/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0094/agent/work/REVIEW.zh.md"
+  },
+  "q-0096": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0096",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0096/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0096/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0096/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0096/agent/work/REVIEW.zh.md"
+  },
+  "q-0097": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0097",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0097/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0097/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0097/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0097/agent/work/REVIEW.zh.md"
+  },
+  "q-0098": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0098",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0098/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0098/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0098/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0098/agent/work/REVIEW.zh.md"
+  },
+  "q-0099": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0099",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0099/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0099/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0099/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0099/agent/work/REVIEW.zh.md"
+  },
+  "q-0131": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0131",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0131/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0131/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0131/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0131/agent/work/REVIEW.zh.md"
+  },
+  "q-0132": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0132",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0132/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0132/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0132/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0132/agent/work/REVIEW.zh.md"
+  },
+  "q-0133": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0133",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0133/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0133/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0133/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0133/agent/work/REVIEW.zh.md"
+  },
+  "q-0134": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0134",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0134/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0134/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0134/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0134/agent/work/REVIEW.zh.md"
+  },
+  "q-0135": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0135",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0135/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0135/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0135/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0135/agent/work/REVIEW.zh.md"
+  },
+  "q-0136": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0136",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0136/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0136/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0136/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0136/agent/work/REVIEW.zh.md"
+  },
+  "q-0139": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0139",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0139/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0139/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0139/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0139/agent/work/REVIEW.zh.md"
+  },
+  "q-0146": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0146",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0146/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0146/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0146/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0146/agent/work/REVIEW.zh.md"
+  },
+  "q-0147": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0147",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0147/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0147/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0147/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0147/agent/work/REVIEW.zh.md"
+  },
+  "q-0148": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0148",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0148/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0148/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0148/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0148/agent/work/REVIEW.zh.md"
+  },
+  "q-0149": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0149",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0149/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0149/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0149/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0149/agent/work/REVIEW.zh.md"
+  },
+  "q-0150": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0150",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0150/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0150/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0150/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0150/agent/work/REVIEW.zh.md"
+  },
+  "q-0176": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0176",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0176/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0176/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0176/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0176/agent/work/REVIEW.zh.md"
+  },
+  "q-0177": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0177",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0177/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0177/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0177/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0177/agent/work/REVIEW.zh.md"
+  },
+  "q-0178": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0178",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0178/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0178/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0178/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0178/agent/work/REVIEW.zh.md"
+  },
+  "q-0179": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0179",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0179/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0179/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0179/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0179/agent/work/REVIEW.zh.md"
+  },
+  "q-0180": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0180",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0180/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0180/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0180/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0180/agent/work/REVIEW.zh.md"
+  },
+  "q-0181": {
+    "campaign": "auto-q0181",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T123202Z-auto-infra-retry-low1-r1/workers/q-0181",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T123202Z-auto-infra-retry-low1-r1/workers/q-0181/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T123202Z-auto-infra-retry-low1-r1/workers/q-0181/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T123202Z-auto-infra-retry-low1-r1/workers/q-0181/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T123202Z-auto-infra-retry-low1-r1/workers/q-0181/agent/work/REVIEW.zh.md"
+  },
+  "q-0290": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0290",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0290/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0290/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0290/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0290/agent/work/REVIEW.zh.md"
+  },
+  "q-0291": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0291",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0291/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0291/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0291/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0291/agent/work/REVIEW.zh.md"
+  },
+  "q-0292": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0292",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0292/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0292/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0292/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0292/agent/work/REVIEW.zh.md"
+  },
+  "q-0293": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0293",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0293/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0293/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0293/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0293/agent/work/REVIEW.zh.md"
+  },
+  "q-0294": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0294",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0294/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0294/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0294/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0294/agent/work/REVIEW.zh.md"
+  },
+  "q-0363": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0363",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0363/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0363/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0363/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0363/agent/work/REVIEW.zh.md"
+  },
+  "q-0364": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0364",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0364/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0364/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0364/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0364/agent/work/REVIEW.zh.md"
+  },
+  "q-0365": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0365",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0365/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0365/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0365/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0365/agent/work/REVIEW.zh.md"
+  },
+  "q-0366": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0366",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0366/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0366/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0366/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0366/agent/work/REVIEW.zh.md"
+  },
+  "q-0503": {
+    "campaign": "q0503",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T093704Z-sol-high-infra-retry-v2/workers/q-0503",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T093704Z-sol-high-infra-retry-v2/workers/q-0503/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T093704Z-sol-high-infra-retry-v2/workers/q-0503/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T093704Z-sol-high-infra-retry-v2/workers/q-0503/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T093704Z-sol-high-infra-retry-v2/workers/q-0503/agent/work/REVIEW.zh.md"
+  },
+  "q-0505": {
+    "campaign": "original",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0505",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0505/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0505/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0505/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T091416Z-sol-high-sca-shared10-v1/workers/q-0505/agent/work/REVIEW.zh.md"
+  },
+  "q-0506": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0506",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0506/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0506/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0506/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0506/agent/work/REVIEW.zh.md"
+  },
+  "q-0508": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0508",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0508/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0508/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0508/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0508/agent/work/REVIEW.zh.md"
+  },
+  "q-0509": {
+    "campaign": "retry-low2",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0509",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0509/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0509/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0509/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100359Z-sol-high-infra-retry-low2-v3/workers/q-0509/agent/work/REVIEW.zh.md"
+  },
+  "q-0510": {
+    "campaign": "clean-continuation",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0510",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0510/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0510/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0510/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T115536Z-sol-high-clean-continuation-low2-v1/workers/q-0510/agent/work/REVIEW.zh.md"
+  },
+  "q-0511": {
+    "campaign": "q0511",
+    "worker": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100634Z-sol-high-q0511-retry-low1-v1/workers/q-0511",
+    "work": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100634Z-sol-high-q0511-retry-low1-v1/workers/q-0511/agent/work",
+    "instruction": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100634Z-sol-high-q0511-retry-low1-v1/workers/q-0511/agent/work/package/public/instruction.md",
+    "instruction_exists": true,
+    "author_result": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100634Z-sol-high-q0511-retry-low1-v1/workers/q-0511/agent/work/author-result.json",
+    "review": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/runs/tutorial-authoring/20260916T100634Z-sol-high-q0511-retry-low1-v1/workers/q-0511/agent/work/REVIEW.zh.md"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "final_time": {
+    "unit": "s",
+    "size": 1
+  },
+  "cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "mass": {
+    "unit": "kg",
+    "size": 1
+  },
+  "axial_momentum": {
+    "unit": "kg m/s",
+    "size": 1
+  },
+  "total_energy": {
+    "unit": "J",
+    "size": 1
+  },
+  "U_volume_mean": {
+    "unit": "m/s",
+    "size": 3
+  },
+  "transverse_velocity_rms": {
+    "unit": "m/s",
+    "size": 1
+  },
+  "last_initial_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "last_final_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "rho_axial_bin_mean": {
+    "unit": "kg/m3",
+    "size": 40
+  },
+  "p_axial_bin_mean": {
+    "unit": "Pa",
+    "size": 40
+  },
+  "T_axial_bin_mean": {
+    "unit": "K",
+    "size": 40
+  },
+  "Ux_axial_bin_mean": {
+    "unit": "m/s",
+    "size": 40
+  }
+}

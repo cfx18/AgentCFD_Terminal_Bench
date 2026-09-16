@@ -1,0 +1,536 @@
+{
+  "version": "free-mesh-v1",
+  "registered": 10,
+  "paid_ready": false,
+  "tasks": {
+    "s-001": {
+      "status": "implemented",
+      "source_task": {
+        "id": "s-001",
+        "version": "couette-transient-2",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "47af4194ba004c89c8c668eb4940da1dc1891525f94c921d461bf13e8047f249",
+        "config_hash": "f75eb20ce679dcab8cc609e403b601cb8a04630d353f1eabb6809c63fd3a6e73"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-001",
+          "version": "couette-transient-2",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "47af4194ba004c89c8c668eb4940da1dc1891525f94c921d461bf13e8047f249",
+          "config_hash": "f75eb20ce679dcab8cc609e403b601cb8a04630d353f1eabb6809c63fd3a6e73"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "bottom",
+          "frontAndBack",
+          "left",
+          "right",
+          "top"
+        ],
+        "volume_m3": 0.1,
+        "surface_triangles": 12,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": []
+    },
+    "s-101": {
+      "status": "review",
+      "source_task": {
+        "id": "s-101",
+        "version": "original-tutorial-science-v2",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "cd4899832187cfe73751ad908bd3c44c50990107c83786e2ae0bc29f51cb9afd",
+        "config_hash": "8fc395e2f9f1c1e3e1f5a09ff1f5e4be94da32b7dc9afef7d12ffdf8e442664b"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-101",
+          "version": "original-tutorial-science-v2",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "cd4899832187cfe73751ad908bd3c44c50990107c83786e2ae0bc29f51cb9afd",
+          "config_hash": "8fc395e2f9f1c1e3e1f5a09ff1f5e4be94da32b7dc9afef7d12ffdf8e442664b"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "fixedWalls",
+          "frontAndBack",
+          "movingWall"
+        ],
+        "volume_m3": 0.00010000000000000002,
+        "surface_triangles": 12,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls"
+      ]
+    },
+    "s-102": {
+      "status": "review",
+      "source_task": {
+        "id": "s-102",
+        "version": "original-tutorial-science-v2",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "7d75a1a842e6a2eb3314565cf6bc18f1cde15bf17cc559b999d1a6287488fc0e",
+        "config_hash": "e4d5896ff2c65b8726457a242b613b0f430a77eaf44a3ccd4ba9af8796f01871"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-102",
+          "version": "original-tutorial-science-v2",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "7d75a1a842e6a2eb3314565cf6bc18f1cde15bf17cc559b999d1a6287488fc0e",
+          "config_hash": "e4d5896ff2c65b8726457a242b613b0f430a77eaf44a3ccd4ba9af8796f01871"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "bottom",
+          "frontAndBack",
+          "left",
+          "right",
+          "top"
+        ],
+        "volume_m3": 0.0001,
+        "surface_triangles": 20,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls"
+      ]
+    },
+    "s-103": {
+      "status": "review",
+      "source_task": {
+        "id": "s-103",
+        "version": "original-tutorial-science-v2",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "0a2cdfa3b86fb3ac79bcab603a5ff7abfc27c3075cdcd06fcd8afb97a89ab32f",
+        "config_hash": "5651c47ede71740d3477a750db9cff08aa84d1f32777c393d2b143ba2422d4f6"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-103",
+          "version": "original-tutorial-science-v2",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "0a2cdfa3b86fb3ac79bcab603a5ff7abfc27c3075cdcd06fcd8afb97a89ab32f",
+          "config_hash": "5651c47ede71740d3477a750db9cff08aa84d1f32777c393d2b143ba2422d4f6"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "frontAndBack",
+          "inlet",
+          "lowerWall",
+          "outlet",
+          "upperWall"
+        ],
+        "volume_m3": 1.4516039999999999e-05,
+        "surface_triangles": 40,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls"
+      ]
+    },
+    "s-104": {
+      "status": "review",
+      "source_task": {
+        "id": "s-104",
+        "version": "original-tutorial-science-v2",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "1c6b17a387a27064f7c2eb2656264ac014cdb77eb097bb246280f10164769d2e",
+        "config_hash": "37c3cfde82bcc75849486300d767fba4abbcdae501a84821340803c84c01c0c6"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-104",
+          "version": "original-tutorial-science-v2",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "1c6b17a387a27064f7c2eb2656264ac014cdb77eb097bb246280f10164769d2e",
+          "config_hash": "37c3cfde82bcc75849486300d767fba4abbcdae501a84821340803c84c01c0c6"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "frontAndBack",
+          "inlet",
+          "lowerWall",
+          "outlet",
+          "upperWall"
+        ],
+        "volume_m3": 1.4516039999999999e-05,
+        "surface_triangles": 40,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls"
+      ]
+    },
+    "s-105": {
+      "status": "review",
+      "source_task": {
+        "id": "s-105",
+        "version": "original-tutorial-science-v2",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "72e044b6b395676c232691aaea7088d38821e98b5f96bca88de4e078377e67ac",
+        "config_hash": "a7a624f0371904b5294683bc49d1897ffe0336c7ea86eeb2efe797f617a03293"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-105",
+          "version": "original-tutorial-science-v2",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "72e044b6b395676c232691aaea7088d38821e98b5f96bca88de4e078377e67ac",
+          "config_hash": "a7a624f0371904b5294683bc49d1897ffe0336c7ea86eeb2efe797f617a03293"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "inlet",
+          "outlet1",
+          "outlet2",
+          "walls"
+        ],
+        "volume_m3": 0.0002479999999999999,
+        "surface_triangles": 36,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls"
+      ]
+    },
+    "s-202": {
+      "status": "review",
+      "source_task": {
+        "id": "s-202",
+        "version": "edge-discrete-science-v1",
+        "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+        "digest": "f7fb9683349e4eb1ba7559ef49a9563e22a795f282396456e5278143f2ee05a4",
+        "config_hash": "15c30598db76d0c03d3eb1de8d75900542147676922da85ccd82868bb2353ac5"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-202",
+          "version": "edge-discrete-science-v1",
+          "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+          "digest": "f7fb9683349e4eb1ba7559ef49a9563e22a795f282396456e5278143f2ee05a4",
+          "config_hash": "15c30598db76d0c03d3eb1de8d75900542147676922da85ccd82868bb2353ac5"
+        },
+        "geometry_status": "multiregion_surface_candidate",
+        "boundaries": [
+          "maxX",
+          "maxY",
+          "maxZ",
+          "minX",
+          "minY",
+          "minZ"
+        ],
+        "volume_m3": 0.0016000000000000003,
+        "surface_triangles": 12,
+        "regions": {
+          "heater": {
+            "boundaries": [
+              "maxZ",
+              "minY",
+              "minZ",
+              "to_bottomWater",
+              "to_leftSolid",
+              "to_rightSolid",
+              "to_topAir"
+            ],
+            "bounds_m": [
+              [
+                -0.013333333333333334,
+                -0.04,
+                -0.05
+              ],
+              [
+                0.013333333333333334,
+                0.008,
+                0.05
+              ]
+            ],
+            "boundary_areas_m2": {
+              "maxZ": 0.00021333333333333336,
+              "minY": 0.0005333333333333334,
+              "minZ": 0.00021333333333333336,
+              "to_bottomWater": 0.005866666666666667,
+              "to_leftSolid": 0.0008,
+              "to_rightSolid": 0.0008,
+              "to_topAir": 0.002666666666666667
+            },
+            "volume_m3": 4.2666666666666676e-05,
+            "surface_triangles": 36,
+            "selected_source_cells": 80
+          },
+          "leftSolid": {
+            "boundaries": [
+              "maxZ",
+              "minX",
+              "minZ",
+              "to_bottomWater",
+              "to_heater",
+              "to_topAir"
+            ],
+            "bounds_m": [
+              [
+                -0.1,
+                0.0,
+                -0.05
+              ],
+              [
+                -0.013333333333333334,
+                0.008,
+                0.05
+              ]
+            ],
+            "boundary_areas_m2": {
+              "maxZ": 0.0006933333333333333,
+              "minX": 0.0008,
+              "minZ": 0.0006933333333333333,
+              "to_bottomWater": 0.008666666666666668,
+              "to_heater": 0.0008,
+              "to_topAir": 0.008666666666666668
+            },
+            "volume_m3": 6.933333333333334e-05,
+            "surface_triangles": 28,
+            "selected_source_cells": 130
+          },
+          "rightSolid": {
+            "boundaries": [
+              "maxX",
+              "maxZ",
+              "minZ",
+              "to_bottomWater",
+              "to_heater",
+              "to_topAir"
+            ],
+            "bounds_m": [
+              [
+                0.013333333333333334,
+                0.0,
+                -0.05
+              ],
+              [
+                0.1,
+                0.008,
+                0.05
+              ]
+            ],
+            "boundary_areas_m2": {
+              "maxX": 0.0008,
+              "maxZ": 0.0006933333333333333,
+              "minZ": 0.0006933333333333333,
+              "to_bottomWater": 0.008666666666666668,
+              "to_heater": 0.0008,
+              "to_topAir": 0.008666666666666668
+            },
+            "volume_m3": 6.933333333333334e-05,
+            "surface_triangles": 28,
+            "selected_source_cells": 130
+          },
+          "topAir": {
+            "boundaries": [
+              "maxX",
+              "maxY",
+              "maxZ",
+              "minX",
+              "minZ",
+              "to_heater",
+              "to_leftSolid",
+              "to_rightSolid"
+            ],
+            "bounds_m": [
+              [
+                -0.1,
+                0.008,
+                -0.05
+              ],
+              [
+                0.1,
+                0.04,
+                0.05
+              ]
+            ],
+            "boundary_areas_m2": {
+              "maxX": 0.0032,
+              "maxY": 0.02,
+              "maxZ": 0.0064,
+              "minX": 0.0032,
+              "minZ": 0.0064,
+              "to_heater": 0.002666666666666667,
+              "to_leftSolid": 0.008666666666666668,
+              "to_rightSolid": 0.008666666666666668
+            },
+            "volume_m3": 0.00064,
+            "surface_triangles": 60,
+            "selected_source_cells": 1200
+          },
+          "bottomWater": {
+            "boundaries": [
+              "maxX",
+              "maxZ",
+              "minX",
+              "minY",
+              "minZ",
+              "to_heater",
+              "to_leftSolid",
+              "to_rightSolid"
+            ],
+            "bounds_m": [
+              [
+                -0.1,
+                -0.04,
+                -0.05
+              ],
+              [
+                0.1,
+                0.0,
+                0.05
+              ]
+            ],
+            "boundary_areas_m2": {
+              "maxX": 0.004,
+              "maxZ": 0.008,
+              "minX": 0.004,
+              "minY": 0.019466666666666667,
+              "minZ": 0.008,
+              "to_heater": 0.005866666666666667,
+              "to_leftSolid": 0.008666666666666668,
+              "to_rightSolid": 0.008666666666666668
+            },
+            "volume_m3": 0.0007786666666666668,
+            "surface_triangles": 64,
+            "selected_source_cells": 1460
+          }
+        },
+        "region_evidence": {
+          "version": "source-cell-boundary-reconstruction-v1",
+          "input_hash": "1359a99c3494f5ea91487029e0f4d35899c010574a0fe82b3f7a2f46ed3c7cb6",
+          "mesh_log_hash": "d1cffb1ca0e37ff422d19b47bbe2821c1516ead159cd2f1913694eb5dda7dec2",
+          "native_bounds_volume_and_counts_match": true,
+          "native_points_available": false,
+          "mesh_resolution_given_to_agent": false,
+          "physical_geometry_choice": "retain_executed_tutorial_regions"
+        },
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls",
+        "pressure_convention_and_initialization_review"
+      ]
+    },
+    "s-203": {
+      "status": "review",
+      "source_task": {
+        "id": "s-203",
+        "version": "edge-discrete-science-v1",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "f8f13858c27f3f7e996d1e9ee168abde65293a9ed3bb840865d86a6aaa7bab20",
+        "config_hash": "1bf563c4b4e8cbbbd20236dd27559676369e7b64ff777218ebaed86f85769898"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-203",
+          "version": "edge-discrete-science-v1",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "f8f13858c27f3f7e996d1e9ee168abde65293a9ed3bb840865d86a6aaa7bab20",
+          "config_hash": "1bf563c4b4e8cbbbd20236dd27559676369e7b64ff777218ebaed86f85769898"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "inlet",
+          "outlet1",
+          "outlet2",
+          "walls"
+        ],
+        "volume_m3": 0.0002479999999999999,
+        "surface_triangles": 36,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls"
+      ]
+    },
+    "s-204": {
+      "status": "review",
+      "source_task": {
+        "id": "s-204",
+        "version": "edge-discrete-science-v1",
+        "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+        "digest": "6361bab10d93b6e8e00232ff58036e3f1b90b682846b93889656ddc9c4e1e14e",
+        "config_hash": "50f0150b370bd6c06605c52b0c00ec9d223ea8c1019061b1e8a4c10466f3d4e4"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-204",
+          "version": "edge-discrete-science-v1",
+          "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+          "digest": "6361bab10d93b6e8e00232ff58036e3f1b90b682846b93889656ddc9c4e1e14e",
+          "config_hash": "50f0150b370bd6c06605c52b0c00ec9d223ea8c1019061b1e8a4c10466f3d4e4"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "cold",
+          "frontAndBack",
+          "hot",
+          "topAndBottom"
+        ],
+        "volume_m3": 0.08615360000000001,
+        "surface_triangles": 12,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls",
+        "old_1000_iteration_reference_not_steady_ground_truth"
+      ]
+    },
+    "s-205": {
+      "status": "review",
+      "source_task": {
+        "id": "s-205",
+        "version": "edge-discrete-science-v1",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "digest": "59c1cded992aae96f291ca4820804e54b03513656e1932543c95519d986eee62",
+        "config_hash": "3c1a227666c2a31a4ee242f1a58a8ac889d01f8c1721c1a27b02a2553d3b2a96"
+      },
+      "native_qualified": false,
+      "geometry": {
+        "task_binding": {
+          "id": "s-205",
+          "version": "edge-discrete-science-v1",
+          "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+          "digest": "59c1cded992aae96f291ca4820804e54b03513656e1932543c95519d986eee62",
+          "config_hash": "3c1a227666c2a31a4ee242f1a58a8ac889d01f8c1721c1a27b02a2553d3b2a96"
+        },
+        "geometry_status": "surface_candidate",
+        "boundaries": [
+          "empty",
+          "sides"
+        ],
+        "volume_m3": 40.0,
+        "surface_triangles": 12,
+        "paid_ready": false,
+        "native_geometry_qualified": false
+      },
+      "blockers": [
+        "cross_mesh_acceptance_and_reference_controls"
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "final_time": {
+    "unit": "s",
+    "size": 1
+  },
+  "pressure_initial_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "pressure_final_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "T_volume_mean": {
+    "unit": "K",
+    "size": 1
+  },
+  "T_min_max": {
+    "unit": "K",
+    "size": 2
+  },
+  "T_rise_rms": {
+    "unit": "K",
+    "size": 1
+  },
+  "relative_300K_sensible_enthalpy": {
+    "unit": "J",
+    "size": 1
+  },
+  "U_volume_mean": {
+    "unit": "m/s",
+    "size": 3
+  },
+  "speed_volume_rms": {
+    "unit": "m/s",
+    "size": 1
+  },
+  "inlet_flow": {
+    "unit": "m3/s",
+    "size": 1
+  },
+  "inlet_enthalpy_flux": {
+    "unit": "W",
+    "size": 1
+  },
+  "outlet1_flow": {
+    "unit": "m3/s",
+    "size": 1
+  },
+  "outlet1_enthalpy_flux": {
+    "unit": "W",
+    "size": 1
+  },
+  "outlet2_flow": {
+    "unit": "m3/s",
+    "size": 1
+  },
+  "outlet2_enthalpy_flux": {
+    "unit": "W",
+    "size": 1
+  },
+  "temperature_excess_315K": {
+    "unit": "K",
+    "size": 1
+  }
+}

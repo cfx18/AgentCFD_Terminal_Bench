@@ -1,0 +1,96 @@
+solid wall_zmin
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 0
+      vertex -19.4 23.68 0
+      vertex 23.66 23.68 0
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 0
+      vertex 23.66 23.68 0
+      vertex 23.66 -19.42 0
+    endloop
+  endfacet
+endsolid wall_zmin
+solid open_xmin
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 0
+      vertex -19.4 -19.42 23.17
+      vertex -19.4 23.68 23.17
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 0
+      vertex -19.4 23.68 23.17
+      vertex -19.4 23.68 0
+    endloop
+  endfacet
+endsolid open_xmin
+solid open_xmax
+  facet normal 0 0 0
+    outer loop
+      vertex 23.66 -19.42 0
+      vertex 23.66 23.68 0
+      vertex 23.66 23.68 23.17
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 23.66 -19.42 0
+      vertex 23.66 23.68 23.17
+      vertex 23.66 -19.42 23.17
+    endloop
+  endfacet
+endsolid open_xmax
+solid open_ymin
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 0
+      vertex 23.66 -19.42 0
+      vertex 23.66 -19.42 23.17
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 0
+      vertex 23.66 -19.42 23.17
+      vertex -19.4 -19.42 23.17
+    endloop
+  endfacet
+endsolid open_ymin
+solid open_ymax
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 23.68 0
+      vertex -19.4 23.68 23.17
+      vertex 23.66 23.68 23.17
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 23.68 0
+      vertex 23.66 23.68 23.17
+      vertex 23.66 23.68 0
+    endloop
+  endfacet
+endsolid open_ymax
+solid open_zmax
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 23.17
+      vertex 23.66 -19.42 23.17
+      vertex 23.66 23.68 23.17
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -19.4 -19.42 23.17
+      vertex 23.66 23.68 23.17
+      vertex -19.4 23.68 23.17
+    endloop
+  endfacet
+endsolid open_zmax

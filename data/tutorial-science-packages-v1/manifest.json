@@ -1,0 +1,43 @@
+{
+  "approved_tasks": 0,
+  "paid_ready": false,
+  "registered_candidates": 5,
+  "tasks": [
+    {
+      "alternative_numerics_hash": "d3382cace9e109304314453b2705fab92f4f61768a774ed9bd3ccdb3dde185f8",
+      "controls_hash": "ca5a3a91b487eb4db5f2099d090a1addc44a49146ceb19f3bb749e005a0ebb75",
+      "digest": "7bcd3317c5bafb2dd03ef4254a09bb33645f207f5a0d0bbbd63bddaacd4d6f3f",
+      "id": "s-101",
+      "status": "awaiting_native_qualification"
+    },
+    {
+      "alternative_numerics_hash": "bcf4495a72d185b07fd8993da0d4d413e61e25464aa83aadd17c1e184a5505ce",
+      "controls_hash": "983789cea1e54e27d6e07d1e356de5233d3faed6e71d673848a6ff90a8cfd51a",
+      "digest": "dad38e625c701c2662496cec9fbb877918f88ed03aa3ec107124fb00d751111e",
+      "id": "s-102",
+      "status": "awaiting_native_qualification"
+    },
+    {
+      "alternative_numerics_hash": "e77e434586de831f15f98c54652c5a3260145c24cda4ea553c058165154de40d",
+      "controls_hash": "35cd3456be72e05b881621cbe5ee9eb5fc60da34aacc3e2ae90ebb8f8a5e6c83",
+      "digest": "04db21d4812427e9c96b65af7e0446231f7838767f5ab4fcc6195dbf1644d08b",
+      "id": "s-103",
+      "status": "awaiting_native_qualification"
+    },
+    {
+      "alternative_numerics_hash": "7d11e26e8a5cc330353d00fd15fbd885053438812b1cc49b76b11f8639a08844",
+      "controls_hash": "aee39b0a18d50f0c5ccf5daa89ffca41a77240052f3af8b14e1ee4082ff6bc02",
+      "digest": "7e5d7752ad3e0334d05fec253e580c569ba3a628eb126f413035c0e41dc6223b",
+      "id": "s-104",
+      "status": "awaiting_native_qualification"
+    },
+    {
+      "alternative_numerics_hash": "0a3d9928089ea212b0fe91ef1574c732a047d3fc99817c9a44d606df783c44d8",
+      "controls_hash": "d4da27e9de402e699003bd55c259dbc4e500ff529da6b9cee793caa5483dd637",
+      "digest": "b67fe99ca818d359e3d90d399ae700c22c31770ac38abe6a0e068c7174405c47",
+      "id": "s-105",
+      "status": "awaiting_native_qualification"
+    }
+  ],
+  "version": "original-tutorial-science-v1"
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "tutorial-dense-observation-v1",
+  "synthetic_observations": true,
+  "point_count": 33600,
+  "columns": [
+    "x_m",
+    "y_m",
+    "z_m",
+    "volume_m3",
+    "Ux_m_s",
+    "Uy_m_s",
+    "Uz_m_s",
+    "Urelx_m_s",
+    "Urely_m_s",
+    "Urelz_m_s",
+    "p_m2_s2",
+    "k_m2_s2",
+    "omega_s_1",
+    "nut_m2_s"
+  ],
+  "coordinate_unit": "m",
+  "weight_unit": "m3",
+  "snapshot": {
+    "kind": "finite_steady_iteration",
+    "iteration": 1000,
+    "physical_time": null,
+    "note": "A finite numerical steady-state iterate; the iteration label is not elapsed time."
+  },
+  "sampling": "All native internal-cell centres with native cell-volume quadrature weights.",
+  "fields": {
+    "U": {
+      "class": "volVectorField",
+      "dimensions": "[0 1 -1 0 0 0 0]",
+      "unit": "m/s"
+    },
+    "Urel": {
+      "class": "volVectorField",
+      "dimensions": "[0 1 -1 0 0 0 0]",
+      "unit": "m/s"
+    },
+    "p": {
+      "class": "volScalarField",
+      "dimensions": "[0 2 -2 0 0 0 0]",
+      "unit": "m2/s2"
+    },
+    "k": {
+      "class": "volScalarField",
+      "dimensions": "[0 2 -2 0 0 0 0]",
+      "unit": "m2/s2"
+    },
+    "omega": {
+      "class": "volScalarField",
+      "dimensions": "[0 0 -1 0 0 0 0]",
+      "unit": "1/s"
+    },
+    "nut": {
+      "class": "volScalarField",
+      "dimensions": "[0 2 -1 0 0 0 0]",
+      "unit": "m2/s"
+    }
+  },
+  "normalizers": {
+    "U": {
+      "value": 10.20920166730902,
+      "unit": "m/s",
+      "definition": "reference volume-weighted RMS absolute speed"
+    },
+    "Urel": {
+      "value": 12.413124747225362,
+      "unit": "m/s",
+      "definition": "reference volume-weighted RMS frame-relative speed"
+    },
+    "p": {
+      "value": 119.1225,
+      "unit": "m2/s2",
+      "definition": "reference maximum minus minimum kinematic pressure"
+    },
+    "k": {
+      "value": 4.8565694,
+      "unit": "m2/s2",
+      "definition": "reference maximum minus minimum turbulent kinetic energy"
+    },
+    "omega": {
+      "value": 13118.57547,
+      "unit": "1/s",
+      "definition": "reference maximum minus minimum specific dissipation rate"
+    },
+    "nut": {
+      "value": 0.0631531278,
+      "unit": "m2/s",
+      "definition": "reference maximum minus minimum eddy viscosity"
+    }
+  },
+  "csv_sha256": "9c75b358beb65c87b017ed2b74089b9a95aa24c0338f22c5e4d57ddd65d7b4c2",
+  "geometry_sha256": "ec1f533d9d96e0ad68649884c22d99814c7639eabb24ed38afc12054eae79be7",
+  "scoring_status": "draft_raw_metrics_only; thresholds_and_reward_not_released"
+}

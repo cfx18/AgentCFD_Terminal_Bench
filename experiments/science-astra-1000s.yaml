@@ -1,0 +1,40 @@
+# New experiment; never resume/overwrite the previous 1800-second run.
+version: science-campaign-v1
+name: astra-xhigh-output-20x-1000s-20260916-003
+
+harness:
+  name: codex                     # Installed Codex CLI; no replacement agent loop.
+  backend: chatgpt-subscription
+  reasoning_effort: xhigh         # Subagents disabled; not ultra.
+  public_decision_log: true
+model:
+  name: gpt-6-astra               # No model/provider fallback.
+
+tasks: [s-205, s-203, s-202, s-204]
+instruction_profile: geometry-only-free-mesh-output-v1
+budget:
+  model_calls: 64
+  native_seconds: 1000            # All OpenFOAM submissions combined, including failures.
+  per_run_seconds: 1000           # Also capped by remaining cumulative runtime.
+  request_seconds: 600            # API watchdog, NOT simulated physical time.
+documentation: openfoam-v2306-reference-v1
+authentication:
+  auth_home: /root/.codex
+execution:
+  python: ../.venv-harbor/bin/python
+  prepared_parent: runs/prepared
+  output_parent: runs/manual
+  provider_concurrency: 1
+  native_concurrency: 1
+evidence:
+  interface_check: local-only
+  probe: audits/astra-kimi-1000s-20260916-001/astra-local-interface
+  junit:
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-1.xml
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-2.xml
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-3.xml
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-4.xml
+release:
+  ready: true                     # submit still requires source-bound tests/interface receipts.
+  audit_report: docs/ASTRA_KIMI_1000S_20260916.md
+  blockers: []

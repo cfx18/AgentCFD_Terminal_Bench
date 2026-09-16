@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentcfd-terminal-bench"
+version = "0.3.0"
+description = "Task-packaged, evidence-backed OpenFOAM agent benchmark"
+requires-python = ">=3.12"
+dependencies = ["httpx>=0.27,<1", "python-dotenv>=1,<2", "PyYAML>=6,<7", "numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+cluster = ["harbor==0.22.0"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+agentcfd-bench = "agentcfd_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agentcfd_bench", "agentcfd_bench.*"]
+
+[tool.setuptools.package-data]
+"agentcfd_bench.harnesses" = ["*.mjs"]
+
+[tool.setuptools.cmdclass]
+build_py = "build_backend.BuildPy"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["integration: actual local sandbox/API-wire integration; no paid service"]

@@ -1,0 +1,183 @@
+{
+  "schema": "openfoam-dense-observations-v1",
+  "observation_type": "native_internal_cell_values",
+  "sample_count": 4000,
+  "coordinates": {
+    "units": "m",
+    "dimensions": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "quadrature_weight": {
+    "column": "cell_volume_m3",
+    "units": "m3",
+    "dimensions": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "fields": {
+    "U": {
+      "units": "m/s",
+      "dimensions": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "U_x_m_per_s",
+        "U_y_m_per_s",
+        "U_z_m_per_s"
+      ],
+      "min": -0.0773168,
+      "max": 0.177663
+    },
+    "T": {
+      "units": "K",
+      "dimensions": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "T_K"
+      ],
+      "min": 300.585,
+      "max": 301.303
+    },
+    "p": {
+      "units": "m2/s2",
+      "dimensions": [
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "p_m2_per_s2"
+      ],
+      "min": -44.0562,
+      "max": 2.02377e-05
+    },
+    "p_rgh": {
+      "units": "m2/s2",
+      "dimensions": [
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "p_rgh_m2_per_s2"
+      ],
+      "min": 2.42133,
+      "max": 2.44952
+    },
+    "k": {
+      "units": "m2/s2",
+      "dimensions": [
+        0,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "k_m2_per_s2"
+      ],
+      "min": 3.42491e-06,
+      "max": 0.000508561
+    },
+    "epsilon": {
+      "units": "m2/s3",
+      "dimensions": [
+        0,
+        2,
+        -3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "epsilon_m2_per_s3"
+      ],
+      "min": 1.02876e-08,
+      "max": 1.60699e-05
+    },
+    "nut": {
+      "units": "m2/s",
+      "dimensions": [
+        0,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "nut_m2_per_s"
+      ],
+      "min": 7.70015e-05,
+      "max": 0.00172878
+    },
+    "alphat": {
+      "units": "m2/s",
+      "dimensions": [
+        0,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "components": [
+        "alphat_m2_per_s"
+      ],
+      "min": 9.40325e-05,
+      "max": 0.00203411
+    }
+  },
+  "endpoint": {
+    "kind": "steady_iteration_index",
+    "value": 1000,
+    "physical_time": null,
+    "solver_run_id": "r-fa5c227922c246e5",
+    "export_run_id": "r-c5f76e43b2874949",
+    "converged_by_configured_residual_control": false
+  },
+  "native_geometry": {
+    "outer_surface": "../geometry/domain.stl",
+    "cell_centres_source": "OpenFOAM writeCellCentres",
+    "cell_volumes_source": "OpenFOAM writeCellVolumes"
+  }
+}

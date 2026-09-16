@@ -1,0 +1,52 @@
+[dataset]
+name = "agentcfd-terminal-bench/science-pilot"
+
+[[tasks]]
+id = "s-001"
+name = "agentcfd-terminal-bench/s-001"
+digest = "47af4194ba004c89c8c668eb4940da1dc1891525f94c921d461bf13e8047f249"
+
+[[tasks]]
+id = "s-101"
+name = "agentcfd-terminal-bench/s-101"
+digest = "cd4899832187cfe73751ad908bd3c44c50990107c83786e2ae0bc29f51cb9afd"
+
+[[tasks]]
+id = "s-102"
+name = "agentcfd-terminal-bench/s-102"
+digest = "7d75a1a842e6a2eb3314565cf6bc18f1cde15bf17cc559b999d1a6287488fc0e"
+
+[[tasks]]
+id = "s-103"
+name = "agentcfd-terminal-bench/s-103"
+digest = "0a2cdfa3b86fb3ac79bcab603a5ff7abfc27c3075cdcd06fcd8afb97a89ab32f"
+
+[[tasks]]
+id = "s-104"
+name = "agentcfd-terminal-bench/s-104"
+digest = "1c6b17a387a27064f7c2eb2656264ac014cdb77eb097bb246280f10164769d2e"
+
+[[tasks]]
+id = "s-105"
+name = "agentcfd-terminal-bench/s-105"
+digest = "72e044b6b395676c232691aaea7088d38821e98b5f96bca88de4e078377e67ac"
+
+[[tasks]]
+id = "s-202"
+name = "agentcfd-terminal-bench/s-202"
+digest = "f7fb9683349e4eb1ba7559ef49a9563e22a795f282396456e5278143f2ee05a4"
+
+[[tasks]]
+id = "s-203"
+name = "agentcfd-terminal-bench/s-203"
+digest = "f8f13858c27f3f7e996d1e9ee168abde65293a9ed3bb840865d86a6aaa7bab20"
+
+[[tasks]]
+id = "s-204"
+name = "agentcfd-terminal-bench/s-204"
+digest = "6361bab10d93b6e8e00232ff58036e3f1b90b682846b93889656ddc9c4e1e14e"
+
+[[tasks]]
+id = "s-205"
+name = "agentcfd-terminal-bench/s-205"
+digest = "59c1cded992aae96f291ca4820804e54b03513656e1932543c95519d986eee62"

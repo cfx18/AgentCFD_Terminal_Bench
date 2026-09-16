@@ -1,0 +1,51 @@
+{
+  "dimensions": {
+    "T": "[0 0 0 1 0 0 0]",
+    "U": "[0 1 -1 0 0 0 0]",
+    "p": "[0 2 -2 0 0 0 0]"
+  },
+  "endpoint_kind": "physical_time",
+  "initial_state": {
+    "T": 300,
+    "U": [
+      0,
+      0,
+      0
+    ],
+    "p": 0
+  },
+  "public_csv_sha256": "9ac239513dfede5240b9d1daa743748f229e041c5e48881cd4cb1221b78f0c66",
+  "reference_status": "accepted_by_expert",
+  "required_time": 1.5,
+  "schema": "dense-observation-v1",
+  "source": {
+    "artifact_hash": "b1b2674ee304112aae118167f8966fc0e1ee80f652b2cb240eecd22b6479810c",
+    "control": "mesh_finest",
+    "endpoint": {
+      "kind": "physical_time",
+      "unit": "s",
+      "value": 1.5
+    },
+    "evidence_status": "completed_and_released",
+    "input_hash": "feea8d4db3d702b5cdb080736b8563785f5ba6df681c8a73f64dbb76d440b74f",
+    "limitations": [
+      "Differences between the last two meshes remain recorded, including pressure and turbulence quantities.",
+      "Recorded native duration exceeds the current model per-run 300 s cap; expert reference acceptance does not prove equal-budget attainability."
+    ],
+    "native_seconds": 495.90217323601246,
+    "native_verdict": "pass",
+    "reference_status": "accepted_by_expert",
+    "result_hash": "1317cfe259db382d64df82fbe6efbcfd3fb590ca60e2ab93f78137eb2cb3f80f",
+    "run_directory": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/audits/free-mesh-thermal-native-20260915-006/s-203/mesh_finest/native/runs/r-000001",
+    "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+    "selection_reason": "Use the finest existing completed author mesh (68,107 cells); do not schedule a new refinement study."
+  },
+  "source_manifest": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/tasks/releases/expert-output-v1/s-203/solution/accepted-target.json",
+  "surface_names": {
+    "inlet": "surface_01",
+    "outlet1": "surface_02",
+    "outlet2": "surface_03",
+    "walls": "surface_04"
+  },
+  "task_id": "s-203"
+}

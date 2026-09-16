@@ -1,0 +1,39 @@
+{
+  "schema": "dense-cell-observations-v1",
+  "candidate_id": "q-0051",
+  "geometry": {
+    "path": "/input/geometry/domain.stl",
+    "coordinates": "metres",
+    "role": "closed exterior surface only; no volume-mesh prescription",
+    "sha256": "7633ed5c3d8249a1db017585584f9cad632821333340653d06bc8d3c6e6ce0a0"
+  },
+  "observations": {
+    "path": "/input/observations/fields.csv",
+    "sample_type": "native finite-volume internal cell centres",
+    "row_count": 5712,
+    "sha256": "15391c935e5ee98abd5fb129c0e673b5fa4779355dd2423f7c5ec34f843edaf8",
+    "columns": [
+      {"name": "cell_id", "meaning": "reference-row identifier", "unit": "1"},
+      {"name": "x_m", "meaning": "cell-centre x coordinate", "unit": "m"},
+      {"name": "y_m", "meaning": "cell-centre y coordinate", "unit": "m"},
+      {"name": "z_m", "meaning": "cell-centre z coordinate", "unit": "m"},
+      {"name": "volume_m3", "meaning": "positive reference-volume quadrature weight", "unit": "m3"},
+      {"name": "T_K", "meaning": "absolute temperature", "unit": "K", "dimensions": [0, 0, 0, 1, 0, 0, 0]}
+    ]
+  },
+  "observation_time_s": 3.0,
+  "initial_temperature_K": 273.0,
+  "thermal_diffusivity_m2_per_s": 0.00004,
+  "reference_volume_m3": 1.5623050462e-05,
+  "temperature_summary_K": {
+    "minimum": 274.313,
+    "maximum": 572.982,
+    "volume_weighted_mean": 370.8008836184502,
+    "range": 298.669
+  },
+  "notes": [
+    "Observation coordinates are sample locations, not a required mesh.",
+    "Only the actual temperature field is supplied; no velocity or pressure field exists for this physics case.",
+    "The endpoint is transient and is not a certified steady solution."
+  ]
+}

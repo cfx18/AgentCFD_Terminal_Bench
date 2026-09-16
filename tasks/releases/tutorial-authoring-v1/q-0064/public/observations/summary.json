@@ -1,0 +1,138 @@
+{
+  "U": {
+    "component_min": [
+      -2.0732531,
+      -2.0659494,
+      -0.049311723
+    ],
+    "component_max": [
+      1.9628234,
+      1.8989301,
+      1.6374253
+    ],
+    "volume_weighted_mean": [
+      -1.6443606838160742e-06,
+      -9.214305213387397e-07,
+      0.0022655103017750903
+    ],
+    "speed_min": 0.00030657960382441394,
+    "speed_max": 2.3741361435468344,
+    "speed_volume_weighted_mean": 0.004601853142431875,
+    "finite": true
+  },
+  "p": {
+    "min": 100000.03,
+    "max": 100130.41,
+    "volume_weighted_mean": 100000.5899677288,
+    "finite": true
+  },
+  "T": {
+    "min": 286.7599,
+    "max": 3561.0665,
+    "volume_weighted_mean": 287.0134594692798,
+    "finite": true
+  },
+  "rho": {
+    "min": 0.093410189,
+    "max": 1.2103768,
+    "volume_weighted_mean": 1.208976106919667,
+    "finite": true
+  },
+  "b": {
+    "min": -0.68626698,
+    "max": 1.0,
+    "volume_weighted_mean": 0.999994020597294,
+    "finite": true
+  },
+  "ft": {
+    "min": 7.0966954e-188,
+    "max": 0.055045771,
+    "volume_weighted_mean": 4.2685552656157846e-05,
+    "finite": true
+  },
+  "Xi": {
+    "min": 1.0,
+    "max": 5.5493088,
+    "volume_weighted_mean": 1.0000226741115759,
+    "finite": true
+  },
+  "k": {
+    "min": 0.00014876508,
+    "max": 0.4330192,
+    "volume_weighted_mean": 0.0001503792723926467,
+    "finite": true
+  },
+  "epsilon": {
+    "min": 4.1268557e-06,
+    "max": 1.2866405,
+    "volume_weighted_mean": 1.2339556038843023e-05,
+    "finite": true
+  },
+  "nut": {
+    "min": 0.00010529661,
+    "max": 0.013115945,
+    "volume_weighted_mean": 0.00020691965018454714,
+    "finite": true
+  },
+  "alphat": {
+    "min": 0.00023452179,
+    "max": 0.00024482761,
+    "volume_weighted_mean": 0.00024481971631459094,
+    "finite": true
+  },
+  "Su": {
+    "min": 0.0,
+    "max": 0.32238342,
+    "volume_weighted_mean": 0.0002467752516738529,
+    "finite": true
+  },
+  "St": {
+    "min": 0.0,
+    "max": 1.7807564,
+    "volume_weighted_mean": 0.00025405609783229555,
+    "finite": true
+  },
+  "Tu": {
+    "min": 286.42637,
+    "max": 287.03897,
+    "volume_weighted_mean": 287.00039619863696,
+    "finite": true
+  },
+  "betav": {
+    "min": 0.49653681,
+    "max": 1.0,
+    "volume_weighted_mean": 0.9997990365853658,
+    "finite": true
+  },
+  "integrals": {
+    "geometric_volume_m3": 43000.87862,
+    "effective_fluid_volume_m3": 42992.23701660026,
+    "final_effective_mass_kg": 51977.142358182406
+  },
+  "temporal_change": {
+    "U": {
+      "previous_time_s": 0.123376,
+      "final_time_s": 0.124524,
+      "max_abs_change": 0.32820366877190577,
+      "volume_weighted_mean_abs_change": 0.00015192312044851332
+    },
+    "p": {
+      "previous_time_s": 0.123376,
+      "final_time_s": 0.124524,
+      "max_abs_change": 69.99000000000524,
+      "volume_weighted_mean_abs_change": 0.026608081242385093
+    },
+    "T": {
+      "previous_time_s": 0.123376,
+      "final_time_s": 0.124524,
+      "max_abs_change": 80.32929999999988,
+      "volume_weighted_mean_abs_change": 0.0006358401137446876
+    },
+    "b": {
+      "previous_time_s": 0.123376,
+      "final_time_s": 0.124524,
+      "max_abs_change": 0.04460330999999995,
+      "volume_weighted_mean_abs_change": 2.945429570028236e-07
+    }
+  }
+}

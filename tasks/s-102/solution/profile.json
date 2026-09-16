@@ -1,0 +1,268 @@
+{
+  "physics": {
+    "additional_equations": null,
+    "fields": {
+      "U": {
+        "boundaryField": {
+          "AMI1": {
+            "type": "cyclicAMI"
+          },
+          "AMI2": {
+            "type": "cyclicAMI"
+          },
+          "bottom": {
+            "type": "uniformFixedValue",
+            "uniformValue": "( 0 0 0 )"
+          },
+          "frontAndBack": {
+            "type": "empty"
+          },
+          "left": {
+            "type": "fixedValue",
+            "value": "uniform ( 1 0 0 )"
+          },
+          "right": {
+            "inletValue": "uniform ( 0 0 0 )",
+            "type": "inletOutlet"
+          },
+          "top": {
+            "type": "uniformFixedValue",
+            "uniformValue": "( 0 0 0 )"
+          }
+        },
+        "dimensions": "[ 0 1 -1 0 0 0 0 ]",
+        "internalField": "uniform ( 0 0 0 )"
+      },
+      "p": {
+        "boundaryField": {
+          "AMI1": {
+            "type": "cyclicAMI",
+            "useImplicit": "true"
+          },
+          "AMI2": {
+            "type": "cyclicAMI",
+            "useImplicit": "true"
+          },
+          "bottom": {
+            "type": "zeroGradient"
+          },
+          "frontAndBack": {
+            "type": "empty"
+          },
+          "left": {
+            "type": "zeroGradient"
+          },
+          "right": {
+            "type": "fixedValue",
+            "value": "uniform 0"
+          },
+          "top": {
+            "type": "zeroGradient"
+          }
+        },
+        "dimensions": "[ 0 2 -2 0 0 0 0 ]",
+        "internalField": "uniform 0"
+      }
+    },
+    "geometry": {
+      "blocks": [
+        {
+          "cell_zone": "left",
+          "cells": [
+            2,
+            5,
+            1
+          ],
+          "grading": [
+            "1",
+            "1",
+            "1"
+          ],
+          "grading_kind": "simpleGrading",
+          "vertices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "cell_zone": "right",
+          "cells": [
+            2,
+            7,
+            1
+          ],
+          "grading": [
+            "1",
+            "1",
+            "1"
+          ],
+          "grading_kind": "simpleGrading",
+          "vertices": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "cell_count": 24,
+      "edges": "( )",
+      "merge_patch_pairs": "( )",
+      "patches": {
+        "AMI1": {
+          "faces": "( ( 2 6 5 1 ) )",
+          "neighbourPatch": "AMI2",
+          "transform": "noOrdering",
+          "type": "cyclicAMI"
+        },
+        "AMI2": {
+          "faces": "( ( 8 12 15 11 ) )",
+          "neighbourPatch": "AMI1",
+          "transform": "noOrdering",
+          "type": "cyclicAMI"
+        },
+        "bottom": {
+          "faces": "( ( 1 5 4 0 ) ( 9 13 12 8 ) )",
+          "type": "patch"
+        },
+        "frontAndBack": {
+          "faces": "( ( 0 3 2 1 ) ( 4 5 6 7 ) ( 8 11 10 9 ) ( 12 13 14 15 ) )",
+          "type": "empty"
+        },
+        "left": {
+          "faces": "( ( 0 4 7 3 ) )",
+          "type": "patch"
+        },
+        "right": {
+          "faces": "( ( 10 14 13 9 ) )",
+          "type": "patch"
+        },
+        "top": {
+          "faces": "( ( 3 7 6 2 ) ( 11 15 14 10 ) )",
+          "type": "patch"
+        }
+      },
+      "vertices_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.01
+        ],
+        [
+          0.05,
+          0.0,
+          0.01
+        ],
+        [
+          0.05,
+          0.1,
+          0.01
+        ],
+        [
+          0.0,
+          0.1,
+          0.01
+        ],
+        [
+          0.05,
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          0.1,
+          0.2,
+          0.0
+        ],
+        [
+          0.05,
+          0.1,
+          0.0
+        ],
+        [
+          0.05,
+          0.0,
+          0.01
+        ],
+        [
+          0.1,
+          0.1,
+          0.01
+        ],
+        [
+          0.1,
+          0.2,
+          0.01
+        ],
+        [
+          0.05,
+          0.1,
+          0.01
+        ]
+      ]
+    },
+    "models": {
+      "custom_model_coefficients": false,
+      "flow_model": "laminar",
+      "kinematic_viscosity_m2_s": 1.5e-05,
+      "transport_model": "Newtonian"
+    },
+    "solver": "simpleFoam",
+    "time": {
+      "adaptive": false,
+      "early_convergence": false,
+      "end": 100.0,
+      "kind": "steady",
+      "maximum_courant": null,
+      "maximum_initial_delta_t": 1.0,
+      "start": 0.0
+    }
+  },
+  "schema": "tutorial-science-candidates-v2",
+  "source_input_hash": "c18745bf3c87820a2c5a5eff52ef1d87f63a2646531ff24a8aeeda04bafa192d",
+  "support": {
+    "canonical_cell_counts_and_grading": true,
+    "canonical_vertex_block_order": true,
+    "independent_initial_phi": false,
+    "local_dictionary_macros": true,
+    "native_ascii_outputs": true,
+    "scalar_transport": false,
+    "standard_streamlines_include": false
+  },
+  "task_id": "s-102",
+  "title": "Steady laminar flow through non-matching connected mesh blocks"
+}

@@ -1,0 +1,90 @@
+solid fixedWalls
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 0 0.01
+      vertex 0 0.10000000000000001 0.01
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 0.10000000000000001 0.01
+      vertex 0 0.10000000000000001 0
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.10000000000000001 0 0
+      vertex 0.10000000000000001 0.10000000000000001 0
+      vertex 0.10000000000000001 0.10000000000000001 0.01
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.10000000000000001 0 0
+      vertex 0.10000000000000001 0.10000000000000001 0.01
+      vertex 0.10000000000000001 0 0.01
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 0.10000000000000001 0 0
+      vertex 0.10000000000000001 0 0.01
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 0.10000000000000001 0 0.01
+      vertex 0 0 0.01
+    endloop
+  endfacet
+endsolid fixedWalls
+solid frontAndBack
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 0 0.10000000000000001 0
+      vertex 0.10000000000000001 0.10000000000000001 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 0.10000000000000001 0.10000000000000001 0
+      vertex 0.10000000000000001 0 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 0.01
+      vertex 0.10000000000000001 0 0.01
+      vertex 0.10000000000000001 0.10000000000000001 0.01
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 0.01
+      vertex 0.10000000000000001 0.10000000000000001 0.01
+      vertex 0 0.10000000000000001 0.01
+    endloop
+  endfacet
+endsolid frontAndBack
+solid movingWall
+  facet normal 0 1 0
+    outer loop
+      vertex 0 0.10000000000000001 0
+      vertex 0 0.10000000000000001 0.01
+      vertex 0.10000000000000001 0.10000000000000001 0.01
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 0 0.10000000000000001 0
+      vertex 0.10000000000000001 0.10000000000000001 0.01
+      vertex 0.10000000000000001 0.10000000000000001 0
+    endloop
+  endfacet
+endsolid movingWall

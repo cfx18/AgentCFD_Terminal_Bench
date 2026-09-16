@@ -1,0 +1,153 @@
+{
+  "physics": {
+    "additional_equations": null,
+    "fields": {
+      "U": {
+        "boundaryField": {
+          "fixedWalls": {
+            "type": "noSlip"
+          },
+          "frontAndBack": {
+            "type": "empty"
+          },
+          "movingWall": {
+            "type": "fixedValue",
+            "value": "uniform ( 1 0 0 )"
+          }
+        },
+        "dimensions": "[ 0 1 -1 0 0 0 0 ]",
+        "internalField": "uniform ( 0 0 0 )"
+      },
+      "p": {
+        "boundaryField": {
+          "fixedWalls": {
+            "type": "zeroGradient"
+          },
+          "frontAndBack": {
+            "type": "empty"
+          },
+          "movingWall": {
+            "type": "zeroGradient"
+          }
+        },
+        "dimensions": "[ 0 2 -2 0 0 0 0 ]",
+        "internalField": "uniform 0"
+      }
+    },
+    "geometry": {
+      "blocks": [
+        {
+          "cells": [
+            20,
+            20,
+            1
+          ],
+          "grading": [
+            "1",
+            "1",
+            "1"
+          ],
+          "grading_kind": "simpleGrading",
+          "vertices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "cell_count": 400,
+      "edges": "( )",
+      "merge_patch_pairs": "( )",
+      "patches": {
+        "fixedWalls": {
+          "faces": "( ( 0 4 7 3 ) ( 2 6 5 1 ) ( 1 5 4 0 ) )",
+          "type": "wall"
+        },
+        "frontAndBack": {
+          "faces": "( ( 0 3 2 1 ) ( 4 5 6 7 ) )",
+          "type": "empty"
+        },
+        "movingWall": {
+          "faces": "( ( 3 7 6 2 ) )",
+          "type": "wall"
+        }
+      },
+      "vertices_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.01
+        ],
+        [
+          0.1,
+          0.0,
+          0.01
+        ],
+        [
+          0.1,
+          0.1,
+          0.01
+        ],
+        [
+          0.0,
+          0.1,
+          0.01
+        ]
+      ]
+    },
+    "models": {
+      "custom_model_coefficients": false,
+      "flow_model": "laminar",
+      "kinematic_viscosity_m2_s": 0.01,
+      "transport_model": "Newtonian"
+    },
+    "solver": "icoFoam",
+    "time": {
+      "adaptive": false,
+      "early_convergence": false,
+      "end": 0.5,
+      "kind": "transient",
+      "maximum_courant": null,
+      "maximum_initial_delta_t": 0.005,
+      "start": 0.0
+    }
+  },
+  "schema": "tutorial-science-candidates-v2",
+  "source_input_hash": "4b26d91efc99dad80ca4b99e0858ea2ea192e4c1f12ae8e3188d3711ac8314cd",
+  "support": {
+    "canonical_cell_counts_and_grading": true,
+    "canonical_vertex_block_order": true,
+    "independent_initial_phi": false,
+    "local_dictionary_macros": true,
+    "native_ascii_outputs": true,
+    "scalar_transport": false,
+    "standard_streamlines_include": false
+  },
+  "task_id": "s-101",
+  "title": "Transient lid-driven enclosed flow"
+}

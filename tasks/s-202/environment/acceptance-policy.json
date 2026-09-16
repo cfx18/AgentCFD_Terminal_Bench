@@ -1,0 +1,61 @@
+{
+  "fields": {
+    "bottomWater/T": {
+      "offset": 300,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "bottomWater/U": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "bottomWater/p": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "bottomWater/p_rgh": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "heater/T": {
+      "offset": 300,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "leftSolid/T": {
+      "offset": 300,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "rightSolid/T": {
+      "offset": 300,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "topAir/T": {
+      "offset": 300,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "topAir/U": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "topAir/p": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    },
+    "topAir/p_rgh": {
+      "offset": 0,
+      "relative_l2": 0.1,
+      "relative_linf": 0.5
+    }
+  },
+  "floor": 1e-12,
+  "version": "thermal-compressible-discrete-v1"
+}

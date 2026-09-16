@@ -1,0 +1,109 @@
+{
+  "version": "expert-accepted-numerical-reference-v1",
+  "decision_date": "2026-09-15",
+  "scope": [
+    "s-202",
+    "s-203",
+    "s-204",
+    "s-205"
+  ],
+  "authority": "The user accepted the prepared numerical cases as Ground Truth and requested an instruction review and English public tasks.",
+  "reference_status": "accepted_by_expert",
+  "meaning": "Approved finite-resolution numerical targets. This decision is not a new proof of convergence, continuum accuracy, or complete physical validation.",
+  "new_model_requests": 0,
+  "new_native_runs": 0,
+  "require_additional_convergence_study": false,
+  "historical_evidence_overwritten": false,
+  "scoring_policy_changed": false,
+  "release_status": "public_instructions_reviewed_scoring_binding_not_published",
+  "tasks": {
+    "s-202": {
+      "run_directory": "audits/free-mesh-thermal-native-20260915-009/s-202/coupled_energy_base_quiet/native/runs/r-000001",
+      "result_hash": "60c1ab122c9c54147b831385067eec190f81270853fd5b73984334d09f8db1db",
+      "input_hash": "c292af34d91dedb9d4524b2d51e8ffee075a5444f97004f221f97ae039b6e957",
+      "artifact_hash": "8ccbf18c3738ef035157fe6725e6fa9992581ca6b38944381a41e116a2c75ebd",
+      "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+      "native_seconds": 123.43616757448763,
+      "native_verdict": "pass",
+      "evidence_status": "completed_and_released",
+      "control": "coupled_energy_base_quiet",
+      "endpoint": {
+        "kind": "physical_time",
+        "value": 100,
+        "unit": "s"
+      },
+      "selection_reason": "Use the completed corrected thermal-coupling reference with pressure logs preserved, rather than earlier incomplete/log-limited variants.",
+      "limitations": [
+        "Only this corrected coarse-mesh coupled solution is selected; mesh/time independence is not claimed.",
+        "Single-phase constant-property water is an explicitly approved idealization."
+      ],
+      "reference_status": "accepted_by_expert"
+    },
+    "s-203": {
+      "run_directory": "audits/free-mesh-thermal-native-20260915-006/s-203/mesh_finest/native/runs/r-000001",
+      "result_hash": "1317cfe259db382d64df82fbe6efbcfd3fb590ca60e2ab93f78137eb2cb3f80f",
+      "input_hash": "feea8d4db3d702b5cdb080736b8563785f5ba6df681c8a73f64dbb76d440b74f",
+      "artifact_hash": "b1b2674ee304112aae118167f8966fc0e1ee80f652b2cb240eecd22b6479810c",
+      "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+      "native_seconds": 495.90217323601246,
+      "native_verdict": "pass",
+      "evidence_status": "completed_and_released",
+      "control": "mesh_finest",
+      "endpoint": {
+        "kind": "physical_time",
+        "value": 1.5,
+        "unit": "s"
+      },
+      "selection_reason": "Use the finest existing completed author mesh (68,107 cells); do not schedule a new refinement study.",
+      "limitations": [
+        "Differences between the last two meshes remain recorded, including pressure and turbulence quantities.",
+        "Recorded native duration exceeds the current model per-run 300 s cap; expert reference acceptance does not prove equal-budget attainability."
+      ],
+      "reference_status": "accepted_by_expert"
+    },
+    "s-204": {
+      "run_directory": "audits/free-mesh-buoyant-shock-20260915-001/s-204/native/runs/r-000001",
+      "result_hash": "7337eb18c200632c06f5771421892b934108c6d25dabe3792009c16662650c6e",
+      "input_hash": "a0f51267985cf9170a2f4e313ac035621679e7f8908ad9a3ba2fcdd5601c79e1",
+      "artifact_hash": "0c255ef140b09b6f961126ce493d18f1967d04fa4786b2150fe877326b303788",
+      "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+      "native_seconds": 1041.761434729211,
+      "native_verdict": "pass",
+      "evidence_status": "completed_and_released",
+      "control": "valid",
+      "endpoint": {
+        "kind": "iteration",
+        "value": 6000,
+        "unit": "1"
+      },
+      "selection_reason": "Use the original 78,750-cell numerical reference, the upper row of the expert field review, not the later lower-resolution upwind diagnostic.",
+      "limitations": [
+        "A finite-iteration numerical reference, not a demonstrated fully converged steady solution.",
+        "The same task ID also has diagnostic runs; none silently replaces this selected result.",
+        "Recorded native duration exceeds the current model per-run 300 s cap; budget feasibility remains an execution-policy issue."
+      ],
+      "reference_status": "accepted_by_expert"
+    },
+    "s-205": {
+      "run_directory": "audits/free-mesh-buoyant-shock-20260915-001/s-205/native/runs/r-000003",
+      "result_hash": "07bdfba012c4f6665fa9c72d16c50e946ea3b12d2fa229d12a58f8417129208d",
+      "input_hash": "0e06a6d6d3ae045270049db7af5e8723167caa92e582ea66cffe0a2f239c8b07",
+      "artifact_hash": "c617570e25ede6391ab4a380ade996139f1a14786c14e129c804f949c63a6582",
+      "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+      "native_seconds": 2.171643898822367,
+      "native_verdict": "pass",
+      "evidence_status": "completed_and_released",
+      "control": "mesh_400",
+      "endpoint": {
+        "kind": "physical_time",
+        "value": 0.007,
+        "unit": "s"
+      },
+      "selection_reason": "Use the existing 400-cell native reference; retain the independent Riemann solution as a separate cross-check.",
+      "limitations": [
+        "The existing analytic-waveform grader is not silently changed to a numerical-reference grader by this manifest."
+      ],
+      "reference_status": "accepted_by_expert"
+    }
+  }
+}

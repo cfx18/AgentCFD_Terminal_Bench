@@ -1,0 +1,907 @@
+{
+  "completion": {
+    "early_convergence": false,
+    "end": 1.5,
+    "kind": "transient",
+    "tolerance": 1e-07
+  },
+  "control": {
+    "adjustTimeStep": [
+      "yes"
+    ],
+    "application": [
+      "pimpleFoam"
+    ],
+    "deltaT": [
+      "0.001"
+    ],
+    "endTime": [
+      "1.5"
+    ],
+    "functions": {
+      "sTransport": {
+        "Cp": [
+          "Cp",
+          "[",
+          "J/kg/K",
+          "]",
+          "1e3"
+        ],
+        "enabled": [
+          "true"
+        ],
+        "field": [
+          "T"
+        ],
+        "fvOptions": {
+          "viscousDissipation": {
+            "enabled": [
+              "true"
+            ],
+            "type": [
+              "viscousDissipation"
+            ],
+            "viscousDissipationCoeffs": {
+              "fields": [
+                "(",
+                "T",
+                ")"
+              ],
+              "rhoInf": [
+                "rho",
+                "[",
+                "kg/m^3",
+                "]",
+                "1.2"
+              ]
+            }
+          }
+        },
+        "kappa": [
+          "kappa",
+          "[",
+          "W/m/K",
+          "]",
+          "0.0257"
+        ],
+        "libs": [
+          "(",
+          "solverFunctionObjects",
+          ")"
+        ],
+        "phi": [
+          "phi"
+        ],
+        "rhoInf": [
+          "rho",
+          "[",
+          "kg/m^3",
+          "]",
+          "1.2"
+        ],
+        "type": [
+          "energyTransport"
+        ],
+        "write": [
+          "true"
+        ],
+        "writeControl": [
+          "writeTime"
+        ],
+        "writeInterval": [
+          "1"
+        ]
+      }
+    },
+    "maxCo": [
+      "5"
+    ],
+    "purgeWrite": [
+      "0"
+    ],
+    "runTimeModifiable": [
+      "true"
+    ],
+    "startFrom": [
+      "startTime"
+    ],
+    "startTime": [
+      "0"
+    ],
+    "stopAt": [
+      "endTime"
+    ],
+    "timeFormat": [
+      "general"
+    ],
+    "timePrecision": [
+      "6"
+    ],
+    "writeCompression": [
+      "off"
+    ],
+    "writeControl": [
+      "adjustable"
+    ],
+    "writeFormat": [
+      "ascii"
+    ],
+    "writeInterval": [
+      "0.1"
+    ],
+    "writePrecision": [
+      "12"
+    ]
+  },
+  "fields": {
+    "T": {
+      "count": 3875,
+      "dimensions": "[ 0 0 0 1 0 0 0 ]",
+      "unit": "K"
+    },
+    "U": {
+      "count": 3875,
+      "dimensions": "[ 0 1 -1 0 0 0 0 ]",
+      "unit": "m/s"
+    },
+    "epsilon": {
+      "count": 3875,
+      "dimensions": "[ 0 2 -3 0 0 0 0 ]",
+      "unit": "m2/s3"
+    },
+    "k": {
+      "count": 3875,
+      "dimensions": "[ 0 2 -2 0 0 0 0 ]",
+      "unit": "m2/s2"
+    },
+    "nut": {
+      "count": 3875,
+      "dimensions": "[ 0 2 -1 0 0 0 0 ]",
+      "unit": "m2/s"
+    },
+    "p": {
+      "count": 3875,
+      "dimensions": "[ 0 2 -2 0 0 0 0 ]",
+      "unit": "m2/s2"
+    }
+  },
+  "physics": {
+    "0/T": {
+      "boundaryField": {
+        "defaultFaces": {
+          "type": [
+            "zeroGradient"
+          ]
+        },
+        "inlet": {
+          "type": [
+            "fixedValue"
+          ],
+          "value": [
+            "uniform",
+            "315"
+          ]
+        },
+        "outlet1": {
+          "inletValue": [
+            "uniform",
+            "300"
+          ],
+          "type": [
+            "inletOutlet"
+          ]
+        },
+        "outlet2": {
+          "inletValue": [
+            "uniform",
+            "300"
+          ],
+          "type": [
+            "inletOutlet"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "300"
+      ]
+    },
+    "0/U": {
+      "boundaryField": {
+        "defaultFaces": {
+          "type": [
+            "noSlip"
+          ]
+        },
+        "inlet": {
+          "type": [
+            "pressureInletOutletVelocity"
+          ],
+          "value": [
+            "uniform",
+            "(",
+            "0",
+            "0",
+            "0",
+            ")"
+          ]
+        },
+        "outlet1": {
+          "inletValue": [
+            "uniform",
+            "(",
+            "0",
+            "0",
+            "0",
+            ")"
+          ],
+          "type": [
+            "inletOutlet"
+          ],
+          "value": [
+            "uniform",
+            "(",
+            "0",
+            "0",
+            "0",
+            ")"
+          ]
+        },
+        "outlet2": {
+          "inletValue": [
+            "uniform",
+            "(",
+            "0",
+            "0",
+            "0",
+            ")"
+          ],
+          "type": [
+            "inletOutlet"
+          ],
+          "value": [
+            "uniform",
+            "(",
+            "0",
+            "0",
+            "0",
+            ")"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "(",
+        "0",
+        "0",
+        "0",
+        ")"
+      ]
+    },
+    "0/epsilon": {
+      "boundaryField": {
+        "defaultFaces": {
+          "type": [
+            "epsilonWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "200"
+          ]
+        },
+        "inlet": {
+          "mixingLength": [
+            "0.01"
+          ],
+          "type": [
+            "turbulentMixingLengthDissipationRateInlet"
+          ],
+          "value": [
+            "uniform",
+            "200"
+          ]
+        },
+        "outlet1": {
+          "inletValue": [
+            "uniform",
+            "200"
+          ],
+          "type": [
+            "inletOutlet"
+          ]
+        },
+        "outlet2": {
+          "inletValue": [
+            "uniform",
+            "200"
+          ],
+          "type": [
+            "inletOutlet"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "2",
+        "-3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "200"
+      ]
+    },
+    "0/k": {
+      "boundaryField": {
+        "defaultFaces": {
+          "type": [
+            "kqRWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "inlet": {
+          "intensity": [
+            "0.05"
+          ],
+          "type": [
+            "turbulentIntensityKineticEnergyInlet"
+          ],
+          "value": [
+            "uniform",
+            "0.2"
+          ]
+        },
+        "outlet1": {
+          "inletValue": [
+            "uniform",
+            "0.2"
+          ],
+          "type": [
+            "inletOutlet"
+          ]
+        },
+        "outlet2": {
+          "inletValue": [
+            "uniform",
+            "0.2"
+          ],
+          "type": [
+            "inletOutlet"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "2",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "0.2"
+      ]
+    },
+    "0/nut": {
+      "boundaryField": {
+        "defaultFaces": {
+          "type": [
+            "nutkWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "inlet": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "outlet1": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "outlet2": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "2",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "0"
+      ]
+    },
+    "0/p": {
+      "boundaryField": {
+        "defaultFaces": {
+          "type": [
+            "zeroGradient"
+          ]
+        },
+        "inlet": {
+          "p0": [
+            "table",
+            "(",
+            "(",
+            "0",
+            "10",
+            ")",
+            "(",
+            "1",
+            "40",
+            ")",
+            ")"
+          ],
+          "type": [
+            "uniformTotalPressure"
+          ]
+        },
+        "outlet1": {
+          "type": [
+            "fixedValue"
+          ],
+          "value": [
+            "uniform",
+            "10"
+          ]
+        },
+        "outlet2": {
+          "type": [
+            "fixedValue"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "2",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "0"
+      ]
+    },
+    "constant/transportProperties": {
+      "Talpha": [
+        "300"
+      ],
+      "alpha": [
+        "0.1"
+      ],
+      "k": [
+        "0"
+      ],
+      "n": [
+        "1"
+      ],
+      "nu0": [
+        "15e-06"
+      ],
+      "nuInf": [
+        "15e-06"
+      ],
+      "transportModel": [
+        "ArrheniusBirdCarreau"
+      ]
+    },
+    "constant/turbulenceProperties": {
+      "RAS": {
+        "RASModel": [
+          "kEpsilon"
+        ],
+        "printCoeffs": [
+          "on"
+        ],
+        "turbulence": [
+          "on"
+        ]
+      },
+      "simulationType": [
+        "RAS"
+      ]
+    },
+    "energy_equation": {
+      "Cp": [
+        "Cp",
+        "[",
+        "J/kg/K",
+        "]",
+        "1e3"
+      ],
+      "enabled": [
+        "true"
+      ],
+      "field": [
+        "T"
+      ],
+      "fvOptions": {
+        "viscousDissipation": {
+          "enabled": [
+            "true"
+          ],
+          "type": [
+            "viscousDissipation"
+          ],
+          "viscousDissipationCoeffs": {
+            "fields": [
+              "(",
+              "T",
+              ")"
+            ],
+            "rhoInf": [
+              "rho",
+              "[",
+              "kg/m^3",
+              "]",
+              "1.2"
+            ]
+          }
+        }
+      },
+      "kappa": [
+        "kappa",
+        "[",
+        "W/m/K",
+        "]",
+        "0.0257"
+      ],
+      "phi": [
+        "phi"
+      ],
+      "rhoInf": [
+        "rho",
+        "[",
+        "kg/m^3",
+        "]",
+        "1.2"
+      ],
+      "type": [
+        "energyTransport"
+      ]
+    },
+    "system/blockMeshDict": {
+      "blocks": [
+        "(",
+        "hex",
+        "(",
+        "0",
+        "1",
+        "2",
+        "3",
+        "10",
+        "11",
+        "12",
+        "13",
+        ")",
+        "(",
+        "50",
+        "5",
+        "5",
+        ")",
+        "simpleGrading",
+        "(",
+        "1",
+        "1",
+        "1",
+        ")",
+        "hex",
+        "(",
+        "1",
+        "4",
+        "5",
+        "2",
+        "11",
+        "14",
+        "15",
+        "12",
+        ")",
+        "(",
+        "5",
+        "5",
+        "5",
+        ")",
+        "simpleGrading",
+        "(",
+        "1",
+        "1",
+        "1",
+        ")",
+        "hex",
+        "(",
+        "6",
+        "7",
+        "4",
+        "1",
+        "16",
+        "17",
+        "14",
+        "11",
+        ")",
+        "(",
+        "5",
+        "50",
+        "5",
+        ")",
+        "simpleGrading",
+        "(",
+        "1",
+        "1",
+        "1",
+        ")",
+        "hex",
+        "(",
+        "2",
+        "5",
+        "9",
+        "8",
+        "12",
+        "15",
+        "19",
+        "18",
+        ")",
+        "(",
+        "5",
+        "50",
+        "5",
+        ")",
+        "simpleGrading",
+        "(",
+        "1",
+        "1",
+        "1",
+        ")",
+        ")"
+      ],
+      "boundary": [
+        "(",
+        "inlet",
+        "{",
+        "type",
+        "patch",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "0",
+        "10",
+        "13",
+        "3",
+        ")",
+        ")",
+        ";",
+        "}",
+        "outlet1",
+        "{",
+        "type",
+        "patch",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "6",
+        "7",
+        "17",
+        "16",
+        ")",
+        ")",
+        ";",
+        "}",
+        "outlet2",
+        "{",
+        "type",
+        "patch",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "8",
+        "18",
+        "19",
+        "9",
+        ")",
+        ")",
+        ";",
+        "}",
+        "defaultFaces",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        ")",
+        ";",
+        "}",
+        ")"
+      ],
+      "edges": [
+        "(",
+        ")"
+      ],
+      "mergePatchPairs": [
+        "(",
+        ")"
+      ],
+      "scale": [
+        "1"
+      ],
+      "vertices": [
+        "(",
+        "(",
+        "0.0",
+        "-0.01",
+        "0",
+        ")",
+        "(",
+        "0.2",
+        "-0.01",
+        "0",
+        ")",
+        "(",
+        "0.2",
+        "0.01",
+        "0",
+        ")",
+        "(",
+        "0.0",
+        "0.01",
+        "0",
+        ")",
+        "(",
+        "0.22",
+        "-0.01",
+        "0",
+        ")",
+        "(",
+        "0.22",
+        "0.01",
+        "0",
+        ")",
+        "(",
+        "0.2",
+        "-0.21",
+        "0",
+        ")",
+        "(",
+        "0.22",
+        "-0.21",
+        "0",
+        ")",
+        "(",
+        "0.2",
+        "0.21",
+        "0",
+        ")",
+        "(",
+        "0.22",
+        "0.21",
+        "0",
+        ")",
+        "(",
+        "0.0",
+        "-0.01",
+        "0.02",
+        ")",
+        "(",
+        "0.2",
+        "-0.01",
+        "0.02",
+        ")",
+        "(",
+        "0.2",
+        "0.01",
+        "0.02",
+        ")",
+        "(",
+        "0.0",
+        "0.01",
+        "0.02",
+        ")",
+        "(",
+        "0.22",
+        "-0.01",
+        "0.02",
+        ")",
+        "(",
+        "0.22",
+        "0.01",
+        "0.02",
+        ")",
+        "(",
+        "0.2",
+        "-0.21",
+        "0.02",
+        ")",
+        "(",
+        "0.22",
+        "-0.21",
+        "0.02",
+        ")",
+        "(",
+        "0.2",
+        "0.21",
+        "0.02",
+        ")",
+        "(",
+        "0.22",
+        "0.21",
+        "0.02",
+        ")",
+        ")"
+      ]
+    }
+  },
+  "residual": "p",
+  "task_id": "s-203",
+  "version": "thermal-compressible-discrete-v1"
+}

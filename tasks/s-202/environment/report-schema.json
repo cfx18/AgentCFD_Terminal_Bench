@@ -1,0 +1,74 @@
+{
+  "bottomWater_T_cell_min_mean_max": [
+    "K",
+    3
+  ],
+  "bottomWater_U_cell_mean": [
+    "m/s",
+    3
+  ],
+  "bottomWater_U_speed_max": [
+    "m/s",
+    1
+  ],
+  "bottomWater_U_speed_rms": [
+    "m/s",
+    1
+  ],
+  "bottomWater_p_cell_min_mean_max": [
+    "Pa",
+    3
+  ],
+  "bottomWater_p_rgh_cell_min_mean_max": [
+    "Pa",
+    3
+  ],
+  "final_time": [
+    "s",
+    1
+  ],
+  "heater_T_cell_min_mean_max": [
+    "K",
+    3
+  ],
+  "last_final_residual": [
+    "1",
+    1
+  ],
+  "last_initial_residual": [
+    "1",
+    1
+  ],
+  "leftSolid_T_cell_min_mean_max": [
+    "K",
+    3
+  ],
+  "rightSolid_T_cell_min_mean_max": [
+    "K",
+    3
+  ],
+  "topAir_T_cell_min_mean_max": [
+    "K",
+    3
+  ],
+  "topAir_U_cell_mean": [
+    "m/s",
+    3
+  ],
+  "topAir_U_speed_max": [
+    "m/s",
+    1
+  ],
+  "topAir_U_speed_rms": [
+    "m/s",
+    1
+  ],
+  "topAir_p_cell_min_mean_max": [
+    "Pa",
+    3
+  ],
+  "topAir_p_rgh_cell_min_mean_max": [
+    "Pa",
+    3
+  ]
+}

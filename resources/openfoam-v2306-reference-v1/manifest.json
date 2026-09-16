@@ -1,0 +1,20 @@
+{
+  "corpus_hash": "749add986ffac3355a32a95b5e7b207359d022ed2ce192ae1556bbf6ff339b9b",
+  "documents": 635,
+  "excluded_pages": 21,
+  "forbidden_pattern": "(?i)FOAM_TUTORIALS|\\btutorials?\\b|pitzDaily|TJunction|implicitAMI|\\bcavity\\b|AgentCFD|FoamBench|NL2FOAM|/root/|/public3/|\\bAllrun\\b",
+  "policy": "offline-reference-docs-v1",
+  "reference_routes": [
+    "fundamentals/case-structure/",
+    "fundamentals/input-types/",
+    "fundamentals/command-line/",
+    "tools/pre-processing/",
+    "tools/processing/",
+    "tools/post-processing/",
+    "tools/parallel/"
+  ],
+  "review_hash": "d6a94006f1c7f04f011ad247a2aeff5b61c76599b27441c6e4eb058f8cc0fdaf",
+  "source": "https://doc.openfoam.com/2306/",
+  "source_corpus_hash": "aa07ae32b3db8bb9aa1e3250c0f82a96c9ad3ec3afb2e2afed65a386f3b4a87b",
+  "source_pages": 656
+}

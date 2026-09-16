@@ -1,0 +1,15 @@
+{
+  "version": "tutorial-science-campaign-v1",
+  "tasks": ["s-101", "s-102", "s-103", "s-104", "s-105"],
+  "harnesses": ["codex", "foamclaw", "claude-code", "kimi-code"],
+  "model": {"name": "Kimi-K3", "wire_api": "chat"},
+  "budget": {"model_calls": 64, "native_seconds": 600, "per_run_seconds": 120, "request_seconds": 600},
+  "documentation": {
+    "mode": "offline-reference-docs-v1",
+    "bundle": "openfoam-v2306-reference-v1",
+    "digest": "6ee02ee3c7e9047b5ffe81cb337dfcf320b3c0a5a63fbe825b62dae600be5a88"
+  },
+  "concurrency": 1,
+  "native_observation_seconds": 600,
+  "native_observation_interval_seconds": 10
+}

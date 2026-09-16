@@ -1,0 +1,39 @@
+version: author-native-closeout-v1
+name: free-mesh-native-closeout-20260915
+# 作者参考准备，不是模型评测；此文件只供只读报告器定位证据。
+# 它不能启动模型、提交 Slurm 或修改既有任务与评分。
+resources:
+  ssh_host: sca2070
+  partition: amd_256
+  parallel_groups: 3
+  max_native_jobs: 4  # 三组，另一个名额用于独立数值修复对照；不是模型并发。
+  author_seconds_per_operation: 1800
+  agent_seconds_per_operation_unchanged: 300
+tasks:
+  - id: s-101
+    title: 顶盖方腔瞬态
+    evidence_roots: [audits/free-mesh-flow-20260915-001/s-101]
+  - id: s-102
+    title: 偏折通道稳态
+    evidence_roots: [audits/free-mesh-flow-20260915-002/s-102, audits/free-mesh-flow-20260915-003/s-102]
+  - id: s-103
+    title: 后向台阶稳态
+    evidence_roots: [audits/free-mesh-flow-20260915-002/s-103, audits/free-mesh-flow-20260915-003/s-103, audits/free-mesh-flow-20260915-005/s-103]
+  - id: s-104
+    title: 后向台阶瞬态
+    evidence_roots: [audits/free-mesh-flow-20260915-002/s-104, audits/free-mesh-flow-20260915-004/s-104]
+  - id: s-105
+    title: 分叉流与标量源
+    evidence_roots: [audits/free-mesh-flow-20260915-002/s-105, audits/free-mesh-flow-20260915-004/s-105]
+  - id: s-202
+    title: 多区域共轭传热
+    evidence_roots: [audits/free-mesh-thermal-native-20260915-002/s-202, audits/free-mesh-thermal-native-20260915-004/s-202, audits/free-mesh-thermal-native-20260915-005/s-202, audits/free-mesh-thermal-native-20260915-007/s-202, audits/free-mesh-thermal-native-20260915-008/s-202, audits/free-mesh-thermal-native-20260915-009/s-202]
+  - id: s-203
+    title: 温度依赖黏度
+    evidence_roots: [audits/free-mesh-thermal-native-20260915-001/s-203, audits/free-mesh-thermal-native-20260915-003/s-203, audits/free-mesh-thermal-native-20260915-006/s-203]
+  - id: s-204
+    title: 密闭腔体自然对流
+    evidence_roots: [audits/free-mesh-buoyant-shock-20260915-001/s-204, audits/free-mesh-buoyant-shock-20260915-002/s-204, audits/free-mesh-buoyant-shock-20260915-003/s-204, audits/free-mesh-buoyant-shock-20260915-004/s-204]
+  - id: s-205
+    title: 激波管
+    evidence_roots: [audits/free-mesh-buoyant-shock-20260915-001/s-205]

@@ -1,0 +1,278 @@
+{
+  "input_hash": "a0f51267985cf9170a2f4e313ac035621679e7f8908ad9a3ba2fcdd5601c79e1",
+  "observations": {
+    "measurements": {
+      "T_last_write_relative_change": {
+        "unit": "1",
+        "value": 0.0020459118590611986
+      },
+      "T_volume_mean": {
+        "unit": "K",
+        "value": 297.7630869570398
+      },
+      "T_x_bin_mean": {
+        "unit": "K",
+        "value": [
+          290.49466923352634,
+          293.903711184031,
+          295.6584391896405,
+          296.4719022397523,
+          296.9236614389028,
+          297.1699257157272,
+          297.341684333687,
+          297.47159335247403,
+          297.5844381905767,
+          297.67563392231597,
+          297.76397046936603,
+          297.8571831271605,
+          297.9750378066758,
+          298.11293568738506,
+          298.29633847899424,
+          298.55890479425557,
+          299.03792631762497,
+          299.89752709198706,
+          301.74962052242296,
+          305.3166360451056
+        ]
+      },
+      "T_y_bin_mean": {
+        "unit": "K",
+        "value": [
+          291.1224970020879,
+          292.49731298554,
+          293.5452203871374,
+          294.42896784627425,
+          295.2235616473723,
+          295.8849708095165,
+          296.4557537698545,
+          296.9112045897398,
+          297.27698803172956,
+          297.5880159287769,
+          297.86693942369044,
+          298.1880358035011,
+          298.55830290456583,
+          299.0187911892315,
+          299.6002614299947,
+          300.27979823111576,
+          301.10205739683,
+          302.01493005943394,
+          303.1229541986052,
+          304.5751755046872
+        ]
+      },
+      "U_last_write_relative_change": {
+        "unit": "1",
+        "value": 0.057624830061183685
+      },
+      "U_volume_mean": {
+        "unit": "m/s",
+        "value": [
+          -4.763152710887199e-05,
+          0.000771481937410865,
+          -1.6176162679025498e-06
+        ]
+      },
+      "Uy_x_bin_mean": {
+        "unit": "m/s",
+        "value": [
+          -0.11297870066371335,
+          -0.16448547921665443,
+          -0.14653533452514908,
+          -0.12152230127359258,
+          -0.09735445496015087,
+          -0.07776973258322711,
+          -0.059798195768588705,
+          -0.042711721260790966,
+          -0.024744170643029945,
+          -0.008443610730401941,
+          0.00783284782443693,
+          0.024299467686640548,
+          0.042681223175005785,
+          0.06034768786087612,
+          0.0790899244792831,
+          0.09945223269624415,
+          0.12438203995414762,
+          0.15015210682645233,
+          0.16854015952464882,
+          0.11499565037140097
+        ]
+      },
+      "Uy_y_bin_mean": {
+        "unit": "m/s",
+        "value": [
+          0.0001588457154832281,
+          0.0004520128384419223,
+          0.0006246400056453923,
+          0.0007402522829310871,
+          0.0008327071174292184,
+          0.000902799971210286,
+          0.0009538093629939483,
+          0.000984650066869431,
+          0.0010094954071085945,
+          0.0010198261114797963,
+          0.001019369420126103,
+          0.0010033257628665124,
+          0.0009841097771585389,
+          0.0009545844975854332,
+          0.0008994520932888099,
+          0.0008319648450246191,
+          0.0007390181654638034,
+          0.0006125176872595559,
+          0.0004447361255498618,
+          0.00026152149420904935
+        ]
+      },
+      "alphat_volume_mean": {
+        "unit": "kg/(m s)",
+        "value": 0.00011711055564785766
+      },
+      "cell_count": {
+        "unit": "1",
+        "value": 78750
+      },
+      "cold_wall_heat_rate": {
+        "unit": "W",
+        "value": -35.4520507
+      },
+      "final_iteration": {
+        "unit": "1",
+        "value": 6000.0
+      },
+      "frontAndBack_wall_heat_rate": {
+        "unit": "W",
+        "value": 0.0
+      },
+      "h_final_initial_residual": {
+        "unit": "1",
+        "value": 0.0001456341946
+      },
+      "hot_wall_heat_rate": {
+        "unit": "W",
+        "value": 36.72664063
+      },
+      "k_volume_mean": {
+        "unit": "m2/s2",
+        "value": 0.0017445789836859963
+      },
+      "last_final_residual": {
+        "unit": "1",
+        "value": 1.33541471e-06
+      },
+      "last_initial_residual": {
+        "unit": "1",
+        "value": 0.0004058951449
+      },
+      "mass": {
+        "unit": "kg",
+        "value": 0.10241655931919069
+      },
+      "nut_volume_mean": {
+        "unit": "m2/s",
+        "value": 9.850762140461194e-05
+      },
+      "omega_volume_mean": {
+        "unit": "1/s",
+        "value": 81.41192895654252
+      },
+      "p_rgh_final_initial_residual": {
+        "unit": "1",
+        "value": 0.0004058951449
+      },
+      "p_volume_mean": {
+        "unit": "Pa",
+        "value": 101601.88707628942
+      },
+      "speed_volume_rms": {
+        "unit": "m/s",
+        "value": 0.10925097054768929
+      },
+      "topAndBottom_wall_heat_rate": {
+        "unit": "W",
+        "value": 0.0
+      },
+      "volume": {
+        "unit": "m3",
+        "value": 0.086153600001076
+      }
+    }
+  },
+  "policy": {
+    "buoyant_T_scaled_l1": 0.05,
+    "buoyant_U_relative_l1": 0.1,
+    "buoyant_heat_relative": 0.05,
+    "convergence_diagnostics_are_gates": false,
+    "meaning": "agreement_with_expert_accepted_finite_numerical_target",
+    "reward_mapping": null,
+    "shock_normalized_l1": 0.04,
+    "thermal_relative_rms": 0.05,
+    "thermal_temperature_absolute_K": 0.01,
+    "version": "expert-reference-v1"
+  },
+  "receipt_hashes": {
+    "0-exit": "9206819236b0496a147283b20e2959f8acd6c4117fba14144808d10e702391a6",
+    "0-log": "d83c37a7949315575d046586bedbabf4493627d581cb68248b08fc1a98fd8439",
+    "0-start": "1ad79e03db896bf499d21e37091060a8131c857f2ab1e8ee2eb7c1b2a3c420c6",
+    "1-exit": "d483f5709b9b4e898a590275d5b1ba2fda6ae9524c6786636db174530767ce07",
+    "1-log": "1b1e2bff952f92268c56cd3133cfdebc1992275fec5a4481327f44efa493ebd7",
+    "1-start": "d45f73e5c1fba558f8df7a56e49ce0815d3ebb38148d744c1667acff67a94147",
+    "2-exit": "181d9f7479f2d5fedabb773c46bcca9ec2733821fe0403e337199cb47a0f4cdc",
+    "2-log": "eb03595536c7dfe792bb8bb8d18c540a499644eb38c10740317d0c936a90160e",
+    "2-start": "bea3e97d8697cba22da1b489131b3a3d86eb1171a75e970a4fabcf9d4b184760",
+    "3-exit": "cae548a54732cdaae6366d0d432f58ed780a2a68d525c996519e9ef19f44ce20",
+    "3-log": "8a03e36ddabc7d5c94acdc74f33894e03f3eb7a03bf2d2c168e50b09102bf81a",
+    "3-start": "e7f64d7e48849a51af4885d1773278c205dfcbdee28f3a486deafcfcb2933ba3",
+    "4-exit": "7e2d0fc62254b2db1b95d6f75e500409ebfff75c55f792e53559a45c843fe8e7",
+    "4-log": "f58475b6d8cc7fa948973508d75a90a25bccc3ea054851f9da2749caed111580",
+    "4-start": "14de6a619b39514e448dc5a7de0a8cf6e6bf95b763fb652fb71066a60fb7c98e",
+    "5-exit": "7f0b9196e4cd8de90b1fecb28a19d9af944468fc19aa308972e06c89c9bd35f8",
+    "5-log": "1c067e5c944a9c8b9e29051a245d4130aa9313e830ed0a05b28f1b53c1d33418",
+    "5-start": "85bffd5e365bef262a02e99883b6f90eb379ead454d893be239fa7f44526c030",
+    "allocation": "96c1959e56835e0250e250815e61f3f2eb6f773b3a86bc395c8373c3936a4804",
+    "artifacts": "0c255ef140b09b6f961126ce493d18f1967d04fa4786b2150fe877326b303788",
+    "handle": "7660dc2bce14df633155ed52a5dbad524c32616c528221f345d21559d3da78a8",
+    "inputs": "a0f51267985cf9170a2f4e313ac035621679e7f8908ad9a3ba2fcdd5601c79e1",
+    "prepare_started": "417482f58136d9941bec2116117b08d622b5a4160fc0b3b06c09b721abb07f9b",
+    "released": "f7bccf609b3dd0de0810cea1fd1c87418262bab3a1c564df02988b27511a1a42",
+    "result": "7337eb18c200632c06f5771421892b934108c6d25dabe3792009c16662650c6e",
+    "spec": "8248f0f00adc1d236807c5603762c47e586cde7a0a845c119fef35f513a5b1e7"
+  },
+  "reference_diagnostics": {
+    "T_last_write_relative_change": 0.0020459118590611986,
+    "U_last_write_relative_change": 0.057624830061183685,
+    "heat_balance_relative": 0.03470477855137272,
+    "optional_velocity_residuals": {},
+    "outer_residuals": {
+      "h": 0.0001456341946,
+      "k": 0.0001388147632,
+      "omega": 1.060093437e-05,
+      "p_rgh": 0.0004058951449
+    },
+    "previous_write": 5950.0,
+    "solver_claimed_convergence": false
+  },
+  "reference_status": "accepted_by_expert",
+  "source": {
+    "artifact_hash": "0c255ef140b09b6f961126ce493d18f1967d04fa4786b2150fe877326b303788",
+    "control": "valid",
+    "endpoint": {
+      "kind": "iteration",
+      "unit": "1",
+      "value": 6000
+    },
+    "evidence_status": "completed_and_released",
+    "input_hash": "a0f51267985cf9170a2f4e313ac035621679e7f8908ad9a3ba2fcdd5601c79e1",
+    "limitations": [
+      "A finite-iteration numerical reference, not a demonstrated fully converged steady solution.",
+      "The same task ID also has diagnostic runs; none silently replaces this selected result.",
+      "Recorded native duration exceeds the current model per-run 300 s cap; budget feasibility remains an execution-policy issue."
+    ],
+    "native_seconds": 1041.761434729211,
+    "native_verdict": "pass",
+    "reference_status": "accepted_by_expert",
+    "result_hash": "7337eb18c200632c06f5771421892b934108c6d25dabe3792009c16662650c6e",
+    "run_directory": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/audits/free-mesh-buoyant-shock-20260915-001/s-204/native/runs/r-000001",
+    "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+    "selection_reason": "Use the original 78,750-cell numerical reference, the upper row of the expert field review, not the later lower-resolution upwind diagnostic."
+  },
+  "task_id": "s-204"
+}

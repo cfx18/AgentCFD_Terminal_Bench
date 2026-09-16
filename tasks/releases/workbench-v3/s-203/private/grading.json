@@ -1,0 +1,6 @@
+{
+  "policy": "accepted-gt-v1",
+  "convergence_rules": [],
+  "convergence_status": "diagnostic_only_until_expert_thresholds_are_registered",
+  "reference_revision": "unchanged_expert_output_v1"
+}

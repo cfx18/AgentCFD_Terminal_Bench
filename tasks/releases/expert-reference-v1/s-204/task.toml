@@ -1,0 +1,32 @@
+schema_version = "1.4"
+
+[metadata]
+artifact_fields = ["U", "p", "p_rgh", "T", "k", "omega", "nut", "alphat", "C", "V", "wallHeatFlux"]
+edge_recipe = "free-mesh-buoyant-heat-v1"
+execution_protocol = "durable-native-session-v1"
+native_commands = [["mesh", "blockMesh"], ["mesh_check", "checkMesh"], ["solver", "buoyantSimpleFoam"], ["centres", "postProcess", "-func", "writeCellCentres", "-latestTime"], ["volumes", "postProcess", "-func", "writeCellVolumes", "-latestTime"], ["wall_heat_flux", "buoyantSimpleFoam", "-postProcess", "-func", "wallHeatFlux", "-latestTime"]]
+qualification_seconds = 300
+runtime = "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1"
+track = "science"
+version = "expert-reference-v1"
+model_native_seconds = 1800
+submitted_steady_endpoint = true
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "field_realizability", "reference_observations"]
+
+[metadata.native_completion]
+kind = "steady"
+end = 6000
+tolerance = 1e-07
+early_convergence = true
+
+[metadata.qualification]
+source_mode = "expert-accepted-reference-v1"
+
+[verifier]
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

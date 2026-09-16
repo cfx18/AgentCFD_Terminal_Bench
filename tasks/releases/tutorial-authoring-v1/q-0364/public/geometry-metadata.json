@@ -1,0 +1,11 @@
+{
+  "format": "Wavefront OBJ exterior surface",
+  "coordinate_units": "m",
+  "bounds_m": {
+    "x": [0.0, 0.017],
+    "y": [-0.0025, 0.0025],
+    "z": [-0.00015, 0.00015]
+  },
+  "topology": "watertight extrusion of the exact planar fluid outline",
+  "planar_model_note": "The two z-normal faces delimit the representation thickness and correspond to a two-dimensional condition, not no-slip walls."
+}

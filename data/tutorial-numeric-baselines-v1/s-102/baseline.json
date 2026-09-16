@@ -1,0 +1,298 @@
+{
+  "paid_ready": false,
+  "profile_hash": "de658ea7f1af9dd1f02f41e88644750a460860f0353e6ded17d0a7d510049c95",
+  "provenance": {
+    "artifact_hash": "da019e472381b2e960c5094a7dfd5cfc53541dd58e4ca1ece84320bcb82216ae",
+    "execution_code_hash": "9cb52651df540443835eeea5e1ebfbcb2d710afbc810bbb3ac3102dfcec6b343",
+    "execution_task": {
+      "config_hash": "7553e40c40fabe417f73139c79fd169f5db60b14dcea0b8640a1f176e621be37",
+      "digest": "64d87bed9d810b6ae7dec85e3cb114750e910522ae66cf2f57c4ef20d0892108",
+      "id": "s-102",
+      "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+      "version": "original-reference-preparation-v1"
+    },
+    "input_hash": "c18745bf3c87820a2c5a5eff52ef1d87f63a2646531ff24a8aeeda04bafa192d",
+    "job_id": "7941260",
+    "metrics_version": "tutorial-discrete-metrics-v1",
+    "operation_id": "7d5ece5d6442ff2cbd3559044ed95c7aaa88904e9075b220151d68195f83d57e",
+    "purpose": "reuse_original_execution_without_rerunning_or_rebinding",
+    "receipts": {
+      "native/leases/7d5ece5d6442ff2cbd3559044ed95c7aaa88904e9075b220151d68195f83d57e/allocation": {
+        "file_sha256": "e0fd1d8626f69e60a0d7ab6b09683282ad37baa787202d09b1d7e2400e2f0e29",
+        "payload_hash": "1084a8824cf8a6b8bc8533743105124f1f4cf8516dd85ddbe203cc0a0141734f"
+      },
+      "native/leases/7d5ece5d6442ff2cbd3559044ed95c7aaa88904e9075b220151d68195f83d57e/allocation_requested": {
+        "file_sha256": "c21d608a391a00cfd25dbda9c22ca6a0d3e865aabec9c511358467bfd8c2e760",
+        "payload_hash": "bd073a44d524b2dd4b12449e50217145a4f1e0887774d638f580494a5a2c4099"
+      },
+      "native/runs/r-000001/0-exit": {
+        "file_sha256": "c5740665733fcdd3f12f29c4dac260751f6e1a7e39a8d920e6dea64dbacba2b1",
+        "payload_hash": "a41c3f9ee4213813f4030cf8994ac8ee4a51e120a7bcf8b87c503b3147676e99"
+      },
+      "native/runs/r-000001/0-log": {
+        "file_sha256": "414bfe47fe7b249b8bf0e09a01766a07a45d8d682745c9806509ffc03b712458",
+        "payload_hash": "6f25ae13b6767a4e849a9aab3bd9ff177bacd0a5ae94ee8ac75756afe393992b"
+      },
+      "native/runs/r-000001/0-start": {
+        "file_sha256": "fd799fed4ff0da2915e0bacaa55f8225e8ed94190c02f0aece499653277698fa",
+        "payload_hash": "b2a2624ff2da7a55b41e7c13bace8f011cc4d8f872c77be5aa691a66fdf1a61a"
+      },
+      "native/runs/r-000001/1-exit": {
+        "file_sha256": "10343cef1fa11cc4cb98211a8a7f5cf9bfeded06434d6bfb4eb5f0240c24014c",
+        "payload_hash": "14aa8f94362cdd449b62032ee7fe11d0586c4bb64f43e18c38a263dcd7524dab"
+      },
+      "native/runs/r-000001/1-log": {
+        "file_sha256": "1f609e92ce402ee9681de9f7082dc1eca671c01b68bab6bf543f9a1d170d4f51",
+        "payload_hash": "750d98400b3ee1a76f8cab17eaec1b62d8e31e5183d7a39de10727ac263ebb2a"
+      },
+      "native/runs/r-000001/1-start": {
+        "file_sha256": "3db6c00c0a835b959f2febeb9559cce524d68899e0745abc894d176e04614612",
+        "payload_hash": "b23861f2deca31fa110378d24bac4106829d8ccec0684caf6daf8b78445f92b6"
+      },
+      "native/runs/r-000001/2-exit": {
+        "file_sha256": "6b1e7e2b5028848ff06cf90d993bbc4c45a489d14c0d5ae137726953ca2f3bd8",
+        "payload_hash": "46078e118efc54010ddd6ec3bbf181fbf2fbb8b46d59682d13a7ffb5b05664d3"
+      },
+      "native/runs/r-000001/2-log": {
+        "file_sha256": "8a50cbe36982bbb54302091dbaf31146a8db6cf8e8c8b60ffa204d3f5ddb4fda",
+        "payload_hash": "11a729a8920557dd30bc9446a28162c1795ad0b0144f556a10dcfcffa9901a56"
+      },
+      "native/runs/r-000001/2-start": {
+        "file_sha256": "2abd4f5caefe0befb121a64e69eb2706355a8d0c9156c77ef4131abab15a77b7",
+        "payload_hash": "f0194addd2b0d90f4d69d8d7ea29df5d4cabd73f1cc62b51edb36cc924136949"
+      },
+      "native/runs/r-000001/artifacts": {
+        "file_sha256": "c46d23286cb8cab122ab621523f97396bd3b84ae5d442f07c2906f6903c40d90",
+        "payload_hash": "da019e472381b2e960c5094a7dfd5cfc53541dd58e4ca1ece84320bcb82216ae"
+      },
+      "native/runs/r-000001/handle": {
+        "file_sha256": "00d09d7bc1214aab9adb25c0a6bbdfc7af6b82ba65bbf569a2561f2bfa6c625e",
+        "payload_hash": "842bff2754c437983574d5cba7ac09bebe718334d27afbeedad0609a6c37afc0"
+      },
+      "native/runs/r-000001/inputs": {
+        "file_sha256": "9e4df937f075de7c176e22f66acecb1643839513aac96bacdc6f55edd7611ff7",
+        "payload_hash": "c18745bf3c87820a2c5a5eff52ef1d87f63a2646531ff24a8aeeda04bafa192d"
+      },
+      "native/runs/r-000001/released": {
+        "file_sha256": "ec21a4c17a274e916f696e17f9932725d6150b75f015c96cc831ed51b0562809",
+        "payload_hash": "f7bccf609b3dd0de0810cea1fd1c87418262bab3a1c564df02988b27511a1a42"
+      },
+      "native/runs/r-000001/result": {
+        "file_sha256": "b233a2bdb50ae2e2aa2d4576a433b1f66be07290630cfdc39033f0bd84c9e4df",
+        "payload_hash": "4122357b7f4b255a38213ca83c0c3c27f2b9f67f9ad45ddab3f2a682fe6534aa"
+      },
+      "native/runs/r-000001/spec": {
+        "file_sha256": "ddc9a25f77b2829e96c1fdf5cebe102d555670d1d49926e6287805869d216f35",
+        "payload_hash": "d89965cfff05ae87bc625c625ba53474a2168366acb195ea3c73d251f389c6e1"
+      },
+      "result": {
+        "file_sha256": "89f6a7e1211eb610fac53cec5fcf42cfeb299416af06d7b98dbf3028b573bfbc",
+        "payload_hash": "733faac96e237d5a94b5850f0aaee7257c7ad5cc4e83bc370f88648dc8cadaa0"
+      },
+      "spec": {
+        "file_sha256": "ff94126b7a40c371d974a45069df9d67f7f5c19cb36785cbf796ec8b6d58e902",
+        "payload_hash": "d63e31784a03552d12ceb5ba517c6a64c61765be37a7b72c749be2cfe0761438"
+      }
+    },
+    "result_hash": "4122357b7f4b255a38213ca83c0c3c27f2b9f67f9ad45ddab3f2a682fe6534aa"
+  },
+  "remaining_gate": "task_specific_numeric_and_native_negative_qualification",
+  "schema": "original-numeric-baseline-v1",
+  "snapshot": {
+    "cell_count": 24,
+    "end": 100.0,
+    "fields": {
+      "U": [
+        [
+          0.790118,
+          -0.120698,
+          0.0
+        ],
+        [
+          1.12841,
+          0.2849,
+          0.0
+        ],
+        [
+          0.650329,
+          0.274064,
+          0.0
+        ],
+        [
+          1.28586,
+          0.0510329,
+          0.0
+        ],
+        [
+          0.829141,
+          0.152609,
+          0.0
+        ],
+        [
+          1.27017,
+          0.351142,
+          0.0
+        ],
+        [
+          0.18088,
+          0.189336,
+          0.0
+        ],
+        [
+          1.94689,
+          0.130083,
+          0.0
+        ],
+        [
+          0.408136,
+          0.219675,
+          0.0
+        ],
+        [
+          1.69868,
+          -0.0841386,
+          0.0
+        ],
+        [
+          0.15381,
+          -0.0482773,
+          0.0
+        ],
+        [
+          1.33052,
+          0.878762,
+          -2.26709e-16
+        ],
+        [
+          0.834083,
+          0.653496,
+          0.0
+        ],
+        [
+          0.963039,
+          1.50779,
+          0.0
+        ],
+        [
+          0.488182,
+          1.01287,
+          0.0
+        ],
+        [
+          0.919916,
+          1.24336,
+          0.0
+        ],
+        [
+          0.7862,
+          0.930907,
+          1.64776e-16
+        ],
+        [
+          0.953885,
+          1.17557,
+          -3.80333e-18
+        ],
+        [
+          0.908195,
+          0.881651,
+          -2.71513e-16
+        ],
+        [
+          0.77022,
+          1.10198,
+          1.51128e-17
+        ],
+        [
+          0.115351,
+          1.21678,
+          2.07353e-16
+        ],
+        [
+          0.257559,
+          1.26308,
+          -2.07633e-17
+        ],
+        [
+          1.46239,
+          0.325552,
+          0.0
+        ],
+        [
+          1.33306,
+          0.276291,
+          0.0
+        ]
+      ],
+      "p": [
+        1.54043,
+        1.69529,
+        1.41248,
+        1.52931,
+        1.23419,
+        1.27423,
+        1.0299,
+        0.928267,
+        0.967674,
+        0.524468,
+        1.72902,
+        0.611878,
+        1.52124,
+        0.37492,
+        1.28432,
+        0.206154,
+        1.08258,
+        0.0637695,
+        0.7572,
+        -0.0286332,
+        0.538127,
+        -0.0483524,
+        0.164477,
+        -0.172186
+      ]
+    },
+    "measurements": {
+      "U_cell_mean": {
+        "unit": "m/s",
+        "value": [
+          0.894376,
+          0.5778257083333334,
+          -5.647784583333335e-18
+        ]
+      },
+      "cell_count": {
+        "unit": "1",
+        "value": 24
+      },
+      "final_iteration": {
+        "unit": "1",
+        "value": 100.0
+      },
+      "p_cell_min_mean_max": {
+        "unit": "m2/s2",
+        "value": [
+          -0.172186,
+          0.8425313708333334,
+          1.72902
+        ]
+      },
+      "p_last_final_residual": {
+        "unit": "1",
+        "value": 2.32705e-07
+      },
+      "p_last_initial_residual": {
+        "unit": "1",
+        "value": 8.60806e-05
+      },
+      "speed_cell_max": {
+        "unit": "m/s",
+        "value": 1.9512309599299105
+      },
+      "speed_cell_rms": {
+        "unit": "m/s",
+        "value": 1.2676494771114382
+      }
+    },
+    "version": "tutorial-discrete-metrics-v1"
+  }
+}

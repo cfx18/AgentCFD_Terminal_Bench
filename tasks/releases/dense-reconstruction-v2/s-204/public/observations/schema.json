@@ -1,0 +1,47 @@
+{
+  "columns": [
+    "x_m",
+    "y_m",
+    "z_m",
+    "volume_m3",
+    "Ux_m_s",
+    "Uy_m_s",
+    "Uz_m_s",
+    "p",
+    "T_K"
+  ],
+  "coordinate_unit": "m",
+  "csv_sha256": "3ee51802548b57227c7614e275b4d8f93b44e498f4627f63ce96aa86bf96a00b",
+  "normalizers": {
+    "T": {
+      "definition": "reference maximum minus minimum temperature, NOT absolute Kelvin",
+      "unit": "K",
+      "value": 19.4923809
+    },
+    "U": {
+      "definition": "reference volume-weighted RMS speed",
+      "unit": "m/s",
+      "value": 0.10925097054768929
+    },
+    "p": {
+      "definition": "reference maximum minus minimum pressure, NOT absolute mean",
+      "unit": "Pa",
+      "value": 25.258799999995972
+    }
+  },
+  "point_count": 78750,
+  "pressure_definition": "absolute thermodynamic pressure",
+  "pressure_unit": "Pa",
+  "sampling": "All reference internal-cell centres; candidate samples use native containing-cell values at these coordinates.",
+  "schema": "dense-observation-v1",
+  "scoring_status": "released; dense-reconstruction-reward-v1",
+  "snapshot": {
+    "kind": "finite_numerical_reference",
+    "note": "One accepted finite numerical state, not a certified steady or mesh-independent solution.",
+    "physical_time": null
+  },
+  "synthetic_observations": true,
+  "temperature_unit": "K",
+  "velocity_unit": "m/s",
+  "weight_unit": "m3"
+}

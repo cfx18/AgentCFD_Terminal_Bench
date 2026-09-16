@@ -1,0 +1,30 @@
+{
+  "version": "manual-science-launch-v1",
+  "python": "../.venv-harbor/bin/python",
+  "runtime": "runs/sol-ultra-runtime-001",
+  "manifest": "experiments/sol-ultra-five-v1.json",
+  "probe": "runs/sol-subscription-client-probe-003",
+  "junit": [
+    "runs/sol-subscription-final-tests-0.xml",
+    "runs/sol-subscription-final-tests-1.xml",
+    "runs/sol-subscription-launcher-tests-001.xml"
+  ],
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "ultra",
+  "model_calls_per_task": 64,
+  "authentication": {
+    "backend": "chatgpt-subscription",
+    "auth_home": "/root/.codex"
+  },
+  "output_parent": "runs/manual",
+  "release": {
+    "ready": false,
+    "audit_report": "audits/pipeline-20260915-001/README.md",
+    "blockers": [
+      "当前冻结版本仍有串行桥接与 ultra 子 Agent 并发冲突，需真实 CLI 慢流测试。",
+      "需修复断连后丢失上游终态及终态后等待 EOF 的问题。",
+      "修复后须更新 runtime、接口烟测 probe 和与该版本绑定的测试证据，不能沿用旧版通过记录。",
+      "正式提交前确认订阅额度；审计时周额度已用 99%，无额外 credits。"
+    ]
+  }
+}

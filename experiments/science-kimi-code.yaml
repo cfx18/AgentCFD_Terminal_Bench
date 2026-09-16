@@ -1,0 +1,47 @@
+# Independent companion to science.yaml; never resume or overwrite the Astra run.
+version: science-campaign-v1
+name: kimi-code-k3-output-20x-001
+
+harness:
+  # codex | foamclaw | claude-code | kimi-code. This run uses Node Kimi Code 0.28.1.
+  name: kimi-code
+  backend: custom-api
+  reasoning_effort: null          # Preserve client/provider defaults; no Astra effort mapping.
+  public_decision_log: false      # Codex-only addendum is unsupported here; all native I/O is captured.
+
+model:
+  name: Kimi-K3                   # Existing non-Codex bridge supports this exact model only.
+
+tasks: [s-205, s-203, s-202, s-204]
+instruction_profile: geometry-only-free-mesh-output-v1
+
+# Identical task inputs, GT, grading and budgets to the parallel Astra campaign.
+budget:
+  model_calls: 64
+  native_seconds: 1800
+  per_run_seconds: 1800
+  request_seconds: 600
+
+# Screened, read-only general documentation; no internet/tutorial answers/GT.
+documentation: openfoam-v2306-reference-v1
+authentication:
+  env_file: /root/shared-nvme/Caifeixue/AgentCFD/.env  # Host only; never copied into the agent or snapshots.
+
+execution:
+  python: ../.venv-harbor/bin/python
+  prepared_parent: runs/prepared
+  output_parent: runs/manual
+  provider_concurrency: 1         # One Kimi request at a time; independent from the Astra controller.
+  native_concurrency: 1           # Separate cluster lease per submission; no shared workspace.
+
+evidence:
+  interface_check: live-probe
+  probe: audits/kimi-output-reference-20260916-001/client-probe
+  junit:
+    - audits/kimi-output-reference-20260916-001/tests-release.xml
+
+release:
+  ready: false                    # Retired: user stopped the relay-provider campaign.
+  audit_report: docs/KIMI_OUTPUT_REFERENCE_20260916.md
+  blockers:
+    - "User stopped this relay-provider campaign; use science-kimi-official.yaml after qualification."

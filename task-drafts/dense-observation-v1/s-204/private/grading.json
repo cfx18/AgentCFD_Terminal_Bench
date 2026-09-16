@@ -1,0 +1,10 @@
+{
+  "policy": "dense-observation-v1",
+  "release_status": "draft",
+  "general_mesh_qualified": false,
+  "rubric_approved": false,
+  "convergence_rules": [],
+  "thresholds": null,
+  "reward": null,
+  "pending": ["cross_mesh_sampling_qualification", "expert_metric_and_tolerance_review", "reconstruction_integrity_review"]
+}

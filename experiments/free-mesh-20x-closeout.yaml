@@ -1,0 +1,18 @@
+version: author-native-closeout-v1
+name: free-mesh-20x-native-review-20260915
+# 按用户明确的新范围，只读展示 s-20x。不是自动筛题或删掉失败分母。
+# 完整历史仍在 free-mesh-author-closeout.yaml；s-10x 故意错误题不再推进。
+# 不启动模型或原生计算，不修改已冻结记录。
+tasks:
+  - id: s-202
+    title: 多区域共轭传热
+    evidence_roots: [audits/free-mesh-thermal-native-20260915-002/s-202, audits/free-mesh-thermal-native-20260915-004/s-202, audits/free-mesh-thermal-native-20260915-005/s-202, audits/free-mesh-thermal-native-20260915-007/s-202, audits/free-mesh-thermal-native-20260915-008/s-202, audits/free-mesh-thermal-native-20260915-009/s-202]
+  - id: s-203
+    title: 温度依赖黏度
+    evidence_roots: [audits/free-mesh-thermal-native-20260915-001/s-203, audits/free-mesh-thermal-native-20260915-003/s-203, audits/free-mesh-thermal-native-20260915-006/s-203]
+  - id: s-204
+    title: 密闭腔体自然对流
+    evidence_roots: [audits/free-mesh-buoyant-shock-20260915-001/s-204, audits/free-mesh-buoyant-shock-20260915-002/s-204, audits/free-mesh-buoyant-shock-20260915-003/s-204, audits/free-mesh-buoyant-shock-20260915-004/s-204]
+  - id: s-205
+    title: 激波管
+    evidence_roots: [audits/free-mesh-buoyant-shock-20260915-001/s-205]

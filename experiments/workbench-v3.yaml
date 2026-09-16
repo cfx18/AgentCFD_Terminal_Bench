@@ -1,0 +1,25 @@
+# New protocol: no old run is resumed, overwritten or silently rescored.
+version: workbench-v3
+harness:
+  name: codex                       # Real Codex CLI; other harnesses remain archived.
+  backend: chatgpt-subscription     # Or custom-api (endpoint + api_key_env below).
+  reasoning_effort: xhigh           # low / medium / high / xhigh; subagents disabled.
+  auth_home: /root/.codex            # Host only, never mounted into the agent.
+  # endpoint: https://YOUR-PROVIDER/v1  # Base URL, NOT /chat/completions.
+  # api_key_env: BENCH_MODEL_API_KEY
+model: gpt-6-astra                  # Subscription: gpt-6-astra / gpt-5.6-sol (if in local catalog).
+                                   # Custom API: provider's actual model ID; no alias/fallback.
+tasks: [s-205, s-203, s-202, s-204]
+task_root: ../tasks/releases/workbench-v3
+docs: ../environments/docs-v2306
+network: disabled
+budget:
+  model_calls: 64
+  native_seconds: 1000              # All Agent-requested native work, including failures.
+  request_seconds: 600              # Provider watchdog; not physical simulation time.
+execution:
+  foam_root: ../environments/native-v2306/foam
+  mpi: intelmpi
+  memory_bytes: 4294967296
+  file_bytes: 536870912
+output: ../runs/workbench-v3

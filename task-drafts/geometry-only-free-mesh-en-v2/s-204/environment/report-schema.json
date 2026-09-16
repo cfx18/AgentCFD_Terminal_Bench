@@ -1,0 +1,106 @@
+{
+  "final_iteration": {
+    "unit": "1",
+    "size": 1
+  },
+  "cell_count": {
+    "unit": "1",
+    "size": 1
+  },
+  "volume": {
+    "unit": "m3",
+    "size": 1
+  },
+  "mass": {
+    "unit": "kg",
+    "size": 1
+  },
+  "T_volume_mean": {
+    "unit": "K",
+    "size": 1
+  },
+  "p_volume_mean": {
+    "unit": "Pa",
+    "size": 1
+  },
+  "speed_volume_rms": {
+    "unit": "m/s",
+    "size": 1
+  },
+  "U_volume_mean": {
+    "unit": "m/s",
+    "size": 3
+  },
+  "last_initial_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "last_final_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "p_rgh_final_initial_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "h_final_initial_residual": {
+    "unit": "1",
+    "size": 1
+  },
+  "T_last_write_relative_change": {
+    "unit": "1",
+    "size": 1
+  },
+  "U_last_write_relative_change": {
+    "unit": "1",
+    "size": 1
+  },
+  "cold_wall_heat_rate": {
+    "unit": "W",
+    "size": 1
+  },
+  "frontAndBack_wall_heat_rate": {
+    "unit": "W",
+    "size": 1
+  },
+  "hot_wall_heat_rate": {
+    "unit": "W",
+    "size": 1
+  },
+  "topAndBottom_wall_heat_rate": {
+    "unit": "W",
+    "size": 1
+  },
+  "k_volume_mean": {
+    "unit": "m2/s2",
+    "size": 1
+  },
+  "omega_volume_mean": {
+    "unit": "1/s",
+    "size": 1
+  },
+  "nut_volume_mean": {
+    "unit": "m2/s",
+    "size": 1
+  },
+  "alphat_volume_mean": {
+    "unit": "kg/(m s)",
+    "size": 1
+  },
+  "T_x_bin_mean": {
+    "unit": "K",
+    "size": 20
+  },
+  "Uy_x_bin_mean": {
+    "unit": "m/s",
+    "size": 20
+  },
+  "T_y_bin_mean": {
+    "unit": "K",
+    "size": 20
+  },
+  "Uy_y_bin_mean": {
+    "unit": "m/s",
+    "size": 20
+  }
+}

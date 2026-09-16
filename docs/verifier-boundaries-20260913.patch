@@ -1,0 +1,443 @@
+*** Begin Patch
+*** Update File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/agentcfd_bench/foam/science_contract.py
+@@
+     if kind not in ('fixedValue',):
+         # These fields are recomputed by the registered boundary model. Keep
+         # inletValue, intensity, mixingLength, p0 and every physical coefficient.
+-        if kind in ('inletOutlet', 'pressureInletOutletVelocity', 'calculated',
++        # cyclicAMI's optional value initializes the patch field; subsequent
++        # values follow coupledFvPatchField::evaluate, not a fixed-value law.
++        # Preserve type/useImplicit and all other coefficients. Native validity
++        # and final-field acceptance remain independent, mandatory checks.
++        if kind in ('cyclicAMI', 'inletOutlet', 'pressureInletOutletVelocity', 'calculated',
+                     'epsilonWallFunction', 'kqRWallFunction', 'nutkWallFunction',
+                     'turbulentIntensityKineticEnergyInlet', 'turbulentMixingLengthDissipationRateInlet'):
+             value.pop('value', None)
+*** Update File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/agentcfd_bench/smoke/agent.py
+@@
+ CLAUDE = CLAUDE_MODULES / '@anthropic-ai/claude-code/cli.js'
+ KIMI = PROJECT / '.harness-runtime/kimi-code-0.28.1/node_modules'
+ LEGACY_FILES = ('core/react.py', 'core/llm.py', 'core/memory.py', 'core/state.py', 'tools/registry.py')
++SUBMISSION_PROTOCOL = 'fresh-action-v2-budget-boundary'
+ 
+ 
+ def runtime_identity(harness, legacy):
+@@
+         self.root.mkdir(parents=True)
+         self.harness, self.legacy = harness, Path(legacy)
+         self.identity = runtime_identity(harness, legacy)
+-        self.identity['submission_protocol'] = 'fresh-action-v1' if fresh_action else 'final-file-snapshot-v1'
++        self.identity['submission_protocol'] = SUBMISSION_PROTOCOL if fresh_action else 'final-file-snapshot-v1'
+         self.documentation = documentation
+         if documentation is not None:
+             self.identity['documentation_digest'] = documentation.digest
+@@
+         journal.write('client_result', {'completed': completed, 'session': self.session, 'errors': broker.errors})
+         budget_stop = broker.budget_exhausted and not broker.errors
+         usage = collect(broker.directory)
+-        if not budget_stop and (child.returncode or timed_out or broker.errors or not completed):
++        if timed_out or (not budget_stop and (child.returncode or broker.errors or not completed)):
+             exc = CodexExecutionError('Harness did not complete; see client_result, stderr and API receipts', broker.calls)
+             exc.model_usage = usage
+             raise exc
+         captured = capture_inputs(self.work)
++        # A completed last tool can write the explicit action before the client
++        # asks for another model response and hits the known call-budget guard.
++        # Fresh-action mode consumed any prior action before launching; never
++        # apply this recovery to legacy snapshots or uncertain/timeout exits.
++        terminal_action = (budget_stop and self.fresh_action and not captured['invalid']
++                           and ACTION_FILE in captured['files'])
++        submitted = (completed and not budget_stop) or terminal_action
++        journal.write('submission_boundary', {'client_completed': completed,
++            'known_budget_stop': budget_stop, 'fresh_action': self.fresh_action,
++            'action_present': ACTION_FILE in captured['files'],
++            'accepted_terminal_action': bool(terminal_action), 'submitted': bool(submitted)})
+         history = (*context.history, {'role': 'assistant', 'content': json.dumps({'events': events}),
+             'harness_session': {'identity': self.identity, 'workspace': self.root.name, 'session': self.session, 'index': self.index}})
+-        turn = AgentTurn(captured['files'], history, completed and not budget_stop,
++        turn = AgentTurn(captured['files'], history, submitted,
+                          input_error='unsupported_workspace_input' if captured['invalid'] else None, model_calls=broker.calls, usage=usage)
+         journal.write('turn', asdict(turn))
+         return turn
+@@
+         return Agent(root, harness, endpoint=endpoint, credential=credential, legacy=legacy,
+                      artifacts=artifacts, seconds=seconds, fresh_action=fresh_action, documentation=documentation)
+     create.identity = runtime_identity(harness, legacy)
+-    create.identity['submission_protocol'] = 'fresh-action-v1' if fresh_action else 'final-file-snapshot-v1'
++    create.identity['submission_protocol'] = SUBMISSION_PROTOCOL if fresh_action else 'final-file-snapshot-v1'
+     if documentation is not None:
+         create.identity['documentation_digest'] = documentation.digest
+     return create
+*** Update File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/agentcfd_bench/smoke/broker.py
+@@
+                 self.end_headers()
+                 self.wfile.write(body)
+ 
+-            def reject(self, status, message):
+-                self.send(status, json.dumps({'type': 'error', 'error': {'type': 'api_error', 'message': message}}).encode())
++            def reject(self, status, message, error_type='api_error'):
++                self.send(status, json.dumps({'type': 'error', 'error': {'type': error_type, 'message': message}}).encode())
+ 
+             def do_POST(self):
+                 path = self.path.split('?', 1)[0]
+@@
+                 if owner.errors:
+                     return self.reject(503, 'Previous request failed; host review required, no automatic redispatch')
+                 if owner.calls >= limit:
++                    if not owner.budget_exhausted:
++                        NativeJournal(owner.directory).write('budget_exhausted', {
++                            'calls': owner.calls, 'limit': limit, 'http_status': 400,
++                            'reason': 'local_model_call_budget_exhausted', 'provider_dispatched': False})
+                     owner.budget_exhausted = True
+-                    return self.reject(429, 'Benchmark request budget exhausted')
++                    # This cannot recover by waiting. A retryable 429 makes
++                    # real clients back off for minutes after all paid work has
++                    # finished. Keep genuine upstream errors separate.
++                    return self.reject(400, 'Benchmark request budget exhausted', 'invalid_request_error')
+                 owner.calls += 1
+                 journal = NativeJournal(owner.directory / f'call-{owner.calls:03d}')
+                 journal.write('request', {'path': path, 'body': body})
+*** Update File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/agentcfd_bench/science_campaign.py
+@@
+ 
+ def prepare(root, config, staging, legacy, *, mode='paid-harness-science'):
+     from .qualification import protocol_identity
+-    from .smoke.agent import runtime_identity
++    from .smoke.agent import runtime_identity, SUBMISSION_PROTOCOL
+     from .tutorial_inventory import BATCH
+     expected = [row[0] for row in BATCH]
+     keys = {'version','tasks','harnesses','model','budget','documentation','concurrency',
+@@
+                  'code_hashes':{task.identity['id']:protocol_identity(task=task) for task in tasks},
+                  'experiments':{task.identity['id']:_experiment(config,task) for task in tasks},
+                  'harness_identities':{
+-                     name:{**runtime_identity(name,legacy),'submission_protocol':'fresh-action-v1',
++                     name:{**runtime_identity(name,legacy),'submission_protocol':SUBMISSION_PROTOCOL,
+                            'documentation_digest':docs.digest} for name in HARNESSES}}
+     root = Path(root)
+     root.mkdir(parents=True,exist_ok=False)
+@@
+         if task.binding != selection['tasks'][name] or protocol_identity(task=task) != selection['code_hashes'][name]:
+             raise ValueError('Task or execution code changed after campaign preparation')
+     for name in HARNESSES:
+-        actual = {**runtime_identity(name,selection['legacy']),'submission_protocol':'fresh-action-v1',
++        from .smoke.agent import SUBMISSION_PROTOCOL
++        actual = {**runtime_identity(name,selection['legacy']),'submission_protocol':SUBMISSION_PROTOCOL,
+                   'documentation_digest':docs.digest}
+         if actual != selection['harness_identities'][name]:
+             raise ValueError('Actual harness changed after campaign preparation')
+*** Update File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/tests/test_rounds_only_budget.py
+@@
+             body = {'model': 'Kimi-K3', 'messages': [{'role': 'user', 'content': 'hello'}]}
+             assert client.post('/v1/chat/completions', json=body).status_code == 200
+             assert client.post('/v1/chat/completions', json={**body, 'max_tokens': 131072}).status_code == 200
+-            assert client.post('/v1/chat/completions', json=body).status_code == 429
++            assert client.post('/v1/chat/completions', json=body).status_code == 400
+     assert len(sent) == broker.calls == 2 and broker.budget_exhausted
++    assert NativeJournal(broker.directory).read('budget_exhausted') == {
++        'calls': 2, 'limit': 2, 'http_status': 400,
++        'reason': 'local_model_call_budget_exhausted', 'provider_dispatched': False}
+     assert 'max_tokens' not in sent[0] and sent[1]['max_tokens'] == 131072
+     assert collect(tmp_path/'evidence')['output_tokens'] == 40000
+*** Update File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/tests/test_release_checks.py
+@@
+ import json
+ import subprocess
+ import sys
++import tomllib
+ 
+-from agentcfd_bench.task_package import PROJECT
++from agentcfd_bench.task_package import PROJECT, TASKS
+ 
+ 
+ def test_read_only_release_gate():
+@@
+                             cwd=PROJECT, text=True, capture_output=True)
+     assert result.returncode == 0, result.stderr
+     value = json.loads(result.stdout)
+-    assert value == {'registered':['s-001'], 'unregistered':[], 'passed':True,
++    registered = [row['id'] for row in tomllib.loads((TASKS/'dataset.toml').read_text())['tasks']]
++    assert value == {'registered':registered, 'unregistered':[], 'passed':True,
+                      'executed_models':0,'executed_native_commands':0}
+ 
+ 
+*** Add File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/tests/test_terminal_action_budget.py
++"""Real clients + local fake API: the last paid tool may write the submission.
++
++No external API or OpenFOAM. Runs in a separate checkout while a frozen campaign
++is active; unknown requests and stale actions must never become submissions.
++"""
++import json
++import os
++from pathlib import Path
++import shlex
++import threading
++from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
++
++import pytest
++
++from agentcfd_bench.models import PublicContext
++from agentcfd_bench.smoke.agent import Agent, PROJECT
++
++
++@pytest.mark.parametrize('harness', ['codex', 'foamclaw', 'claude-code', 'kimi-code'])
++@pytest.mark.parametrize('write_action,fresh,expected', [
++    (True, True, True), (False, True, False), (True, False, False),
++])
++def test_last_tool_submission_survives_budget_boundary(tmp_path, harness, write_action, fresh, expected):
++    if os.environ.get('FOAMCLAW_TEST_CODEX_ISOLATION') != '1':
++        pytest.skip('Opt-in actual isolated clients with local fake API only')
++    requests, failures = [], []
++    action = '{"action":"run","solver":"icoFoam"}'
++
++    class Handler(BaseHTTPRequestHandler):
++        def log_message(self, *args):
++            pass
++
++        def do_POST(self):
++            body = json.loads(self.rfile.read(int(self.headers['Content-Length'])))
++            requests.append(body)
++            try:
++                auxiliary = not body.get('tools') or body['messages'][-1].get('content') == 'Warmup'
++                if auxiliary:
++                    message = {'role':'assistant', 'content':'python3'}
++                    finish = 'stop'
++                else:
++                    specs = [t['function'] for t in body['tools']]
++                    target = '/work/system/science-action.json' if write_action else '/work/note.txt'
++                    writer = next((t for t in specs if t['name'].lower() == 'write'), None)
++                    if writer:
++                        props = writer['parameters']['properties']
++                        path_key = 'file_path' if 'file_path' in props else 'path'
++                        args = {path_key:target, 'content':action}
++                    else:
++                        writer = next(t for t in specs if t['name'].lower() in ('exec_command','bash','shell'))
++                        props = writer['parameters']['properties']
++                        source = ('from pathlib import Path; p=Path('+repr(target)+'); '
++                                  'p.parent.mkdir(parents=True,exist_ok=True); p.write_text('+repr(action)+')')
++                        args = {'cmd' if 'cmd' in props else 'command':shlex.join(['python3','-c',source])}
++                    for name in writer['parameters'].get('required', []):
++                        if name not in args:
++                            args[name] = {'description':'local boundary test','timeout':10,'timeout_ms':10000}.get(name,'test')
++                    message = {'role':'assistant','content':None,'tool_calls':[{
++                        'id':'tool_'+str(len(requests)), 'type':'function',
++                        'function':{'name':writer['name'],'arguments':json.dumps(args)}}]}
++                    finish = 'tool_calls'
++                # Never send a final primary assistant response: the next API
++                # request is rejected locally after the last tool has executed.
++                data = json.dumps({'id':'fake_'+str(len(requests)), 'model':'Kimi-K3',
++                    'choices':[{'index':0,'message':message,'finish_reason':finish}],
++                    'usage':{'prompt_tokens':10,'completion_tokens':10,'total_tokens':20}}).encode()
++                self.send_response(200)
++            except Exception as exc:
++                failures.append(str(exc))
++                data = json.dumps({'error':str(exc)}).encode()
++                self.send_response(500)
++            self.send_header('Content-Type','application/json')
++            self.send_header('Content-Length',str(len(data)))
++            self.end_headers()
++            self.wfile.write(data)
++
++    server = ThreadingHTTPServer(('127.0.0.1',0),Handler)
++    thread = threading.Thread(target=server.serve_forever,daemon=True)
++    thread.start()
++    try:
++        agent = Agent(tmp_path/'agent',harness,endpoint=f'http://127.0.0.1:{server.server_port}/v1',
++                      credential='fake',legacy=PROJECT.parent,seconds=15,submission_seconds=90,fresh_action=fresh)
++        turn = agent.step(PublicContext('Use the tools to write a fresh run action.',
++                         {'system/science-action.json':'{"old":true}'},(),8,0))
++        assert not failures
++        assert len(requests) == turn.model_calls == 8
++        assert turn.submitted is expected
++        if fresh and not write_action:
++            assert 'system/science-action.json' not in turn.files
++        elif write_action and fresh:
++            assert turn.files['system/science-action.json'] == action
++    finally:
++        server.shutdown()
++        server.server_close()
++        thread.join()
++
++
++def test_engine_scores_report_on_last_allowed_model_call(tmp_path):
++    from agentcfd_bench.demo import FakeAgent, FakeTransport
++    from agentcfd_bench.engine import run
++    from agentcfd_bench.runtime import NativeService
++    from agentcfd_bench.spec import load_experiment
++    experiment = load_experiment(PROJECT/'experiments/science-from-scratch-rounds-v2.json')
++    experiment['budget']['model_calls'] = 3
++    result = run(experiment,tmp_path/'run',FakeAgent,NativeService(tmp_path/'native',FakeTransport()))
++    assert result['model_calls'] == 3 and result['verdict'] == 'pass'
++
++
++@pytest.mark.parametrize('failure', ['timeout', 'provider_error', 'unknown_request'])
++def test_unsafe_exit_cannot_salvage_an_existing_fresh_action(tmp_path, monkeypatch, failure):
++    import subprocess
++    from agentcfd_bench.smoke import agent as module
++    from agentcfd_bench.adapters.codex_agent import CodexExecutionError
++
++    class Broker:
++        def __init__(self, root, *args, **kwargs):
++            self.directory = Path(root)
++            self.directory.mkdir(parents=True)
++            self.calls = 1
++            self.budget_exhausted = True
++            self.errors = [] if failure == 'timeout' else [{'type':failure, 'known_response':False}]
++        def __enter__(self):
++            return self
++        def __exit__(self, *args):
++            pass
++
++    agent = Agent(tmp_path/'agent','codex',endpoint='http://invalid.local',credential='fake',
++                  legacy=PROJECT.parent,seconds=1,submission_seconds=1,fresh_action=True)
++
++    class Child:
++        pid = 99999999
++        returncode = 1
++        def __init__(self, *args, **kwargs):
++            pass
++        def communicate(self, *args, **kwargs):
++            path = agent.work/'system/science-action.json'
++            path.parent.mkdir(exist_ok=True)
++            path.write_text('{"action":"run","solver":"icoFoam"}')
++            if failure == 'timeout':
++                raise subprocess.TimeoutExpired('fake',1)
++            return b'',b''
++        def wait(self):
++            self.returncode = -9
++            return self.returncode
++
++    monkeypatch.setattr(module,'Broker',Broker)
++    monkeypatch.setattr(module,'namespace_command',lambda *args,**kwargs:['--chdir','/work','fake'])
++    monkeypatch.setattr(module.subprocess,'Popen',Child)
++    monkeypatch.setattr(module.os,'killpg',lambda *args:None)
++    with pytest.raises(CodexExecutionError) as exc:
++        agent.step(PublicContext('test',{},(),1,0))
++    assert exc.value.model_calls == 1
+*** Add File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/tests/test_ami_initialization.py
++"""AMI initial guesses are not boundary laws; other constraints still apply."""
++import pytest
++
++from agentcfd_bench.foam.science_contract import check
++from test_tutorial_requirements import case
++
++
++@pytest.mark.parametrize('field,value', [
++    ('U', '$internalField'), ('p', '$internalField'),
++    ('U', 'uniform (0 0 0)'), ('p', 'uniform 0'),
++])
++def test_optional_ami_initialization_is_not_wrong_physics(field, value):
++    files, profile, _ = case('s-102')
++    old = 'type            cyclicAMI;'
++    assert files['0/'+field].count(old) == 2
++    files['0/'+field] = files['0/'+field].replace(old, old+'\n        value '+value+';')
++    assert check(files, profile) == {'passed': True, 'violations': []}
++
++
++@pytest.mark.parametrize('field,old,new', [
++    ('p', 'useImplicit     true;', 'useImplicit false;'),
++    ('U', 'type            cyclicAMI;', 'type fixedValue;'),
++    ('U', 'internalField   uniform (0 0 0);', 'internalField uniform (1 0 0);'),
++    ('p', 'value           uniform 0;', 'value uniform 1;'),
++])
++def test_ami_normalization_cannot_hide_other_constraint_changes(field, old, new):
++    files, profile, _ = case('s-102')
++    files['0/'+field] = files['0/'+field].replace(
++        'type            cyclicAMI;', 'type            cyclicAMI;\n        value $internalField;')
++    assert old in files['0/'+field]
++    files['0/'+field] = files['0/'+field].replace(old, new)
++    assert not check(files, profile)['passed']
+*** Add File: /root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/ci_checks/ami_initialization_control.py
++"""One native AMI equivalence diagnostic; no model calls or reference reruns.
++
++Run from this implementation's project root with --execute-native. The original
++completed baseline is read only. A fresh variant adds only the four AMI value
++initializers; outputs and receipt identities remain in a separate directory.
++Re-entry observes the same operation, never starts a replacement for ambiguity.
++This diagnostic is not a replacement for release qualification.
++"""
++import argparse
++import json
++from pathlib import Path
++import sys
++import time
++
++sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
++
++from agentcfd_bench.identity import fingerprint
++from agentcfd_bench.journal import NativeJournal
++from agentcfd_bench.qualification import protocol_identity
++from agentcfd_bench.runtime import Pending, cluster_service
++from agentcfd_bench.task_package import load_task
++from agentcfd_bench.tutorial_acceptance import distances
++from agentcfd_bench.foam.science_metrics import snapshot
++
++
++def run(output):
++    task = load_task('s-102')
++    acceptance = task.acceptance()
++    reference = task.reference().reference_files()
++    files = dict(reference)
++    for name in ('0/U', '0/p'):
++        marker = 'type            cyclicAMI;'
++        if files[name].count(marker) != 2:
++            raise ValueError('Original AMI patch entries changed')
++        files[name] = files[name].replace(marker, marker+'\n        value $internalField;')
++    changed = sorted(k for k in files if files[k] != reference[k])
++    if changed != ['0/U','0/p']:
++        raise ValueError('Diagnostic changed more than AMI initializers')
++    contract = acceptance.physics_contract(files)
++    if contract != {'passed':True,'violations':[]}:
++        raise ValueError('Run this diagnostic with the corrected contract implementation')
++    journal = NativeJournal(Path(output))
++    spec = {'schema':'ami-initial-value-native-control-v1', 'task':task.binding,
++            'code_hash':protocol_identity(task=task), 'input_hash':fingerprint(files),
++            'original_input_hash':fingerprint(reference), 'changed_inputs':changed,
++            'edit':'add value $internalField to AMI1/AMI2 in U and p only',
++            'model_calls':0, 'reference_reruns':0}
++    if journal.read('spec') is None:
++        journal.write('spec',spec)
++    if journal.read('spec') != spec:
++        raise ValueError('Diagnostic version changed; do not reuse its native receipts')
++    saved = journal.read('assessment')
++    if saved is not None:
++        return saved
++    service = cluster_service(journal.root/'native',task=task)
++    deadline = time.monotonic()+600
++    while True:
++        try:
++            native = service.execute('r-000001',files,120)
++            break
++        except Pending:
++            if time.monotonic() >= deadline:
++                raise  # Unknown native outcomes are not fresh submissions.
++            time.sleep(10)
++    baseline = json.loads((task.root/'solution/baseline.json').read_text())
++    policy = json.loads((task.root/'environment/acceptance-policy.json').read_text())
++    if native['verdict'] == 'pass':
++        observed = snapshot(native['artifacts'],json.loads((task.root/'solution/profile.json').read_text()))
++        measures = observed['measurements']
++        evaluation = acceptance.evaluate({'action':'report','run_id':'r-000001','measurements':measures},native)
++        errors = distances(observed['fields'],baseline['snapshot']['fields'],policy)
++        same_fields = observed['fields'] == baseline['snapshot']['fields']
++    else:
++        evaluation, errors, same_fields = {'verdict':'not_evaluated'}, {}, False
++    result = {**spec, 'native_verdict':native['verdict'],'native_stage':native['stage'],
++              'native_reason':native['reason'], 'native_result_hash':fingerprint(native),
++              'baseline_hash':fingerprint(baseline),'contract':contract,
++              'evaluation':evaluation,'distances':errors,'exact_same_final_fields':same_fields}
++    journal.write('assessment',result)
++    return result
++
++
++if __name__ == '__main__':
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('--output',required=True)
++    parser.add_argument('--execute-native',action='store_true')
++    args = parser.parse_args()
++    if not args.execute_native:
++        parser.error('Explicit --execute-native required; this acquires one short cluster allocation')
++    result = run(args.output)
++    print(json.dumps(result,ensure_ascii=False,indent=2),flush=True)
++    raise SystemExit(0 if result['evaluation']['verdict'] == 'pass' else 1)
+*** End Patch

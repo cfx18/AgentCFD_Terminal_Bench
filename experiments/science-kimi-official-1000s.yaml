@@ -1,0 +1,40 @@
+# Same tasks/scoring/runtime budget as science-astra-1000s.yaml.
+version: science-campaign-v1
+name: kimi-official-output-20x-1000s-20260916-003
+
+harness:
+  name: kimi-code                 # Node @moonshot-ai/kimi-code, not Python kimi-cli.
+  backend: custom-api             # Direct Moonshot official endpoint; no intermediary.
+  reasoning_effort: null          # Preserve client/provider settings.
+  public_decision_log: false
+model:
+  name: kimi-k3                   # Exact official model ID; no fallback.
+
+tasks: [s-205, s-203, s-202, s-204]
+instruction_profile: geometry-only-free-mesh-output-v1
+budget:
+  model_calls: 64
+  native_seconds: 1000
+  per_run_seconds: 1000
+  request_seconds: 600
+documentation: openfoam-v2306-reference-v1
+authentication:
+  env_file: .env.kimi-official     # Host only, never copied to the evaluated workspace.
+execution:
+  python: ../.venv-harbor/bin/python
+  prepared_parent: runs/prepared
+  output_parent: runs/manual
+  provider_concurrency: 1
+  native_concurrency: 1
+evidence:
+  interface_check: live-probe
+  probe: audits/astra-kimi-1000s-20260916-001/kimi-official-interface
+  junit:
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-1.xml
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-2.xml
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-3.xml
+    - audits/astra-kimi-1000s-20260916-001/tests-final-shard-4.xml
+release:
+  ready: true                     # A failed/missing new official probe still blocks submit.
+  audit_report: docs/ASTRA_KIMI_1000S_20260916.md
+  blockers: []

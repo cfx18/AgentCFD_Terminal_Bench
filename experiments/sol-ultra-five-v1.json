@@ -1,0 +1,12 @@
+{
+  "version": "explicit-science-matrix-v1",
+  "provider_concurrency": 1,
+  "native_concurrency": 1,
+  "tasks": [
+    {"experiment": "sol-ultra-s-105-v1.json", "positive_source": "runs/tutorial-reference-preparation-001/s-105"},
+    {"experiment": "sol-ultra-s-205-v1.json", "positive_source": "runs/fable-edge-originals-001/s-205"},
+    {"experiment": "sol-ultra-s-203-v1.json", "positive_source": "runs/fable-edge-originals-001/s-203"},
+    {"experiment": "sol-ultra-s-202-v1.json", "positive_source": "runs/fable-edge-originals-002/s-202"},
+    {"experiment": "sol-ultra-s-204-v1.json", "positive_source": "runs/fable-edge-originals-002/s-204"}
+  ]
+}

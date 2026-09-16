@@ -1,0 +1,28 @@
+schema_version = "1.4"
+artifacts = ["/work/system/science-action.json"]
+
+[task]
+name = "agentcfd-terminal-bench/s-001"
+description = "Build and verify a transient planar Couette flow from scratch."
+
+[metadata]
+version = "couette-transient-2"
+track = "science"
+runtime = "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1"
+execution_protocol = "durable-native-session-v1"
+native_commands = [["mesh", "blockMesh"], ["mesh_check", "checkMesh"], ["solver", "icoFoam", "-noFunctionObjects"]]
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+cpus = 1
+memory_mb = 2048
+network_mode = "no-network"
+
+[verifier]
+timeout_sec = 120.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

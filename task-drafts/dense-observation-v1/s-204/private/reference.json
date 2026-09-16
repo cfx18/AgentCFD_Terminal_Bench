@@ -1,0 +1,43 @@
+{
+  "dimensions": {
+    "T": "[0 0 0 1 0 0 0]",
+    "U": "[0 1 -1 0 0 0 0]",
+    "p": "[1 -1 -2 0 0 0 0]"
+  },
+  "endpoint_kind": "latest_saved_state",
+  "public_csv_sha256": "3ee51802548b57227c7614e275b4d8f93b44e498f4627f63ce96aa86bf96a00b",
+  "reference_status": "accepted_by_expert",
+  "required_time": null,
+  "schema": "dense-observation-v1",
+  "source": {
+    "artifact_hash": "0c255ef140b09b6f961126ce493d18f1967d04fa4786b2150fe877326b303788",
+    "control": "valid",
+    "endpoint": {
+      "kind": "iteration",
+      "unit": "1",
+      "value": 6000
+    },
+    "evidence_status": "completed_and_released",
+    "input_hash": "a0f51267985cf9170a2f4e313ac035621679e7f8908ad9a3ba2fcdd5601c79e1",
+    "limitations": [
+      "A finite-iteration numerical reference, not a demonstrated fully converged steady solution.",
+      "The same task ID also has diagnostic runs; none silently replaces this selected result.",
+      "Recorded native duration exceeds the current model per-run 300 s cap; budget feasibility remains an execution-policy issue."
+    ],
+    "native_seconds": 1041.761434729211,
+    "native_verdict": "pass",
+    "reference_status": "accepted_by_expert",
+    "result_hash": "7337eb18c200632c06f5771421892b934108c6d25dabe3792009c16662650c6e",
+    "run_directory": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/audits/free-mesh-buoyant-shock-20260915-001/s-204/native/runs/r-000001",
+    "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+    "selection_reason": "Use the original 78,750-cell numerical reference, the upper row of the expert field review, not the later lower-resolution upwind diagnostic."
+  },
+  "source_manifest": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/tasks/releases/expert-output-v1/s-204/solution/accepted-target.json",
+  "surface_names": {
+    "cold": "surface_01",
+    "frontAndBack": "surface_02",
+    "hot": "surface_03",
+    "topAndBottom": "surface_04"
+  },
+  "task_id": "s-204"
+}

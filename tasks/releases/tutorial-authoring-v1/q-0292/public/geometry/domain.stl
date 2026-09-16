@@ -1,0 +1,86 @@
+solid rectangular_column
+  facet normal 0 0 -1
+    outer loop
+      vertex -0.0075 -0.075 0
+      vertex 0.0075 0.075 0
+      vertex 0.0075 -0.075 0
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex -0.0075 -0.075 0
+      vertex -0.0075 0.075 0
+      vertex 0.0075 0.075 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -0.0075 -0.075 0.45
+      vertex 0.0075 -0.075 0.45
+      vertex 0.0075 0.075 0.45
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -0.0075 -0.075 0.45
+      vertex 0.0075 0.075 0.45
+      vertex -0.0075 0.075 0.45
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -0.0075 -0.075 0
+      vertex -0.0075 -0.075 0.45
+      vertex -0.0075 0.075 0.45
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -0.0075 -0.075 0
+      vertex -0.0075 0.075 0.45
+      vertex -0.0075 0.075 0
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.0075 -0.075 0
+      vertex 0.0075 0.075 0
+      vertex 0.0075 0.075 0.45
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.0075 -0.075 0
+      vertex 0.0075 0.075 0.45
+      vertex 0.0075 -0.075 0.45
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -0.0075 -0.075 0
+      vertex 0.0075 -0.075 0
+      vertex 0.0075 -0.075 0.45
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex -0.0075 -0.075 0
+      vertex 0.0075 -0.075 0.45
+      vertex -0.0075 -0.075 0.45
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -0.0075 0.075 0
+      vertex 0.0075 0.075 0.45
+      vertex 0.0075 0.075 0
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex -0.0075 0.075 0
+      vertex -0.0075 0.075 0.45
+      vertex 0.0075 0.075 0.45
+    endloop
+  endfacet
+endsolid rectangular_column

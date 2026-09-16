@@ -1,0 +1,26 @@
+{
+  "schema": "tutorial-author-campaign-v1",
+  "target_qualified_tasks": 100,
+  "model": "gpt-5.6-luna",
+  "harness": {
+    "name": "codex",
+    "backend": "chatgpt-subscription",
+    "reasoning_effort": "high",
+    "auth_home": "/root/.codex-experiment"
+  },
+  "network": "disabled",
+  "budget": {"model_calls": 120, "request_seconds": 600, "native_seconds": null},
+  "minimum_free_bytes": 17179869184,
+  "author_concurrency": 3,
+  "archive": "/root/shared-nvme/Caifeixue/OpenFOAM-v2306/OpenFOAM-v2306.tgz",
+  "inventory": "/root/shared-nvme/Caifeixue/AgentCFD/data/benchmarks/experiments/tutorial-source-v2306-v2/inventory.json",
+  "docs": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/environments/docs-v2306/source",
+  "sandbox": {
+    "foam_root": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/environments/native-v2306/foam",
+    "mpi": "intelmpi"
+  },
+  "pilot_sources": [
+    "OpenFOAM-v2306/tutorials/incompressible/icoFoam/cavity/cavity",
+    "OpenFOAM-v2306/tutorials/heatTransfer/buoyantSimpleFoam/buoyantCavity"
+  ]
+}

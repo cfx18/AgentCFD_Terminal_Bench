@@ -1,0 +1,33 @@
+schema_version = "1.4"
+
+[metadata]
+artifact_fields = ["bottomWater/T", "bottomWater/U", "bottomWater/p", "bottomWater/p_rgh", "topAir/T", "topAir/U", "topAir/p", "topAir/p_rgh", "heater/T", "leftSolid/T", "rightSolid/T", "bottomWater/C", "bottomWater/V", "bottomWater/wallHeatFlux", "bottomWater/phi", "bottomWater/grad(T)", "topAir/C", "topAir/V", "topAir/wallHeatFlux", "topAir/phi", "topAir/grad(T)", "heater/C", "heater/V", "heater/wallHeatFlux", "leftSolid/C", "leftSolid/V", "leftSolid/wallHeatFlux", "rightSolid/C", "rightSolid/V", "rightSolid/wallHeatFlux"]
+edge_recipe = "free-mesh-multiregion-energy-v1"
+execution_protocol = "durable-native-session-v1"
+native_commands = [["mesh", "blockMesh"], ["zones", "topoSet"], ["split", "splitMeshRegions", "-cellZones", "-overwrite"], ["boundary_bottomwater", "changeDictionary", "-region", "bottomWater"], ["boundary_topair", "changeDictionary", "-region", "topAir"], ["boundary_heater", "changeDictionary", "-region", "heater"], ["boundary_leftsolid", "changeDictionary", "-region", "leftSolid"], ["boundary_rightsolid", "changeDictionary", "-region", "rightSolid"], ["mesh_check", "checkMesh", "-allRegions"], ["solver", "chtMultiRegionFoam"], ["centres_bottomwater", "postProcess", "-region", "bottomWater", "-func", "writeCellCentres", "-latestTime"], ["volumes_bottomwater", "postProcess", "-region", "bottomWater", "-func", "writeCellVolumes", "-latestTime"], ["centres_topair", "postProcess", "-region", "topAir", "-func", "writeCellCentres", "-latestTime"], ["volumes_topair", "postProcess", "-region", "topAir", "-func", "writeCellVolumes", "-latestTime"], ["centres_heater", "postProcess", "-region", "heater", "-func", "writeCellCentres", "-latestTime"], ["volumes_heater", "postProcess", "-region", "heater", "-func", "writeCellVolumes", "-latestTime"], ["centres_leftsolid", "postProcess", "-region", "leftSolid", "-func", "writeCellCentres", "-latestTime"], ["volumes_leftsolid", "postProcess", "-region", "leftSolid", "-func", "writeCellVolumes", "-latestTime"], ["centres_rightsolid", "postProcess", "-region", "rightSolid", "-func", "writeCellCentres", "-latestTime"], ["volumes_rightsolid", "postProcess", "-region", "rightSolid", "-func", "writeCellVolumes", "-latestTime"], ["wall_heat_flux_bottomwater", "chtMultiRegionFoam", "-postProcess", "-region", "bottomWater", "-func", "wallHeatFlux", "-latestTime"], ["wall_heat_flux_topair", "chtMultiRegionFoam", "-postProcess", "-region", "topAir", "-func", "wallHeatFlux", "-latestTime"], ["wall_heat_flux_heater", "chtMultiRegionFoam", "-postProcess", "-region", "heater", "-func", "wallHeatFlux", "-latestTime"], ["wall_heat_flux_leftsolid", "chtMultiRegionFoam", "-postProcess", "-region", "leftSolid", "-func", "wallHeatFlux", "-latestTime"], ["wall_heat_flux_rightsolid", "chtMultiRegionFoam", "-postProcess", "-region", "rightSolid", "-func", "wallHeatFlux", "-latestTime"], ["temperature_gradient_bottomwater", "postProcess", "-region", "bottomWater", "-func", "grad(T)", "-latestTime"], ["temperature_gradient_topair", "postProcess", "-region", "topAir", "-func", "grad(T)", "-latestTime"]]
+native_mesh_geometry = true
+qualification_seconds = 300
+runtime = "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1"
+track = "science"
+version = "expert-reference-v1"
+model_native_seconds = 1800
+submitted_steady_endpoint = false
+
+[metadata.acceptance_groups]
+report = ["report_matches_artifacts"]
+physical = ["task_contract", "native_completion", "field_realizability", "reference_observations"]
+
+[metadata.native_completion]
+kind = "transient"
+end = 100
+tolerance = 1e-07
+early_convergence = false
+
+[metadata.qualification]
+source_mode = "expert-accepted-reference-v1"
+
+[verifier]
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"

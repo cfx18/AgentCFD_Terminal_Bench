@@ -1,0 +1,46 @@
+{
+  "U_cell_mean": [
+    "m/s",
+    3
+  ],
+  "cell_count": [
+    "1",
+    1
+  ],
+  "epsilon_cell_min_mean_max": [
+    "m2/s3",
+    3
+  ],
+  "final_time": [
+    "s",
+    1
+  ],
+  "k_cell_min_mean_max": [
+    "m2/s2",
+    3
+  ],
+  "nut_cell_min_mean_max": [
+    "m2/s",
+    3
+  ],
+  "p_cell_min_mean_max": [
+    "m2/s2",
+    3
+  ],
+  "p_last_final_residual": [
+    "1",
+    1
+  ],
+  "p_last_initial_residual": [
+    "1",
+    1
+  ],
+  "speed_cell_max": [
+    "m/s",
+    1
+  ],
+  "speed_cell_rms": [
+    "m/s",
+    1
+  ]
+}

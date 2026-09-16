@@ -1,0 +1,50 @@
+{
+  "convergence_certified": false,
+  "coverage": 1.0,
+  "grader_native_seconds": 3.7737619429826736,
+  "integrity_review_required": true,
+  "mechanism_identification_scored": false,
+  "mesh_preprocessing_commands": 1,
+  "metric_status": "completed",
+  "metrics": {
+    "T": {
+      "maximum_absolute_error": 5.684341886080802e-14,
+      "mean_bias": 7.218212246962732e-19,
+      "normalized_maximum_error": 2.9161865424458238e-15,
+      "normalized_rmse": 4.7621126746716375e-17,
+      "normalizer": 19.4923809,
+      "rmse": 9.282491414341734e-16,
+      "unit": "K"
+    },
+    "U": {
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "normalized_maximum_error": 2.5405335510052326e-16,
+      "normalized_rmse": 2.2176356594142563e-18,
+      "normalizer": 0.10925097054768929,
+      "rmse": 2.422788481121724e-19,
+      "unit": "m/s"
+    },
+    "p": {
+      "gauge_aligned_maximum_error": 0.0,
+      "gauge_aligned_rmse": 0.0,
+      "maximum_absolute_error": 0.0,
+      "mean_bias": 0.0,
+      "normalized_maximum_error": 0.0,
+      "normalized_rmse": 0.0,
+      "normalizer": 25.258799999995972,
+      "note": "Raw absolute/gauge offset and spatial shape are reported separately; no offset silently removed.",
+      "rmse": 0.0,
+      "unit": "Pa"
+    }
+  },
+  "native_output_time": "6000",
+  "paid_calls": 0,
+  "point_count": 78750,
+  "policy": "dense-observation-v1",
+  "reason": "dense_rubric_pending_review",
+  "reward": null,
+  "sampling_operation": "r-bc6d834064834545",
+  "solver_runs": 0,
+  "task": "s-204",
+  "verdict": "not_evaluated"
+}

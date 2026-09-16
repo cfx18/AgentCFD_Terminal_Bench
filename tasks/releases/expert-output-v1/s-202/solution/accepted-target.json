@@ -1,0 +1,849 @@
+{
+  "input_hash": "c292af34d91dedb9d4524b2d51e8ffee075a5444f97004f221f97ae039b6e957",
+  "observations": {
+    "measurements": {
+      "bottomWater_T_min_max": {
+        "unit": "K",
+        "value": [
+          299.999993734,
+          345.919135014
+        ]
+      },
+      "bottomWater_T_rise_rms": {
+        "unit": "K",
+        "value": 4.787270286099941
+      },
+      "bottomWater_T_volume_mean": {
+        "unit": "K",
+        "value": 302.0026729958473
+      },
+      "bottomWater_U_volume_mean": {
+        "unit": "m/s",
+        "value": [
+          0.00102827458164349,
+          1.5046258619391758e-14,
+          1.0483963327804352e-13
+        ]
+      },
+      "bottomWater_cell_count": {
+        "unit": "1",
+        "value": 1460
+      },
+      "bottomWater_maxX_enthalpy_flux": {
+        "unit": "W",
+        "value": 19.100994516280217
+      },
+      "bottomWater_maxX_flow": {
+        "unit": "kg/s",
+        "value": 0.0039999999980018
+      },
+      "bottomWater_minX_enthalpy_flux": {
+        "unit": "W",
+        "value": 0.0
+      },
+      "bottomWater_minX_flow": {
+        "unit": "kg/s",
+        "value": -0.004
+      },
+      "bottomWater_relative_300K_sensible_enthalpy": {
+        "unit": "J",
+        "value": 6519.912886203615
+      },
+      "bottomWater_speed_volume_rms": {
+        "unit": "m/s",
+        "value": 0.0011084201751275795
+      },
+      "bottomWater_volume": {
+        "unit": "m3",
+        "value": 0.00077866666666672
+      },
+      "final_time": {
+        "unit": "s",
+        "value": 100.0
+      },
+      "heater_T_min_max": {
+        "unit": "K",
+        "value": [
+          329.519566554,
+          484.754722749
+        ]
+      },
+      "heater_T_rise_rms": {
+        "unit": "K",
+        "value": 103.98881650783446
+      },
+      "heater_T_volume_mean": {
+        "unit": "K",
+        "value": 390.80888984087716
+      },
+      "heater_cell_count": {
+        "unit": "1",
+        "value": 80
+      },
+      "heater_relative_300K_sensible_enthalpy": {
+        "unit": "J",
+        "value": 13948.245479523866
+      },
+      "heater_volume": {
+        "unit": "m3",
+        "value": 4.266666666656e-05
+      },
+      "leftSolid_T_min_max": {
+        "unit": "K",
+        "value": [
+          300.015323951,
+          300.282450621
+        ]
+      },
+      "leftSolid_T_rise_rms": {
+        "unit": "K",
+        "value": 0.08217209348941183
+      },
+      "leftSolid_T_volume_mean": {
+        "unit": "K",
+        "value": 300.06258030490005
+      },
+      "leftSolid_cell_count": {
+        "unit": "1",
+        "value": 130
+      },
+      "leftSolid_relative_300K_sensible_enthalpy": {
+        "unit": "J",
+        "value": 15.62004410305798
+      },
+      "leftSolid_volume": {
+        "unit": "m3",
+        "value": 6.933333333336e-05
+      },
+      "pressure_final_residual": {
+        "unit": "1",
+        "value": 5.05762694669e-08
+      },
+      "pressure_initial_residual": {
+        "unit": "1",
+        "value": 1.15907005299e-06
+      },
+      "rightSolid_T_min_max": {
+        "unit": "K",
+        "value": [
+          304.980231541,
+          349.466014517
+        ]
+      },
+      "rightSolid_T_rise_rms": {
+        "unit": "K",
+        "value": 18.517858948557127
+      },
+      "rightSolid_T_volume_mean": {
+        "unit": "K",
+        "value": 315.38489031130104
+      },
+      "rightSolid_cell_count": {
+        "unit": "1",
+        "value": 130
+      },
+      "rightSolid_relative_300K_sensible_enthalpy": {
+        "unit": "J",
+        "value": 3840.068621702216
+      },
+      "rightSolid_volume": {
+        "unit": "m3",
+        "value": 6.933333333336e-05
+      },
+      "topAir_T_min_max": {
+        "unit": "K",
+        "value": [
+          300.000000781,
+          314.274418437
+        ]
+      },
+      "topAir_T_rise_rms": {
+        "unit": "K",
+        "value": 3.533201857033551
+      },
+      "topAir_T_volume_mean": {
+        "unit": "K",
+        "value": 301.52317924883494
+      },
+      "topAir_U_volume_mean": {
+        "unit": "m/s",
+        "value": [
+          0.10044057617828749,
+          0.0009768131951694197,
+          -8.627809448015785e-12
+        ]
+      },
+      "topAir_cell_count": {
+        "unit": "1",
+        "value": 1200
+      },
+      "topAir_maxX_enthalpy_flux": {
+        "unit": "W",
+        "value": 1.0345533108054847
+      },
+      "topAir_maxX_flow": {
+        "unit": "kg/s",
+        "value": 0.00037078580818587
+      },
+      "topAir_minX_enthalpy_flux": {
+        "unit": "W",
+        "value": 0.0
+      },
+      "topAir_minX_flow": {
+        "unit": "kg/s",
+        "value": -0.00037075827175048
+      },
+      "topAir_relative_300K_sensible_enthalpy": {
+        "unit": "J",
+        "value": 1.0995842205429496
+      },
+      "topAir_speed_volume_rms": {
+        "unit": "m/s",
+        "value": 0.10193777703804659
+      },
+      "topAir_volume": {
+        "unit": "m3",
+        "value": 0.00064
+      }
+    },
+    "spatial_volumes": {
+      "bottomWater": {
+        "0_0": {
+          "T": 300.00034014742283,
+          "U": [
+            0.0009976370766211918,
+            -1.3379562747994009e-14,
+            2.3819530825646212e-05
+          ],
+          "p": 196.2027713126554,
+          "p_rgh": 0.002771312624071704,
+          "volume": 9.333333333340001e-05
+        },
+        "0_1": {
+          "T": 300.00034014688,
+          "U": [
+            0.0009976370766347747,
+            -1.1561668434810663e-14,
+            -2.3819530825395917e-05
+          ],
+          "p": 196.2027713126554,
+          "p_rgh": 0.002771312624037133,
+          "volume": 9.333333333340001e-05
+        },
+        "1_0": {
+          "T": 300.94356785718605,
+          "U": [
+            0.00105695205333616,
+            -5.778595618765198e-15,
+            -0.00013299776504197198
+          ],
+          "p": 196.20197004120106,
+          "p_rgh": 0.001970041208747979,
+          "volume": 0.00010133333333328
+        },
+        "1_1": {
+          "T": 300.94356783996494,
+          "U": [
+            0.0010569520534112443,
+            -7.383969417311467e-15,
+            0.00013299776510772806
+          ],
+          "p": 196.20197004120106,
+          "p_rgh": 0.001970041208639569,
+          "volume": 0.00010133333333328
+        },
+        "2_0": {
+          "T": 305.44079565377285,
+          "U": [
+            0.001062121058318784,
+            3.052764917697194e-14,
+            9.084692716026771e-05
+          ],
+          "p": 196.20065789482305,
+          "p_rgh": 0.00065789483151731,
+          "volume": 8.800000000008e-05
+        },
+        "2_1": {
+          "T": 305.440795631088,
+          "U": [
+            0.00106212105836815,
+            2.0643302575293195e-14,
+            -9.08469270335583e-05
+          ],
+          "p": 196.20065789482305,
+          "p_rgh": 0.0006578948314798433,
+          "volume": 8.800000000008e-05
+        },
+        "3_0": {
+          "T": 301.924412902999,
+          "U": [
+            0.000999915456885295,
+            6.480538851321441e-14,
+            6.435113141356523e-05
+          ],
+          "p": 196.20024371722,
+          "p_rgh": 0.000243717207547008,
+          "volume": 0.0001066666666666
+        },
+        "3_1": {
+          "T": 301.9244129868639,
+          "U": [
+            0.0009999154573364353,
+            3.714427828199548e-14,
+            -6.435113081545842e-05
+          ],
+          "p": 196.20024371722,
+          "p_rgh": 0.00024371720765185,
+          "volume": 0.0001066666666666
+        }
+      },
+      "heater": {
+        "1_0": {
+          "T": 392.30841961069933,
+          "volume": 1.066666666664e-05
+        },
+        "1_1": {
+          "T": 392.3084194039994,
+          "volume": 1.066666666664e-05
+        },
+        "2_0": {
+          "T": 389.30936027950503,
+          "volume": 1.066666666664e-05
+        },
+        "2_1": {
+          "T": 389.309360069305,
+          "volume": 1.066666666664e-05
+        }
+      },
+      "leftSolid": {
+        "0_0": {
+          "T": 300.0269217044286,
+          "volume": 1.866666666668e-05
+        },
+        "0_1": {
+          "T": 300.02692170437143,
+          "volume": 1.866666666668e-05
+        },
+        "1_0": {
+          "T": 300.10418200563345,
+          "volume": 1.6e-05
+        },
+        "1_1": {
+          "T": 300.1041820053334,
+          "volume": 1.6e-05
+        }
+      },
+      "rightSolid": {
+        "2_0": {
+          "T": 326.2835039802421,
+          "volume": 1.333333333336e-05
+        },
+        "2_1": {
+          "T": 326.283503753282,
+          "volume": 1.333333333336e-05
+        },
+        "3_0": {
+          "T": 308.573256870395,
+          "volume": 2.133333333332e-05
+        },
+        "3_1": {
+          "T": 308.5732568078451,
+          "volume": 2.133333333332e-05
+        }
+      },
+      "topAir": {
+        "0_0": {
+          "T": 300.0009534919357,
+          "U": [
+            0.09987132800872213,
+            -1.2745066452849809e-05,
+            0.0009881379753913324
+          ],
+          "p": 99999.73597415358,
+          "p_rgh": 100000.00875896428,
+          "volume": 7.466666666672e-05
+        },
+        "0_1": {
+          "T": 300.00095349317144,
+          "U": [
+            0.09987132814692427,
+            -1.274508636361408e-05,
+            -0.0009881377770216203
+          ],
+          "p": 99999.73597415358,
+          "p_rgh": 100000.00875896428,
+          "volume": 7.466666666672e-05
+        },
+        "1_0": {
+          "T": 300.2353978509374,
+          "U": [
+            0.10007131529596937,
+            -0.0005015665110599146,
+            0.0010384794895647682
+          ],
+          "p": 99999.73415675189,
+          "p_rgh": 100000.0068342375,
+          "volume": 8.533333333328e-05
+        },
+        "1_1": {
+          "T": 300.2353978529436,
+          "U": [
+            0.10007131556120064,
+            -0.0005015665018960069,
+            -0.001038479376087244
+          ],
+          "p": 99999.73415675189,
+          "p_rgh": 100000.0068342375,
+          "volume": 8.533333333328e-05
+        },
+        "2_0": {
+          "T": 302.5490642317576,
+          "U": [
+            0.10079213528518158,
+            -0.0003294292533617204,
+            0.0006920812383428204
+          ],
+          "p": 99999.73235985213,
+          "p_rgh": 100000.00394246071,
+          "volume": 7.466666666672e-05
+        },
+        "2_1": {
+          "T": 302.54906421378615,
+          "U": [
+            0.10079213539913943,
+            -0.00032942924612044776,
+            -0.0006920813396276007
+          ],
+          "p": 99999.73235985213,
+          "p_rgh": 100000.00394246071,
+          "volume": 7.466666666672e-05
+        },
+        "3_0": {
+          "T": 303.2452588599252,
+          "U": [
+            0.1010003149419545,
+            0.004464018569589267,
+            -0.001320052523464973
+          ],
+          "p": 99999.73068223002,
+          "p_rgh": 100000.00167113938,
+          "volume": 8.533333333328e-05
+        },
+        "3_1": {
+          "T": 303.24525880063766,
+          "U": [
+            0.10100031455306074,
+            0.004464018477903987,
+            0.0013200522603295623
+          ],
+          "p": 99999.73068222939,
+          "p_rgh": 100000.00167113938,
+          "volume": 8.533333333328e-05
+        }
+      }
+    }
+  },
+  "policy": {
+    "buoyant_T_scaled_l1": 0.05,
+    "buoyant_U_relative_l1": 0.1,
+    "buoyant_heat_relative": 0.05,
+    "convergence_diagnostics_are_gates": false,
+    "meaning": "agreement_with_expert_accepted_finite_numerical_target",
+    "reward_mapping": null,
+    "shock_normalized_l1": 0.04,
+    "thermal_relative_rms": 0.05,
+    "thermal_temperature_absolute_K": 0.01,
+    "version": "expert-reference-v1"
+  },
+  "receipt_hashes": {
+    "0-exit": "0d021424a80667617e0939a57728d1f1556986cf142fb3d32a30865e2e4ecf7d",
+    "0-log": "ec474633c6ab7f62c25dc2edfc637731b02eda74a69a9b50814d38241e647f49",
+    "0-start": "1ad79e03db896bf499d21e37091060a8131c857f2ab1e8ee2eb7c1b2a3c420c6",
+    "1-exit": "b62fcec07c00301ebbe9b040795da294dd28f3977d21adce4abc75d01b78a6f6",
+    "1-log": "858fb77be60c517f2f791dc6802fe438004e13ffe0cec4101c38bf75a52da007",
+    "1-start": "e73f0651b9556b9cbee29dedb837ebfbf35a0f8525109e601c311adad6384579",
+    "10-exit": "aae37026d62e422dba56df3c3bf01d005f89805013f50942435571398235cba8",
+    "10-log": "46b2fea5765bbf4badec04adc3cb9cc816d820095e8f4261c56832738d0a5dfe",
+    "10-start": "3e6ac90cd47a669fdec8ffc62c9b93c874ddf058ef42b71b55702c27edb454e3",
+    "11-exit": "3df612b9ec996cafd2c60f43841155da9fdd8925a7aedd50708133f9875b2279",
+    "11-log": "3f612a9d22b01367af79be0f17e7bcdfe34cd61dab71435a59e614f1ea02101b",
+    "11-start": "a57c42f1d89efa1d7ffd17821d97d8d1eba5bd0d5e08be9be4a84466d60d55ea",
+    "12-exit": "b96f7f2d9f3d8298eb7aa3b61765bda3c0d91ceadf5e44682345c6e96e6169dc",
+    "12-log": "781adb3e064538c4fa7d46ff98d60471e07ca3d6e4343d6fe715faa3c4432711",
+    "12-start": "fb97dfed40d6884ad3a32ca33abf673fe3ad223b22bd37907b2aa988ff57b849",
+    "13-exit": "05a1ae622d812339157fe8004738e2f2581387d4e428e500cec01e849cdb0ebc",
+    "13-log": "215740b528ea20b5d8abc147f8ad29922c4198c8081b1faad8f15e2ee6cbf16d",
+    "13-start": "c043959483957bae2942493fa674e5f7d7b5b586e3f25957d3c1609f235897f0",
+    "14-exit": "94d7f4ccfee0f50432c765a5ac99b4971e5106230af19a4c4ce8c66689e9a4f6",
+    "14-log": "5a70588cbbae2a134e7d385087945c45d593346e47ed0c4f2eb5bf76027f7496",
+    "14-start": "1aad69775d0098e0af8c940076d31d9d99fbab923053719e7cb19f01d79c9f7f",
+    "15-exit": "5f19c1d9a201154032cc4fb604345e1bc5ea8be8a4b33d2f0fc14864f49e4a56",
+    "15-log": "51fad0b885ae2d4637e2ada97df9403e631b7955bc0eb002d55039fd83342cd7",
+    "15-start": "da10683a0bb6ada3db740ef10810b6da290107a5062017a3e9e5b4603d42fb9c",
+    "16-exit": "1bfba581423412ca48435b2f5bf26056f26a1e1fe84bdf9a448609d46856b671",
+    "16-log": "c8dcffc6616ed1486c4bf7bdd880974fd95b5d0621398a73600ceb90e7b55579",
+    "16-start": "c2e575fbb260c1b28a51b9983468b95d2de9522266fb8f0218bf8acabd8d4086",
+    "17-exit": "960b4cd3db55b741b9fd0400fad4551f6852033bbccf91f6a1d6a32ac378354c",
+    "17-log": "38cfc1bdaa874b47adfe1d6e13b4be87103fe095e309431a079ef8d22c558bef",
+    "17-start": "ca63bc55763e7350c05842878353b629ca4feb5f5db3ca0c990003c3baeca24f",
+    "18-exit": "9e8f2239e698b3f296ac92aa342ee8093abb0eb695084d9cc89adcd60be3498a",
+    "18-log": "64c385c779ae58ced1e92bd13f182027d96ec6869cb1896b945ca99090ea4402",
+    "18-start": "9bc92b713f93d086a565cfe5527633decbfed91434e403ecb359e3dd04e94b3b",
+    "19-exit": "0d6e5c5a765002061bc97a31a7e17d843cf5a657d7216f4852c40bff8f86eec9",
+    "19-log": "439a1adfed3224e6364b0b47939aa93ee832b32920b09a4162988cb79e2aec7b",
+    "19-start": "1795685cfe87b1cad13cbe02eac08cc318ad089ab3e35f39c895511bb30a4616",
+    "2-exit": "97fe9633f394d51a79dbf87d36cb734c8e5450446bac868b89a56210640007f9",
+    "2-log": "fd16d51ea7459ee47c94585d720b1ec7125a5af730f6d1d5d4b84c9f6b96f072",
+    "2-start": "4af76e78782b1e60017a14821bca8b85d87ee0d53de454b688faa244173df28c",
+    "20-exit": "7c5b9544b33ca68bfeb254a680015f6b858852df7c577e5f0bc99f0c620559b5",
+    "20-log": "818897e5e046494ae695e5d18673b33bdc721edce8c2db82276689c72f5c8694",
+    "20-start": "468766eb991dfa8b1983f8753ee05cc1da99dc6b9678c4240dfe8b119727536f",
+    "21-exit": "92ef663442fc47e99dd4bdab9a348a3a440d2e314058fc18de9595415e7aa971",
+    "21-log": "ffc955c18016aaca89e3359fa91603b33cb7311d514fd44ffd711332502d7d4f",
+    "21-start": "fb55fbe0a37076fbc72753de98d6fc97acd1dcd585edcf31857d23020e58223b",
+    "22-exit": "ddddfd763864789647bca92a290d949708b94ed430daeaeffac3ee4507e07ec1",
+    "22-log": "a99eeafc6e3a2054c6f9d94e0a4561f36e93e4da173ac8bbff766d7920fbae83",
+    "22-start": "a4b3a8a5e2267c0bb16faabb684bd8128ae14e335adf8469f1a305c4f000761c",
+    "23-exit": "28656e211186cd92b05df33e30d05cb53db0bb408297a386712e5531bc4a3911",
+    "23-log": "00a197eb330d7b99fcaca7b6b0d514921e0fa2c2133b75d05d6aea5f0fe62847",
+    "23-start": "126578f01f83046474254a94ef95e03688ad9d6ae6fd54836879dbd25c4f5f59",
+    "24-exit": "fb471e24118e79e7c40bde7f6aef0d417760fe042c3a9776948e83eb2f0e0e53",
+    "24-log": "e062be0f8179679c121c4595780bc5cc6c4bb20cac1986f458df6a954042e183",
+    "24-start": "be8dcb080cab37cc0d4bc720283f30c3862ba60830ee1f9cb90cd722026b40ee",
+    "25-exit": "46061f12e19969ebea2c76087051999032fe1cca49823bbfd66300531ddc6963",
+    "25-log": "9993cd88b3a6bcd9b94776d7ffb815523bd68cf24f236a6a2a62c16ded9e6fd8",
+    "25-start": "4cf9d415ec71d1991473f3566de2306452436b485e6577f1dc5aa173e3bafcbf",
+    "26-exit": "96f25fc0d685d5cf83ca2a4392cf449ec866ab7fa02c044d267142a1365a6ace",
+    "26-log": "a5dc5624ad6e9a0149cfc99bc29effb3be16a9476820f8ebfd9e76622016222f",
+    "26-start": "cbec52f50adfbb1f66ee69c68a50bccb9286e7a89232fcdca18c281cb69e7f8d",
+    "3-exit": "8afe88577b7fe09cdce91b0e38a54f6d5cd40772d63088d708ccbfa38ece2057",
+    "3-log": "0cec41dc1121b095f1aa97252c107bafdf4259b6bf0b98e403b3655ed91affc8",
+    "3-start": "b20a4d5f3a0194c1c4bb2e000ff0b147927abeff389937b94aa53473bf4d06bc",
+    "4-exit": "24a801c9d808348e18398d66f131cd3e85609ead8054478aa24035cefd41a871",
+    "4-log": "8651a2b6dc732bcefd2fdc971e72cd2f4b5b082ada2830c2b99d683f4142ee50",
+    "4-start": "08911b3937ca4726dda178f048aa63cd7ca4c3c033a57eb05bb5348683fa3319",
+    "5-exit": "64e5e1787b6910991cf335282733320987f77162488cd89d18a2b66abee6d161",
+    "5-log": "d1d359e63cfbd881b07c6f1da3189e3617475fc4ba2a7064f91f6d6530461c1e",
+    "5-start": "74d8d603b75c7ddfbd93563b9186f3e00c90315e3cbd3e1fa4829f5c07a540bb",
+    "6-exit": "da473821c294709396796a272ed3c0803bda92f24dc7afeb4701ccbc97478566",
+    "6-log": "d7a034a2fd5e4e079b2ad0c06abff89d9c5481c1eea0ddaf61fdb412478a495d",
+    "6-start": "eaf7e2135e40315ae0c1946f3ea7db6782569bf44d41c615f67b48cdfb895f5f",
+    "7-exit": "7d7bd0352a3c5cfe8356ce55ab42b388ee93e7ba8c6aeb324c9eb66d696795a6",
+    "7-log": "f00ac5acd870663c1eb273819baf5d68b447cd177b957551b609a1845ac2fb65",
+    "7-start": "a6bc1c301be9465e753150a9a2616ae9b8d1d3d83d7108c5fe9ad5ede117458f",
+    "8-exit": "268a69b461c51d33f33a5e0532d23acd279d945f5b9b0233d82476c59873bb9d",
+    "8-log": "d564b1a19aa022f877087f233c62e0e3228d370b059f79ddcd232e30d2979e52",
+    "8-start": "6c40536d767a27b7c0d2b8ec5ff96e341b49c16f852e3855a4fca66aa859dba3",
+    "9-exit": "785257d342b4785b43b9230369e91f42bcccef1497aba08b3f86c8820c2eab18",
+    "9-log": "91bd12b8b0d57a3a268350bf4cf67c9a15f6d54c9f0bd0273a8a8404c35bed2b",
+    "9-start": "746734dcefd579a8db85ebd744bdd4ba8d48d2d1dd65bc6c1262aa50f8b027ae",
+    "allocation": "20296780c7b8e949304f166b9f01f0ede608d7dddd02aaba79c1fa48e10994c3",
+    "artifacts": "8ccbf18c3738ef035157fe6725e6fa9992581ca6b38944381a41e116a2c75ebd",
+    "handle": "3253e6a35be6a886737e603a06500ffd87c427eb100606d5c1c2890d6ec009ad",
+    "inputs": "c292af34d91dedb9d4524b2d51e8ffee075a5444f97004f221f97ae039b6e957",
+    "prepare_started": "52b7d968e3f16396930af6fda00e359f28f34122114a0c95d9a092b4d0a829ad",
+    "released": "f7bccf609b3dd0de0810cea1fd1c87418262bab3a1c564df02988b27511a1a42",
+    "result": "60c1ab122c9c54147b831385067eec190f81270853fd5b73984334d09f8db1db",
+    "spec": "1cb59584916ece479f7626857d13dab65485c6ee6f28324375a2062272815691"
+  },
+  "reference_diagnostics": {
+    "energy_balance": {
+      "enthalpy_and_kinetic_outflow_W": 20.1355483936003,
+      "external_wall_input_W": 166.59780188357223,
+      "global_error_W": 0.43127822050813963,
+      "gravity_power_W": -6.982002449977507e-06,
+      "mass_balance": {
+        "bottomWater": {
+          "error_kg_s": -1.9982002164020685e-12,
+          "net_outflow_kg_s": -1.9982002164020685e-12,
+          "storage_kg_s": 0.0
+        },
+        "topAir": {
+          "error_kg_s": -8.685626539520173e-11,
+          "net_outflow_kg_s": 2.753643539002292e-08,
+          "storage_kg_s": -2.7623291655418122e-08
+        }
+      },
+      "opening_conductive_input_W": {
+        "bottomWater": {
+          "maxX": 0.0,
+          "minX": -5.633353349688212e-05
+        },
+        "topAir": {
+          "maxX": 0.0,
+          "minX": -4.31986299424444e-06
+        }
+      },
+      "passed": true,
+      "qualification_note": "Spatial, time-window and coupling convergence must all be demonstrated.",
+      "relative_balance_error": 0.002582055740699574,
+      "storage_rate_W": {
+        "bottomWater": 71.27451077673892,
+        "heater": 28.330302479928864,
+        "leftSolid": 0.2555839968022264,
+        "rightSolid": 47.02477977986371,
+        "topAir": 0.008287041747426307
+      },
+      "wall_heat": {
+        "contact": {
+          "area_m2": 0.0008000000000000001,
+          "observed_heater_to_left_W": 0.020104081920112003,
+          "predicted_heater_to_left_W": 0.020104082111000027,
+          "relative_law_error": 9.494988285639006e-09,
+          "temperature_jump_K": 50.26020527750006
+        },
+        "energy_balance_status": "interface_and_contact_only_not_global_transient_balance",
+        "heater_external_input_W": 166.59780188357223,
+        "interface_pairs": {
+          "bottomWater__heater": {
+            "relative_imbalance": 4.129386825777395e-11,
+            "sum_into_both_W": 3.1294717928176397e-09
+          },
+          "bottomWater__leftSolid": {
+            "relative_imbalance": 1.9601654802751945e-08,
+            "sum_into_both_W": -4.665543340554024e-09
+          },
+          "bottomWater__rightSolid": {
+            "relative_imbalance": 8.492018438940624e-11,
+            "sum_into_both_W": -1.2438672314374344e-09
+          },
+          "heater__leftSolid": {
+            "relative_imbalance": 9.55236855612445e-08,
+            "sum_into_both_W": -1.9204159998342796e-09
+          },
+          "heater__rightSolid": {
+            "relative_imbalance": 1.1108761802890827e-11,
+            "sum_into_both_W": -6.879972147544322e-10
+          },
+          "heater__topAir": {
+            "relative_imbalance": 3.8770847661260125e-10,
+            "sum_into_both_W": -2.7833324534043413e-10
+          },
+          "leftSolid__topAir": {
+            "relative_imbalance": 1.3737468738690453e-07,
+            "sum_into_both_W": 3.480774665894082e-10
+          },
+          "rightSolid__topAir": {
+            "relative_imbalance": 5.466382203810033e-09,
+            "sum_into_both_W": -1.7623713599590474e-09
+          }
+        },
+        "regions": {
+          "bottomWater": {
+            "bottomWater_to_heater": {
+              "area_m2": 0.005866666666656,
+              "heat_into_region_W": 75.7853871495434,
+              "temperature_area_mean_K": 399.62931400877386
+            },
+            "bottomWater_to_leftSolid": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": -0.2380178299996902,
+              "temperature_area_mean_K": 300.0639534846616
+            },
+            "bottomWater_to_rightSolid": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": 14.647486228103114,
+              "temperature_area_mean_K": 315.30038558304716
+            },
+            "maxX": {
+              "area_m2": 0.004,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": 300.96552194540004
+            },
+            "maxZ": {
+              "area_m2": 0.008,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "minX": {
+              "area_m2": 0.004,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": 300.00000000000006
+            },
+            "minY": {
+              "area_m2": 0.019466666666668003,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "minZ": {
+              "area_m2": 0.008,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            }
+          },
+          "heater": {
+            "heater_to_bottomWater": {
+              "area_m2": 0.005866666666656,
+              "heat_into_region_W": -75.78538714641392,
+              "temperature_area_mean_K": 399.62931400877386
+            },
+            "heater_to_leftSolid": {
+              "area_m2": 0.0008000000000000001,
+              "heat_into_region_W": -0.020104081920112003,
+              "temperature_area_mean_K": 350.424195595
+            },
+            "heater_to_rightSolid": {
+              "area_m2": 0.0008000000000000001,
+              "heat_into_region_W": -61.93284426851201,
+              "temperature_area_mean_K": 339.42822412059996
+            },
+            "heater_to_topAir": {
+              "area_m2": 0.00266666666666,
+              "heat_into_region_W": -0.717893113331502,
+              "temperature_area_mean_K": 347.26707240937725
+            },
+            "maxZ": {
+              "area_m2": 0.00021333333333280001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "minY": {
+              "area_m2": 0.000533333333332,
+              "heat_into_region_W": 166.59780188357223,
+              "temperature_area_mean_K": 500.00000000000006
+            },
+            "minZ": {
+              "area_m2": 0.00021333333333280001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            }
+          },
+          "leftSolid": {
+            "leftSolid_to_bottomWater": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": 0.23801782533414687,
+              "temperature_area_mean_K": 300.0639534846616
+            },
+            "leftSolid_to_heater": {
+              "area_m2": 0.0008000000000000001,
+              "heat_into_region_W": 0.020104079999696003,
+              "temperature_area_mean_K": 300.16399031749995
+            },
+            "leftSolid_to_topAir": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": -0.0025337813347814475,
+              "temperature_area_mean_K": 300.06256568693084
+            },
+            "maxZ": {
+              "area_m2": 0.0006933333333336001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "minX": {
+              "area_m2": 0.0008000000000000001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "minZ": {
+              "area_m2": 0.0006933333333336001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            }
+          },
+          "rightSolid": {
+            "maxX": {
+              "area_m2": 0.0008000000000000001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "maxZ": {
+              "area_m2": 0.0006933333333336001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "minZ": {
+              "area_m2": 0.0006933333333336001,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "rightSolid_to_bottomWater": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": -14.647486229346981,
+              "temperature_area_mean_K": 315.30038558305483
+            },
+            "rightSolid_to_heater": {
+              "area_m2": 0.0008000000000000001,
+              "heat_into_region_W": 61.93284426782401,
+              "temperature_area_mean_K": 339.4282241205
+            },
+            "rightSolid_to_topAir": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": -0.32240178133367364,
+              "temperature_area_mean_K": 315.3830303010241
+            }
+          },
+          "topAir": {
+            "maxX": {
+              "area_m2": 0.0032000000000000006,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": 303.552042469425
+            },
+            "maxY": {
+              "area_m2": 0.02,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "maxZ": {
+              "area_m2": 0.0064,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "minX": {
+              "area_m2": 0.0032000000000000006,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": 299.99999999999994
+            },
+            "minZ": {
+              "area_m2": 0.0064,
+              "heat_into_region_W": 0.0,
+              "temperature_area_mean_K": null
+            },
+            "topAir_to_heater": {
+              "area_m2": 0.00266666666666,
+              "heat_into_region_W": 0.7178931130531687,
+              "temperature_area_mean_K": 347.26707240937725
+            },
+            "topAir_to_leftSolid": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": 0.002533781682858914,
+              "temperature_area_mean_K": 300.06256568693084
+            },
+            "topAir_to_rightSolid": {
+              "area_m2": 0.00866666666667,
+              "heat_into_region_W": 0.3224017795713023,
+              "temperature_area_mean_K": 315.3830303010241
+            }
+          }
+        }
+      },
+      "window_s": [
+        99.0,
+        100.0
+      ]
+    }
+  },
+  "reference_status": "accepted_by_expert",
+  "source": {
+    "artifact_hash": "8ccbf18c3738ef035157fe6725e6fa9992581ca6b38944381a41e116a2c75ebd",
+    "control": "coupled_energy_base_quiet",
+    "endpoint": {
+      "kind": "physical_time",
+      "unit": "s",
+      "value": 100
+    },
+    "evidence_status": "completed_and_released",
+    "input_hash": "c292af34d91dedb9d4524b2d51e8ffee075a5444f97004f221f97ae039b6e957",
+    "limitations": [
+      "Only this corrected coarse-mesh coupled solution is selected; mesh/time independence is not claimed.",
+      "Single-phase constant-property water is an explicitly approved idealization."
+    ],
+    "native_seconds": 123.43616757448763,
+    "native_verdict": "pass",
+    "reference_status": "accepted_by_expert",
+    "result_hash": "60c1ab122c9c54147b831385067eec190f81270853fd5b73984334d09f8db1db",
+    "run_directory": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/audits/free-mesh-thermal-native-20260915-009/s-202/coupled_energy_base_quiet/native/runs/r-000001",
+    "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+    "selection_reason": "Use the completed corrected thermal-coupling reference with pressure logs preserved, rather than earlier incomplete/log-limited variants."
+  },
+  "task_id": "s-202"
+}

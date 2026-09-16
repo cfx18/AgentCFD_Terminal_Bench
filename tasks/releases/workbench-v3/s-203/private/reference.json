@@ -1,0 +1,371 @@
+{
+  "input_hash": "feea8d4db3d702b5cdb080736b8563785f5ba6df681c8a73f64dbb76d440b74f",
+  "observations": {
+    "measurements": {
+      "T_min_max": {
+        "unit": "K",
+        "value": [
+          315.00000112,
+          315.090816863
+        ]
+      },
+      "T_rise_rms": {
+        "unit": "K",
+        "value": 15.037046525034066
+      },
+      "T_volume_mean": {
+        "unit": "K",
+        "value": 315.0370295411553
+      },
+      "U_volume_mean": {
+        "unit": "m/s",
+        "value": [
+          2.576572806220569,
+          0.4742793094182778,
+          8.275595402369732e-07
+        ]
+      },
+      "cell_count": {
+        "unit": "1",
+        "value": 68107
+      },
+      "final_time": {
+        "unit": "s",
+        "value": 1.5
+      },
+      "inlet_enthalpy_flux": {
+        "unit": "W",
+        "value": -54.6223737360114
+      },
+      "inlet_flow": {
+        "unit": "m3/s",
+        "value": -0.0030345763186672998
+      },
+      "outlet1_enthalpy_flux": {
+        "unit": "W",
+        "value": 22.347785794235097
+      },
+      "outlet1_flow": {
+        "unit": "m3/s",
+        "value": 0.00123726131882862
+      },
+      "outlet2_enthalpy_flux": {
+        "unit": "W",
+        "value": 32.48109764711754
+      },
+      "outlet2_flow": {
+        "unit": "m3/s",
+        "value": 0.00179731137063077
+      },
+      "pressure_final_residual": {
+        "unit": "1",
+        "value": 8.87198641071e-07
+      },
+      "pressure_initial_residual": {
+        "unit": "1",
+        "value": 0.00114014560517
+      },
+      "relative_300K_sensible_enthalpy": {
+        "unit": "J",
+        "value": 4.475019991447557
+      },
+      "speed_volume_rms": {
+        "unit": "m/s",
+        "value": 5.678357606912214
+      },
+      "temperature_excess_315K": {
+        "unit": "K",
+        "value": 0.03702954115526499
+      },
+      "volume": {
+        "unit": "m3",
+        "value": 0.00024799999999998613
+      }
+    },
+    "spatial_volumes": {
+      "": {
+        "inlet_0": {
+          "T": 315.0019931326259,
+          "U": [
+            7.586439466383061,
+            -5.342575397416274e-08,
+            -3.4021177303109454e-08
+          ],
+          "epsilon": 32.94943149822724,
+          "k": 0.25822457650517205,
+          "nut": 0.0008782568865025266,
+          "p": 10.711185143852967,
+          "volume": 1.599999999999854e-05
+        },
+        "inlet_1": {
+          "T": 315.0065805355159,
+          "U": [
+            7.586435843488415,
+            -1.2303969089475522e-08,
+            -3.9714579192611686e-09
+          ],
+          "epsilon": 56.402347430400354,
+          "k": 0.28127255617835256,
+          "nut": 0.00042730197320540265,
+          "p": 9.383501667276612,
+          "volume": 1.599999999999756e-05
+        },
+        "inlet_2": {
+          "T": 315.0115756219966,
+          "U": [
+            7.586436348828539,
+            4.297400112666974e-07,
+            -2.4935467830063334e-09
+          ],
+          "epsilon": 62.17790951214858,
+          "k": 0.27301850724478116,
+          "nut": 0.0002998568783006274,
+          "p": 7.940650823271998,
+          "volume": 1.599999999999861e-05
+        },
+        "inlet_3": {
+          "T": 315.01648774204347,
+          "U": [
+            7.586438284210108,
+            0.00017940077522310692,
+            4.600029961504919e-08
+          ],
+          "epsilon": 60.830844153763124,
+          "k": 0.25878830780518997,
+          "nut": 0.00024093336131200346,
+          "p": 6.520105727648067,
+          "volume": 1.599999999999966e-05
+        },
+        "inlet_4": {
+          "T": 315.02109472008993,
+          "U": [
+            7.586396529549357,
+            0.05584337967377101,
+            8.453075033684254e-06
+          ],
+          "epsilon": 58.777558435872216,
+          "k": 0.24971882427842995,
+          "nut": 0.00020932977730971357,
+          "p": 5.1946186281142355,
+          "volume": 1.599999999999966e-05
+        },
+        "junction": {
+          "T": 315.0157949862612,
+          "U": [
+            4.444634379200656,
+            0.5873452416106553,
+            0.0001210682415992437
+          ],
+          "epsilon": 229.75948913656237,
+          "k": 0.8026115466080422,
+          "nut": 0.0004851306369684494,
+          "p": 18.11638787683243,
+          "volume": 7.99999999999983e-06
+        },
+        "lower_0": {
+          "T": 315.05120050690067,
+          "U": [
+            -0.011331361970184558,
+            -3.093156127799882,
+            6.540348176946534e-06
+          ],
+          "epsilon": 15.669464230095475,
+          "k": 0.16272327478848322,
+          "nut": 0.00023941880655922493,
+          "p": 10.142958263226701,
+          "volume": 1.599999999999796e-05
+        },
+        "lower_1": {
+          "T": 315.04977561487266,
+          "U": [
+            -0.018504011953720683,
+            -3.093153581591842,
+            5.797203752215975e-06
+          ],
+          "epsilon": 29.505006334841315,
+          "k": 0.2678694983793827,
+          "nut": 0.0003195444058690072,
+          "p": 10.420956365813732,
+          "volume": 1.599999999999799e-05
+        },
+        "lower_2": {
+          "T": 315.0479654248258,
+          "U": [
+            -0.03793743397209464,
+            -3.093138570188028,
+            9.950373893891716e-07
+          ],
+          "epsilon": 80.5369054378538,
+          "k": 0.5613051882960465,
+          "nut": 0.0004782743285134119,
+          "p": 10.596404881301549,
+          "volume": 1.599999999999894e-05
+        },
+        "lower_3": {
+          "T": 315.04572396804366,
+          "U": [
+            -0.2021891403386007,
+            -3.0929897751048863,
+            -7.000678052121368e-05
+          ],
+          "epsilon": 290.24945020353704,
+          "k": 1.4445204393328468,
+          "nut": 0.0007941301483234455,
+          "p": 9.191431937047549,
+          "volume": 1.600000000000062e-05
+        },
+        "lower_4": {
+          "T": 315.0457334983618,
+          "U": [
+            0.1449007582457416,
+            -3.097897668174276,
+            4.0797652910403344e-05
+          ],
+          "epsilon": 381.07927296218566,
+          "k": 1.4581219728835078,
+          "nut": 0.0006099744530554239,
+          "p": 1.6937211977752955,
+          "volume": 1.600000000000062e-05
+        },
+        "upper_0": {
+          "T": 315.049653070165,
+          "U": [
+            0.2835955931445219,
+            4.499010292500045,
+            9.023053918673308e-05
+          ],
+          "epsilon": 648.0870971664964,
+          "k": 2.029531014795386,
+          "nut": 0.0006908052958155111,
+          "p": -12.59048427157842,
+          "volume": 1.600000000000062e-05
+        },
+        "upper_1": {
+          "T": 315.04966397622974,
+          "U": [
+            -0.2878880532926826,
+            4.49314204926973,
+            -0.00011480847219740644
+          ],
+          "epsilon": 530.4874234769413,
+          "k": 2.1733259810749894,
+          "nut": 0.0009599153082259031,
+          "p": -1.3189191897952726,
+          "volume": 1.600000000000062e-05
+        },
+        "upper_2": {
+          "T": 315.05306835079745,
+          "U": [
+            -0.052715802094607085,
+            4.4932630448644435,
+            -5.717692586155505e-06
+          ],
+          "epsilon": 190.41785531631268,
+          "k": 1.0409918432075185,
+          "nut": 0.0006773172418852202,
+          "p": 1.245117661239615,
+          "volume": 1.599999999999894e-05
+        },
+        "upper_3": {
+          "T": 315.05643481473686,
+          "U": [
+            -0.022584902623836674,
+            4.493275089952979,
+            -5.928073316570389e-06
+          ],
+          "epsilon": 76.98709836154988,
+          "k": 0.5209792223442465,
+          "nut": 0.00045681430709885247,
+          "p": 0.8722587094099152,
+          "volume": 1.599999999999799e-05
+        },
+        "upper_4": {
+          "T": 315.05910941757065,
+          "U": [
+            -0.0129308107848914,
+            4.493278776990348,
+            -4.0652998715819785e-06
+          ],
+          "epsilon": 41.47526705809979,
+          "k": 0.31558532280269375,
+          "nut": 0.0003375550556409384,
+          "p": 0.29289913951041485,
+          "volume": 1.599999999999796e-05
+        }
+      }
+    }
+  },
+  "policy": {
+    "buoyant_T_scaled_l1": 0.05,
+    "buoyant_U_relative_l1": 0.1,
+    "buoyant_heat_relative": 0.05,
+    "convergence_diagnostics_are_gates": false,
+    "meaning": "agreement_with_expert_accepted_finite_numerical_target",
+    "reward_mapping": null,
+    "shock_normalized_l1": 0.04,
+    "thermal_relative_rms": 0.05,
+    "thermal_temperature_absolute_K": 0.01,
+    "version": "expert-reference-v1"
+  },
+  "receipt_hashes": {
+    "0-exit": "768bad988e7aab23c5275d76049ec497164140d680c8ef6d9c1e84d5fdf82eac",
+    "0-log": "9fb11357bfda1ee4cb72bbf0290675cca691568530b5231d0ae7ac63576617cc",
+    "0-start": "1ad79e03db896bf499d21e37091060a8131c857f2ab1e8ee2eb7c1b2a3c420c6",
+    "1-exit": "e2a4c8907d6216eff30989f7c40fc39b9129ee1d8cd651916c3f07de5f9d380b",
+    "1-log": "9ff6e1f494654e6c5c071a1145a1d6b3a84f5ff2defffacdc177da90e0836545",
+    "1-start": "e9bf05a13f6507ec55d4e35283b590d76a8376b5b8f884498277f39df476caa8",
+    "2-exit": "ae0b28d688b54aa9ce918145391b84b60ffd2bb4fc3dab1db90bbed720da3f0b",
+    "2-log": "3e4e5443304c0f6e3f62a7ec2e35f2c52a9b3fd6dff47314a30375e0acf1f451",
+    "2-start": "030fa7296afcf06c3d41bdc1fc8186e5b8d563701dbb0598691a9868024fbb66",
+    "3-exit": "217d7fc2331e4075c41ffa2bb186971956398310c18b9a02cb6bd8c05b256c8b",
+    "3-log": "aeae9b05a1723f788d2322b69a3f5e90f3567c70a2f0d9a6f53c12346ef019fd",
+    "3-start": "2400c92ad560c37d3ef5b4ca09b28b43e0764ead60a43b45796bd070f596d705",
+    "4-exit": "51581c3d2f549b3f5e68da11d95fee0a5ad0e32cf6201fcd3da6ffe9c815d335",
+    "4-log": "199b58923f6102de754c9bc73c7d456ba10188fe64b88f67d466eacd47cac250",
+    "4-start": "ab06920f9172d33028e46c87aea02069e6daf2a37192ab9e929dd44ad36924f1",
+    "5-exit": "92a2d4c9df89aa3d8aa4e4218aba0627602ad810aa4e945a76719c79668b1400",
+    "5-log": "75f155f7b78e9d2602bc0aef08812a12bb447d1472a8a27856f0d727da339e6d",
+    "5-start": "68a2b82740ce5d8ae3f618c33f8613733406688811108ce5a0ec185ae0ea2631",
+    "6-exit": "db328c6809be75423f5583f8b409d9472ed2b925d01017f96854dcc441f7633c",
+    "6-log": "6301436eea34093898fb572eeba917ab332e7e61b0089c7e0918c11f9a2be123",
+    "6-start": "eba1cbf053f8469f1c457b140cc603a6f2c03561f4c8573c611224c246e840aa",
+    "allocation": "2a8b4b30d6c83cbdb7b866ddcca611e5b1aa1cacf725f3defb5687e6e4dc1241",
+    "artifacts": "b1b2674ee304112aae118167f8966fc0e1ee80f652b2cb240eecd22b6479810c",
+    "handle": "daddd94ac78e2df034f145c00966dff9eeb8dc81cfa895f3e340e3d4e465a42c",
+    "inputs": "feea8d4db3d702b5cdb080736b8563785f5ba6df681c8a73f64dbb76d440b74f",
+    "prepare_started": "501f7a1e700666aec87b4e19971a12b9c3ee0c85471d7c883be1a5ebb09708f1",
+    "released": "f7bccf609b3dd0de0810cea1fd1c87418262bab3a1c564df02988b27511a1a42",
+    "result": "1317cfe259db382d64df82fbe6efbcfd3fb590ca60e2ab93f78137eb2cb3f80f",
+    "spec": "831fab70e17f95c3fea80a13936539cd5663530952ae256ef90308f923278483"
+  },
+  "reference_diagnostics": {
+    "energy_balance": {
+      "error_type": "ValueError",
+      "status": "not_evaluated"
+    }
+  },
+  "reference_status": "accepted_by_expert",
+  "source": {
+    "artifact_hash": "b1b2674ee304112aae118167f8966fc0e1ee80f652b2cb240eecd22b6479810c",
+    "control": "mesh_finest",
+    "endpoint": {
+      "kind": "physical_time",
+      "unit": "s",
+      "value": 1.5
+    },
+    "evidence_status": "completed_and_released",
+    "input_hash": "feea8d4db3d702b5cdb080736b8563785f5ba6df681c8a73f64dbb76d440b74f",
+    "limitations": [
+      "Differences between the last two meshes remain recorded, including pressure and turbulence quantities.",
+      "Recorded native duration exceeds the current model per-run 300 s cap; expert reference acceptance does not prove equal-budget attainability."
+    ],
+    "native_seconds": 495.90217323601246,
+    "native_verdict": "pass",
+    "reference_status": "accepted_by_expert",
+    "result_hash": "1317cfe259db382d64df82fbe6efbcfd3fb590ca60e2ab93f78137eb2cb3f80f",
+    "run_directory": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/audits/free-mesh-thermal-native-20260915-006/s-203/mesh_finest/native/runs/r-000001",
+    "runtime": "1b8daf015bedab9fc337a623e8516c81f805d69a53a6e58436c46fb3053b5bd1",
+    "selection_reason": "Use the finest existing completed author mesh (68,107 cells); do not schedule a new refinement study."
+  },
+  "task_id": "s-203"
+}

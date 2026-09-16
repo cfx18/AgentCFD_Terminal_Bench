@@ -1,0 +1,63 @@
+{
+  "paid_ready": false,
+  "registered_candidates": 5,
+  "schema": "original-numeric-baseline-v1",
+  "source_candidates_hash": "d8137983cdde72c688518d4a2eb1001b75d4f15fa461a6609369613ad1777854",
+  "tasks": [
+    {
+      "baseline_hash": "604572458e7f2ffc505bd145e588c9e917ddfcd15b7eda26a5c5c467b4e1ee9f",
+      "execution_task": {
+        "config_hash": "39fb80244192d6b1e89f68de6370b7eec987b2674d450accfbbf1e24a103ea80",
+        "digest": "a313651a8695a1b22808cad73ebac659bbde36fd71014933543453078f704e81",
+        "id": "s-101",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "version": "original-reference-preparation-v1"
+      },
+      "id": "s-101"
+    },
+    {
+      "baseline_hash": "6838c1afa24c261eddedc7d79efc5c22495ef110ca5fd4c3301747338002bf7f",
+      "execution_task": {
+        "config_hash": "7553e40c40fabe417f73139c79fd169f5db60b14dcea0b8640a1f176e621be37",
+        "digest": "64d87bed9d810b6ae7dec85e3cb114750e910522ae66cf2f57c4ef20d0892108",
+        "id": "s-102",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "version": "original-reference-preparation-v1"
+      },
+      "id": "s-102"
+    },
+    {
+      "baseline_hash": "f468f38a1145725c71b547236cff98ba592d95b7c91ff15f281b0566a500f564",
+      "execution_task": {
+        "config_hash": "d62adcfa60514332994c6d9c07041d14aff1c4df8c5234a6ae7dab7efae0f372",
+        "digest": "d81b78b22d3edc8b5d158bbaf434ed7f6f970b687cf321eb68ca929b63fdb5a3",
+        "id": "s-103",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "version": "original-reference-preparation-v1"
+      },
+      "id": "s-103"
+    },
+    {
+      "baseline_hash": "df1e0680dbfe298746602019cdb0752cbef4021c831177da5b0b688bfc231450",
+      "execution_task": {
+        "config_hash": "e109a7d936b49db4c471657dbca97ee6b43751ac232103d00a7155c5f2c33205",
+        "digest": "950dc48e703cd2a2e4e562e3a553b8950329be9bc249b8838672990eb5b3b9b4",
+        "id": "s-104",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "version": "original-reference-preparation-v1"
+      },
+      "id": "s-104"
+    },
+    {
+      "baseline_hash": "379d73403fabacde092d7ef07b1e760c2cb31eae5c3ead99319caf7ef7742c42",
+      "execution_task": {
+        "config_hash": "3b333cd650ff7cb38876891f30ef20491487ef4f666f1a9bbf58f1ad6cdf010f",
+        "digest": "c71395d2ccac40613e4c66c196ecad5c58aa7efb00c08cdc95de4bf5777b11b8",
+        "id": "s-105",
+        "runtime": "6b322a55d17b430b4d21ff66c2243755154716e6eb34ef3f7b2360db83d6aba1",
+        "version": "original-reference-preparation-v1"
+      },
+      "id": "s-105"
+    }
+  ]
+}

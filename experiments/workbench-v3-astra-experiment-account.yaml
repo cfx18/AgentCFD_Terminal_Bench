@@ -1,0 +1,23 @@
+# Explicit experiment account; never falls back to /root/.codex.
+# Same four tasks and budgets; versioned polyhedral observation grader.
+version: workbench-v3
+harness:
+  name: codex
+  backend: chatgpt-subscription
+  reasoning_effort: xhigh
+  auth_home: /root/.codex-experiment  # Host-only; not mounted into the agent.
+model: gpt-6-astra
+tasks: [s-205, s-203, s-202, s-204]
+task_root: ../tasks/releases/workbench-v3-polyhedral-v2
+docs: ../environments/docs-v2306
+network: disabled
+budget:
+  model_calls: 64
+  native_seconds: 1000
+  request_seconds: 600
+execution:
+  foam_root: ../environments/native-v2306/foam
+  mpi: intelmpi
+  memory_bytes: 4294967296
+  file_bytes: 536870912
+output: ../runs/workbench-v3

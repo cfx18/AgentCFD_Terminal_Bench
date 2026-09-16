@@ -1,0 +1,781 @@
+{
+  "completion": {
+    "early_convergence": true,
+    "end": 1000,
+    "kind": "steady",
+    "tolerance": 1e-07
+  },
+  "control": {
+    "application": [
+      "buoyantSimpleFoam"
+    ],
+    "deltaT": [
+      "1"
+    ],
+    "endTime": [
+      "1000"
+    ],
+    "purgeWrite": [
+      "3"
+    ],
+    "runTimeModifiable": [
+      "true"
+    ],
+    "startFrom": [
+      "startTime"
+    ],
+    "startTime": [
+      "0"
+    ],
+    "stopAt": [
+      "endTime"
+    ],
+    "timeFormat": [
+      "general"
+    ],
+    "timePrecision": [
+      "6"
+    ],
+    "writeCompression": [
+      "off"
+    ],
+    "writeControl": [
+      "timeStep"
+    ],
+    "writeFormat": [
+      "ascii"
+    ],
+    "writeInterval": [
+      "50"
+    ],
+    "writePrecision": [
+      "6"
+    ]
+  },
+  "fields": {
+    "T": {
+      "count": 78750,
+      "dimensions": "[ 0 0 0 1 0 0 0 ]",
+      "unit": "K"
+    },
+    "U": {
+      "count": 78750,
+      "dimensions": "[ 0 1 -1 0 0 0 0 ]",
+      "unit": "m/s"
+    },
+    "alphat": {
+      "count": 78750,
+      "dimensions": "[ 1 -1 -1 0 0 0 0 ]",
+      "unit": "kg/(m s)"
+    },
+    "k": {
+      "count": 78750,
+      "dimensions": "[ 0 2 -2 0 0 0 0 ]",
+      "unit": "m2/s2"
+    },
+    "nut": {
+      "count": 78750,
+      "dimensions": "[ 0 2 -1 0 0 0 0 ]",
+      "unit": "m2/s"
+    },
+    "omega": {
+      "count": 78750,
+      "dimensions": "[ 0 0 -1 0 0 0 0 ]",
+      "unit": "1/s"
+    },
+    "p": {
+      "count": 78750,
+      "dimensions": "[ 1 -1 -2 0 0 0 0 ]",
+      "unit": "Pa"
+    },
+    "p_rgh": {
+      "count": 78750,
+      "dimensions": "[ 1 -1 -2 0 0 0 0 ]",
+      "unit": "Pa"
+    }
+  },
+  "physics": {
+    "0/T": {
+      "boundaryField": {
+        "cold": {
+          "type": [
+            "fixedValue"
+          ],
+          "value": [
+            "uniform",
+            "288.15"
+          ]
+        },
+        "frontAndBack": {
+          "type": [
+            "zeroGradient"
+          ]
+        },
+        "hot": {
+          "type": [
+            "fixedValue"
+          ],
+          "value": [
+            "uniform",
+            "307.75"
+          ]
+        },
+        "topAndBottom": {
+          "type": [
+            "zeroGradient"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "293"
+      ]
+    },
+    "0/U": {
+      "boundaryField": {
+        "cold": {
+          "type": [
+            "noSlip"
+          ]
+        },
+        "frontAndBack": {
+          "type": [
+            "noSlip"
+          ]
+        },
+        "hot": {
+          "type": [
+            "noSlip"
+          ]
+        },
+        "topAndBottom": {
+          "type": [
+            "noSlip"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "(",
+        "0",
+        "0",
+        "0",
+        ")"
+      ]
+    },
+    "0/alphat": {
+      "boundaryField": {
+        "cold": {
+          "Prt": [
+            "0.85"
+          ],
+          "type": [
+            "compressible::alphatWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "frontAndBack": {
+          "Prt": [
+            "0.85"
+          ],
+          "type": [
+            "compressible::alphatWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "hot": {
+          "Prt": [
+            "0.85"
+          ],
+          "type": [
+            "compressible::alphatWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "topAndBottom": {
+          "Prt": [
+            "0.85"
+          ],
+          "type": [
+            "compressible::alphatWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "1",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "0"
+      ]
+    },
+    "0/k": {
+      "boundaryField": {
+        "cold": {
+          "type": [
+            "kqRWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "3.75e-04"
+          ]
+        },
+        "frontAndBack": {
+          "type": [
+            "kqRWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "3.75e-04"
+          ]
+        },
+        "hot": {
+          "type": [
+            "kqRWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "3.75e-04"
+          ]
+        },
+        "topAndBottom": {
+          "type": [
+            "kqRWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "3.75e-04"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "2",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "3.75e-04"
+      ]
+    },
+    "0/nut": {
+      "boundaryField": {
+        "cold": {
+          "type": [
+            "nutUWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "frontAndBack": {
+          "type": [
+            "nutUWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "hot": {
+          "type": [
+            "nutUWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        },
+        "topAndBottom": {
+          "type": [
+            "nutUWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "2",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "0"
+      ]
+    },
+    "0/omega": {
+      "boundaryField": {
+        "cold": {
+          "type": [
+            "omegaWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0.12"
+          ]
+        },
+        "frontAndBack": {
+          "type": [
+            "omegaWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0.12"
+          ]
+        },
+        "hot": {
+          "type": [
+            "omegaWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0.12"
+          ]
+        },
+        "topAndBottom": {
+          "type": [
+            "omegaWallFunction"
+          ],
+          "value": [
+            "uniform",
+            "0.12"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "0.12"
+      ]
+    },
+    "0/p": {
+      "boundaryField": {
+        "cold": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        },
+        "frontAndBack": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        },
+        "hot": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        },
+        "topAndBottom": {
+          "type": [
+            "calculated"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "1",
+        "-1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "1e5"
+      ]
+    },
+    "0/p_rgh": {
+      "boundaryField": {
+        "cold": {
+          "type": [
+            "fixedFluxPressure"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        },
+        "frontAndBack": {
+          "type": [
+            "fixedFluxPressure"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        },
+        "hot": {
+          "type": [
+            "fixedFluxPressure"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        },
+        "topAndBottom": {
+          "type": [
+            "fixedFluxPressure"
+          ],
+          "value": [
+            "uniform",
+            "1e5"
+          ]
+        }
+      },
+      "dimensions": [
+        "[",
+        "1",
+        "-1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "internalField": [
+        "uniform",
+        "1e5"
+      ]
+    },
+    "constant/g": {
+      "dimensions": [
+        "[",
+        "0",
+        "1",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "]"
+      ],
+      "value": [
+        "(",
+        "0",
+        "-9.81",
+        "0",
+        ")"
+      ]
+    },
+    "constant/thermophysicalProperties": {
+      "mixture": {
+        "specie": {
+          "molWeight": [
+            "28.96"
+          ]
+        },
+        "thermodynamics": {
+          "Cp": [
+            "1004.4"
+          ],
+          "Hf": [
+            "0"
+          ]
+        },
+        "transport": {
+          "Pr": [
+            "0.705"
+          ],
+          "mu": [
+            "1.831e-05"
+          ]
+        }
+      },
+      "thermoType": {
+        "energy": [
+          "sensibleEnthalpy"
+        ],
+        "equationOfState": [
+          "perfectGas"
+        ],
+        "mixture": [
+          "pureMixture"
+        ],
+        "specie": [
+          "specie"
+        ],
+        "thermo": [
+          "hConst"
+        ],
+        "transport": [
+          "const"
+        ],
+        "type": [
+          "heRhoThermo"
+        ]
+      }
+    },
+    "constant/turbulenceProperties": {
+      "RAS": {
+        "RASModel": [
+          "kOmegaSST"
+        ],
+        "printCoeffs": [
+          "on"
+        ],
+        "turbulence": [
+          "on"
+        ]
+      },
+      "simulationType": [
+        "RAS"
+      ]
+    },
+    "system/blockMeshDict": {
+      "blocks": [
+        "(",
+        "hex",
+        "(",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        ")",
+        "(",
+        "35",
+        "150",
+        "15",
+        ")",
+        "simpleGrading",
+        "(",
+        "1",
+        "1",
+        "1",
+        ")",
+        ")"
+      ],
+      "boundary": [
+        "(",
+        "frontAndBack",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "0",
+        "1",
+        "5",
+        "4",
+        ")",
+        "(",
+        "2",
+        "3",
+        "7",
+        "6",
+        ")",
+        ")",
+        ";",
+        "}",
+        "topAndBottom",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "4",
+        "5",
+        "6",
+        "7",
+        ")",
+        "(",
+        "3",
+        "2",
+        "1",
+        "0",
+        ")",
+        ")",
+        ";",
+        "}",
+        "hot",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "6",
+        "5",
+        "1",
+        "2",
+        ")",
+        ")",
+        ";",
+        "}",
+        "cold",
+        "{",
+        "type",
+        "wall",
+        ";",
+        "faces",
+        "(",
+        "(",
+        "4",
+        "7",
+        "3",
+        "0",
+        ")",
+        ")",
+        ";",
+        "}",
+        ")"
+      ],
+      "edges": [
+        "(",
+        ")"
+      ],
+      "mergePatchPairs": [
+        "(",
+        ")"
+      ],
+      "scale": [
+        "0.001"
+      ],
+      "vertices": [
+        "(",
+        "(",
+        "0",
+        "0",
+        "-260",
+        ")",
+        "(",
+        "76",
+        "0",
+        "-260",
+        ")",
+        "(",
+        "76",
+        "2180",
+        "-260",
+        ")",
+        "(",
+        "0",
+        "2180",
+        "-260",
+        ")",
+        "(",
+        "0",
+        "0",
+        "260",
+        ")",
+        "(",
+        "76",
+        "0",
+        "260",
+        ")",
+        "(",
+        "76",
+        "2180",
+        "260",
+        ")",
+        "(",
+        "0",
+        "2180",
+        "260",
+        ")",
+        ")"
+      ]
+    }
+  },
+  "residual": "p_rgh",
+  "task_id": "s-204",
+  "version": "thermal-compressible-discrete-v1"
+}

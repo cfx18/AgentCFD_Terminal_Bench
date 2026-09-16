@@ -1,0 +1,13 @@
+{
+  "code_identity": "526ff28caeec093b9ba1978d8ed743911412908d52fa6c2256912e832ade2da3",
+  "limits": "No claim of unique mechanism identification or universal adversarial-proof execution",
+  "policy_identity": "4d5fd62bf0397b5cda8d4daabab974720ec072b8a551ed0e232e710923e7040a",
+  "public_identity": "ec51fb133a7b19d9967386b4b2b98a98d75a34e23d81e5587a65ceba1c12655b",
+  "reference_identity": "28b05e0e23fe8feb9bc0c79b0d8f322f811e6e3bd46ee04af20ad8cd3dc3a68a",
+  "replay_identity": "56ae2203e2d29e8bb1176c964eefa3aa150923b40dfde72dfbf9ed86bf971570",
+  "source_replay": "/root/shared-nvme/Caifeixue/AgentCFD/AgentCFD_Terminal_Bench/audits/dense-native-budget120-20260916-001/validation.json",
+  "tests": {
+    "sha256": "3cf2f619d51a2878c435afe5b22422684dbd5065dbce1e3152085d639e43e8c2",
+    "total": 213
+  }
+}

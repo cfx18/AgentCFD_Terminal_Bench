@@ -1,0 +1,106 @@
+version: free-mesh-v2
+# Historical automatic-qualification manifest, not the latest expert GT decision.
+# Accepted numerical references and English public statements are separately
+# versioned in task-drafts/geometry-only-free-mesh-en-v2/; do not falsify these
+# original scientific checks or rerun convergence studies merely to clear them.
+# 私有作者封装清单，不是模型测试配置；只能复用完整原生证据，不启动计算。
+# 九题全部留在清单，未合格题不允许加载。s-001 已在独立 free-mesh-v1 中完成。
+# 范围纠正：用户明确 s-10x 为故意做错的 case，不再修复或推进物理参考发布。
+# 对这些题使用 review 仅作加载阻断，blocker 表明排除原因，不表示等待修好。
+# 历史控制映射与冻结候选仍保留；本轮只推进 s-202～s-205。
+tasks:
+  - id: s-101
+    status: review
+    blockers: [user_declared_intentional_error_out_of_scope]
+    materials: audits/free-mesh-flow-materials-20260915-004/s-101
+    acceptance_module: agentcfd_bench.free_mesh_flow
+    physical_error_checks: [field_U, field_p]
+    controls:
+      valid:
+        input_name: fine
+        run_directory: audits/free-mesh-flow-20260915-001/s-101/native/runs/r-000003
+        supplemental_sources: &cavity_exports [0.5/phi, constant/polyMesh/points, constant/polyMesh/faces, constant/polyMesh/boundary, constant/polyMesh/owner, constant/polyMesh/neighbour]
+      alternative_mesh:
+        input_name: medium
+        run_directory: audits/free-mesh-flow-20260915-001/s-101/native/runs/r-000002
+        supplemental_sources: *cavity_exports
+      positive_time_step_half:
+        input_name: half_time_step
+        run_directory: audits/free-mesh-flow-20260915-001/s-101/native/runs/r-000006
+        supplemental_sources: *cavity_exports
+      wrong_physics:
+        input_name: wrong_physics
+        run_directory: audits/free-mesh-flow-20260915-001/s-101/native/runs/r-000004
+        supplemental_sources: *cavity_exports
+      invalid:
+        input_name: missing_velocity
+        run_directory: audits/free-mesh-flow-20260915-001/s-101/native/runs/r-000005
+  - id: s-102
+    status: review
+    blockers: [user_declared_intentional_error_out_of_scope]
+  - id: s-103
+    status: review
+    blockers: [user_declared_intentional_error_out_of_scope]
+  - id: s-104
+    status: review
+    blockers: [user_declared_intentional_error_out_of_scope]
+    materials: audits/free-mesh-flow-materials-20260915-004/s-104
+    acceptance_module: agentcfd_bench.free_mesh_flow
+    physical_error_checks: [field_U, field_p]
+    controls:
+      valid:
+        input_name: fine
+        run_directory: audits/free-mesh-flow-20260915-004/s-104/native/runs/r-000003
+        supplemental_sources: &flow_mesh_exports [constant/polyMesh/points, constant/polyMesh/faces, constant/polyMesh/boundary, constant/polyMesh/owner, constant/polyMesh/neighbour]
+      alternative_mesh:
+        input_name: medium
+        run_directory: audits/free-mesh-flow-20260915-004/s-104/native/runs/r-000002
+        supplemental_sources: *flow_mesh_exports
+      positive_mesh_coarse:
+        input_name: coarse
+        run_directory: audits/free-mesh-flow-20260915-004/s-104/native/runs/r-000001
+        supplemental_sources: *flow_mesh_exports
+      positive_time_step_half:
+        input_name: half_time_step
+        run_directory: audits/free-mesh-flow-20260915-004/s-104/native/runs/r-000006
+        supplemental_sources: *flow_mesh_exports
+      wrong_physics:
+        input_name: wrong_physics
+        run_directory: audits/free-mesh-flow-20260915-004/s-104/native/runs/r-000004
+        supplemental_sources: *flow_mesh_exports
+      invalid:
+        input_name: missing_velocity
+        run_directory: audits/free-mesh-flow-20260915-004/s-104/native/runs/r-000005
+  - id: s-105
+    status: review
+    blockers: [user_declared_intentional_error_out_of_scope]
+  - id: s-202
+    status: review
+    blockers: [coupled_reference_energy_balance_not_qualified]
+  - id: s-203
+    status: review
+    blockers: [mesh_independence_not_established, finest_native_exceeds_agent_budget]
+  - id: s-204
+    status: review
+    blockers: [four_numerical_studies_not_steady, agent_native_budget_feasibility_not_demonstrated]
+  - id: s-205
+    status: candidate
+    materials: audits/free-mesh-buoyant-shock-materials-20260915-001/s-205
+    acceptance_module: agentcfd_bench.free_mesh_shock
+    physical_error_checks: [waveform_rho, waveform_p, waveform_T, waveform_Ux]
+    controls:
+      valid:
+        input_name: valid
+        run_directory: audits/free-mesh-buoyant-shock-20260915-001/s-205/native/runs/r-000001
+      alternative_mesh:
+        input_name: mesh_200
+        run_directory: audits/free-mesh-buoyant-shock-20260915-001/s-205/native/runs/r-000002
+      positive_mesh_400:
+        input_name: mesh_400
+        run_directory: audits/free-mesh-buoyant-shock-20260915-001/s-205/native/runs/r-000003
+      wrong_physics:
+        input_name: wrong_physics
+        run_directory: audits/free-mesh-buoyant-shock-20260915-001/s-205/native/runs/r-000004
+      invalid:
+        input_name: invalid
+        run_directory: audits/free-mesh-buoyant-shock-20260915-001/s-205/native/runs/r-000005

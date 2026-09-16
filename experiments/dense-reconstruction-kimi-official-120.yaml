@@ -1,0 +1,29 @@
+# Paired with dense-reconstruction-astra-120.yaml; only harness/model differ.
+version: workbench-v3
+harness:
+  name: kimi-code  # Node @moonshot-ai/kimi-code 0.28.1, not Python kimi-cli.
+  backend: custom-api
+  reasoning_effort: null  # Preserve official provider defaults.
+  runtime: ../.harness-runtime/kimi-code-0.28.1/node_modules
+  endpoint: https://api.moonshot.cn/v1
+  env_file: ../.env.kimi-official  # Host only; never copied into Agent workspace.
+  api_key_env: SCIENCE_API_KEY
+  endpoint_env: SCIENCE_API_BASE
+  context_window: 1048576
+model: kimi-k3  # Exact official ID; no fallback or intermediary provider.
+tasks: [s-204, s-203]
+task_root: ../tasks/releases/dense-reconstruction-v2
+docs: ../environments/docs-v2306
+network: disabled
+budget:
+  model_calls: 120
+  native_seconds: null
+  request_seconds: 600  # API fault watchdog only, not a task deadline.
+completion:
+  on_model_budget_exhausted: evaluate_latest_successful
+execution:
+  foam_root: ../environments/native-v2306/foam
+  mpi: intelmpi  # Runtime libraries only; solver execution remains serial.
+  memory_bytes: 4294967296
+  file_bytes: 536870912
+output: ../runs/dense-reconstruction

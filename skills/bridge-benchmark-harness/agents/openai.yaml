@@ -1,0 +1,4 @@
+interface:
+  display_name: "Benchmark Harness Bridge"
+  short_description: "Configure and validate isolated AgentCFD harness bridges"
+  default_prompt: "Use $bridge-benchmark-harness to configure my selected harness and model, test the bridge without paid calls, and report remaining readiness gates."

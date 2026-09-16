@@ -1,0 +1,31 @@
+{
+  "schema": "tutorial-reference-export-v1",
+  "solver_run_id": "r-c57a5a71214f48ea",
+  "export_run_id": "r-76e23f3a5243431f",
+  "wall_heat_flux_run_id": "r-e578e741b1bf4ab7",
+  "endpoint_directory": "430",
+  "endpoint_kind": "steady iteration index, not physical time",
+  "native_cell_count": 7950,
+  "exported_observation_count": 7656,
+  "excluded_hole_cell_count": 294,
+  "native_format": "OpenFOAM ASCII scalar64, writePrecision 12",
+  "native_fields": [
+    "C",
+    "Cx",
+    "Cy",
+    "Cz",
+    "V",
+    "U",
+    "T",
+    "p",
+    "rho",
+    "k",
+    "epsilon",
+    "nut",
+    "alphat",
+    "zoneID",
+    "cellTypes",
+    "phi",
+    "wallHeatFlux"
+  ]
+}
