@@ -17,3 +17,11 @@ dist/
 environments/native-v2306/foam/
 environments/docs-v2306/manual/
 environments/docs-v2306/source/
+tasks/releases/tutorial-grader-v1/
+tasks/releases/tutorial-grader-v2/
+tasks/releases/tutorial-grader-v3/
+tasks/releases/tutorial-grader-v4/**
+!tasks/releases/tutorial-grader-v4/
+!tasks/releases/tutorial-grader-v4/MANIFEST.json
+!tasks/releases/tutorial-grader-v4/README.md
+data-packages/

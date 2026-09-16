@@ -1,0 +1,967 @@
+{
+  "blocked_count": 92,
+  "grader_version": "tutorial-dense-metric-grader-v1",
+  "metric_grader_executable_count": 8,
+  "note": "Metric grader is executable; review/blocked tasks are not valid leaderboard releases until blockers are resolved.",
+  "release": "tutorial-grader-v4",
+  "released_count": 0,
+  "review_count": 8,
+  "review_decisions": {
+    "blocked": 97,
+    "review": 3
+  },
+  "source_run": "runs/tutorial-release-completion/20260916T191015Z-sol-high-codex-experiment-c6-v1",
+  "task_count": 100,
+  "tasks": [
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0046"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0050"
+    },
+    {
+      "blocker_count": 1,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/fields.csv",
+      "release_status": "review",
+      "review_decision": "blocked",
+      "scored_fields": [
+        "T"
+      ],
+      "task_id": "q-0051"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0052"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0053"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0054"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0055"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0056"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0057"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0058"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0060"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0061"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0062"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0063"
+    },
+    {
+      "blocker_count": 3,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/fields.csv",
+      "release_status": "review",
+      "review_decision": "blocked",
+      "scored_fields": [
+        "T",
+        "U",
+        "b",
+        "ft",
+        "p",
+        "rho"
+      ],
+      "task_id": "q-0064"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0065"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0066"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0068"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0069"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0070"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0071"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0072"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0073"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0074"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0091"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0092"
+    },
+    {
+      "blocker_count": 1,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/fields.csv",
+      "release_status": "review",
+      "review_decision": "review",
+      "scored_fields": [
+        "T_K",
+        "U",
+        "p_Pa"
+      ],
+      "task_id": "q-0094"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0096"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0097"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0098"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0099"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0100"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0101"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0102"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0103"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0104"
+    },
+    {
+      "blocker_count": 1,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/cell_fields.csv",
+      "release_status": "review",
+      "review_decision": "blocked",
+      "scored_fields": [
+        "UMean",
+        "dsmcRhoNMean",
+        "iDofMean",
+        "internalEMean",
+        "internalT",
+        "linearKEMean",
+        "momentumMean_x",
+        "momentumMean_y",
+        "momentumMean_z",
+        "overallT",
+        "p",
+        "rhoMMean",
+        "rhoNMean",
+        "translationalT"
+      ],
+      "task_id": "q-0131"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0132"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0133"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0134"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0135"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0136"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0137"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0138"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0139"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0145"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/fields.csv",
+      "release_status": "review",
+      "review_decision": "review",
+      "scored_fields": [
+        "T",
+        "U",
+        "p"
+      ],
+      "task_id": "q-0146"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0147"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0148"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0149"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0150"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0152"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0154"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0155"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0156"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0157"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0158"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0175"
+    },
+    {
+      "blocker_count": 1,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/fields.csv",
+      "release_status": "review",
+      "review_decision": "review",
+      "scored_fields": [
+        "U",
+        "Urel",
+        "k_m2_s2",
+        "nut_m2_s",
+        "omega_s_1",
+        "p_m2_s2"
+      ],
+      "task_id": "q-0176"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0177"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0178"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0179"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0180"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0181"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0182"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0183"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0184"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0185"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0186"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0289"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0290"
+    },
+    {
+      "blocker_count": 2,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/fields.csv",
+      "release_status": "review",
+      "review_decision": "blocked",
+      "scored_fields": [
+        "U.air",
+        "kinematicCloud:theta",
+        "p"
+      ],
+      "task_id": "q-0291"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0292"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0293"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0294"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0295"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0297"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0298"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0299"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0300"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0361"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0362"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0363"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0364"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0365"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0366"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0367"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0368"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0369"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0370"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0372"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0373"
+    },
+    {
+      "blocker_count": 4,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0502"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0503"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": true,
+      "public_observation_csv": "public/observations/fields.csv",
+      "release_status": "review",
+      "review_decision": "blocked",
+      "scored_fields": [
+        "U",
+        "alphat",
+        "epsilon",
+        "k",
+        "nut",
+        "p"
+      ],
+      "task_id": "q-0505"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0506"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0508"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0509"
+    },
+    {
+      "blocker_count": 6,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0510"
+    },
+    {
+      "blocker_count": 5,
+      "metric_grader_executable": false,
+      "public_observation_csv": null,
+      "release_status": "blocked",
+      "review_decision": "blocked",
+      "scored_fields": [],
+      "task_id": "q-0511"
+    }
+  ]
+}

@@ -20,6 +20,13 @@ def main():
     p = commands.add_parser("regrade", help="Regrade a submitted answer without model calls")
     p.add_argument("run_id")
     p.add_argument("task_id")
+    p = commands.add_parser(
+        "release-tutorial-graders",
+        help="Build tutorial dense-observation grader release packages from authoring evidence",
+    )
+    p.add_argument("--source-run", required=True)
+    p.add_argument("--destination", required=True)
+    p.add_argument("--task-id", action="append", dest="task_ids")
     args = parser.parse_args()
     if args.command == "prepare":
         from .tasks.experiment import prepare
@@ -35,6 +42,14 @@ def main():
         from .grading.regrade import regrade
 
         value = regrade(args.run_id, args.task_id)
+    elif args.command == "release-tutorial-graders":
+        from .tasks.release_tutorial_graders import release
+
+        value = release(
+            args.source_run,
+            args.destination,
+            tuple(args.task_ids) if args.task_ids else None,
+        )
     elif args.command == "run":
         if not args.allow_paid:
             parser.error("run requires explicit --allow-paid; prepare is free")
